@@ -24,6 +24,10 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.clipsToBounds = true
         
+        emailTextField.delegate = self
+        emailTextField.keyboardType = .emailAddress
+        passwordTextField.delegate = self
+        
         signInBtn.layer.cornerRadius = 10
     }
     
@@ -32,4 +36,16 @@ class LoginViewController: UIViewController {
     }
     
     
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
+    }
 }
