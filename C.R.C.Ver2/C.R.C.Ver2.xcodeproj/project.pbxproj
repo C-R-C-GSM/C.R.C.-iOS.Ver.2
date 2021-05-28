@@ -17,9 +17,8 @@
 		BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BD6B4E3B26607B8D00BEBF7F /* Alamofire */; };
 		BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E3E26607F1300BEBF7F /* SignUpEmailViewController.swift */; };
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
-		BD6B4E4326607F5900BEBF7F /* SignUpPasswordCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4226607F5900BEBF7F /* SignUpPasswordCheckViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
-		BD6B4E4726607F8000BEBF7F /* SignUpStudentNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpStudentNumberViewController.swift */; };
+		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +33,8 @@
 		BD6B4E38265F3FF600BEBF7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD6B4E3E26607F1300BEBF7F /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
-		BD6B4E4226607F5900BEBF7F /* SignUpPasswordCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordCheckViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
-		BD6B4E4626607F8000BEBF7F /* SignUpStudentNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStudentNumberViewController.swift; sourceTree = "<group>"; };
+		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +134,8 @@
 			children = (
 				BD6B4E3E26607F1300BEBF7F /* SignUpEmailViewController.swift */,
 				BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */,
-				BD6B4E4226607F5900BEBF7F /* SignUpPasswordCheckViewController.swift */,
 				BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */,
-				BD6B4E4626607F8000BEBF7F /* SignUpStudentNumberViewController.swift */,
+				BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -224,8 +221,7 @@
 				BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */,
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
-				BD6B4E4726607F8000BEBF7F /* SignUpStudentNumberViewController.swift in Sources */,
-				BD6B4E4326607F5900BEBF7F /* SignUpPasswordCheckViewController.swift in Sources */,
+				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 			);
