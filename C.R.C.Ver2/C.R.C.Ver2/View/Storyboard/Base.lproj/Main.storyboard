@@ -360,7 +360,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCC-Cq-QOV">
-                                <rect key="frame" x="30" y="745" width="354" height="50"/>
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hBl-FL-xyR"/>
@@ -380,7 +380,7 @@
                             <constraint firstItem="aze-sl-cK9" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="HVu-9e-ZQO"/>
                             <constraint firstItem="VCC-Cq-QOV" firstAttribute="leading" secondItem="aze-sl-cK9" secondAttribute="leading" id="Iwe-14-Tb3"/>
                             <constraint firstItem="5yC-92-dOw" firstAttribute="top" secondItem="2gt-Zg-vJQ" secondAttribute="top" constant="30" id="KGo-C1-mui"/>
-                            <constraint firstItem="2gt-Zg-vJQ" firstAttribute="bottom" secondItem="VCC-Cq-QOV" secondAttribute="bottom" constant="67" id="Wry-2f-TtK"/>
+                            <constraint firstItem="2gt-Zg-vJQ" firstAttribute="bottom" secondItem="VCC-Cq-QOV" secondAttribute="bottom" constant="30" id="Wry-2f-TtK"/>
                             <constraint firstItem="aze-sl-cK9" firstAttribute="leading" secondItem="5yC-92-dOw" secondAttribute="leading" id="cbs-xD-bKW"/>
                             <constraint firstItem="aze-sl-cK9" firstAttribute="top" secondItem="5yC-92-dOw" secondAttribute="bottom" constant="50" id="fQ3-T9-kDZ"/>
                             <constraint firstItem="5yC-92-dOw" firstAttribute="leading" secondItem="E2H-zM-hvl" secondAttribute="leading" constant="30" id="mPU-RZ-i90"/>
@@ -390,6 +390,7 @@
                     <connections>
                         <outlet property="classNumberTextField" destination="16o-hA-aJ6" id="CPt-NQ-IlC"/>
                         <outlet property="doneBtn" destination="VCC-Cq-QOV" id="LGs-Rq-x9v"/>
+                        <outlet property="doneBtnBottomConstraint" destination="Wry-2f-TtK" id="XXz-ed-WQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfP-o5-utD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -451,7 +452,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McU-fo-7Hc">
-                                <rect key="frame" x="30" y="745" width="354" height="50"/>
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9fr-2K-UWi"/>
@@ -474,7 +475,7 @@
                             <constraint firstItem="UVK-ZA-0UM" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="etd-ye-Eqm"/>
                             <constraint firstItem="UVK-ZA-0UM" firstAttribute="leading" secondItem="Txg-Dp-2N2" secondAttribute="leading" id="hon-O4-s9Z"/>
                             <constraint firstItem="McU-fo-7Hc" firstAttribute="leading" secondItem="UVK-ZA-0UM" secondAttribute="leading" id="sLZ-7c-1N7"/>
-                            <constraint firstItem="NoE-o7-e2d" firstAttribute="bottom" secondItem="McU-fo-7Hc" secondAttribute="bottom" constant="67" id="xAr-y3-jCK"/>
+                            <constraint firstItem="NoE-o7-e2d" firstAttribute="bottom" secondItem="McU-fo-7Hc" secondAttribute="bottom" constant="30" id="xAr-y3-jCK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="C.R.C." id="kLq-Aq-4oN">
@@ -482,6 +483,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="continueBtn" destination="McU-fo-7Hc" id="uqN-Ga-YqX"/>
+                        <outlet property="continueBtnBottomConstraint" destination="xAr-y3-jCK" id="3v9-lz-9HQ"/>
                         <outlet property="nameTextField" destination="Reg-IV-yzc" id="dRc-mV-Xql"/>
                     </connections>
                 </viewController>
@@ -544,7 +546,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-aE-Sbh">
-                                <rect key="frame" x="30" y="745" width="354" height="50"/>
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9BT-a1-YLH"/>
@@ -609,7 +611,7 @@
                             <constraint firstItem="QcX-N9-es1" firstAttribute="leading" secondItem="Qjm-XM-Td9" secondAttribute="leading" constant="30" id="ZxT-5I-Vk1"/>
                             <constraint firstItem="qkn-Pm-BkY" firstAttribute="leading" secondItem="3I2-tM-E3B" secondAttribute="leading" id="alp-wo-ISz"/>
                             <constraint firstItem="QcX-N9-es1" firstAttribute="top" secondItem="Qjm-XM-Td9" secondAttribute="top" constant="30" id="iqf-BC-chl"/>
-                            <constraint firstItem="Qjm-XM-Td9" firstAttribute="bottom" secondItem="Kdo-aE-Sbh" secondAttribute="bottom" constant="67" id="udh-nX-SiE"/>
+                            <constraint firstItem="Qjm-XM-Td9" firstAttribute="bottom" secondItem="Kdo-aE-Sbh" secondAttribute="bottom" constant="30" id="udh-nX-SiE"/>
                             <constraint firstItem="qkn-Pm-BkY" firstAttribute="centerX" secondItem="N79-UP-uGX" secondAttribute="centerX" id="yTL-x1-7fK"/>
                         </constraints>
                     </view>
@@ -618,6 +620,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="continueBtn" destination="Kdo-aE-Sbh" id="Xtm-5p-8fr"/>
+                        <outlet property="continueBtnBottomConstraint" destination="udh-nX-SiE" id="f78-VE-Ss1"/>
                         <outlet property="passwordCheckTextField" destination="BDl-Qe-pR7" id="vUh-OI-trp"/>
                         <outlet property="passwordTextField" destination="iic-bP-Xao" id="XWj-cA-6p0"/>
                     </connections>
@@ -681,7 +684,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXI-BB-AwT">
-                                <rect key="frame" x="30" y="745" width="354" height="50"/>
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="jQo-tX-2cH"/>
@@ -697,7 +700,7 @@
                         <viewLayoutGuide key="safeArea" id="m80-eb-hW1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m80-eb-hW1" firstAttribute="bottom" secondItem="EXI-BB-AwT" secondAttribute="bottom" constant="67" id="8kr-cu-M93"/>
+                            <constraint firstItem="m80-eb-hW1" firstAttribute="bottom" secondItem="EXI-BB-AwT" secondAttribute="bottom" constant="30" id="8kr-cu-M93"/>
                             <constraint firstItem="EXI-BB-AwT" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="CkJ-SY-rbB"/>
                             <constraint firstItem="EXI-BB-AwT" firstAttribute="leading" secondItem="OQM-VS-ypF" secondAttribute="leading" id="Ii8-i9-Acj"/>
                             <constraint firstItem="OQM-VS-ypF" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="LYt-9e-liY"/>
@@ -712,6 +715,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="continueBtn" destination="EXI-BB-AwT" id="Lw0-YA-M62"/>
+                        <outlet property="continueBtnBottomConstraint" destination="8kr-cu-M93" id="pz8-Hr-BKG"/>
                         <outlet property="emailTextField" destination="kNt-6W-x54" id="ByH-3L-tc6"/>
                     </connections>
                 </viewController>
@@ -746,10 +750,10 @@
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <namedColor name="Primary Color">
-            <color red="0.53299999237060547" green="0.75700002908706665" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.53333333333333333" green="0.75686274509803919" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Second Color">
-            <color red="0.94900000095367432" green="0.70599997043609619" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.70588235294117641" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
