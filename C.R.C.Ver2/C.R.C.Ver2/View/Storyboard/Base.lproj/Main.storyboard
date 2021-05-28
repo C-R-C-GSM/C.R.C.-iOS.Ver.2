@@ -143,13 +143,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-vO-kLA">
-                                <rect key="frame" x="50" y="172" width="114" height="32.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <rect key="frame" x="50" y="172" width="114" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" name="Second Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-gT-23W">
-                                <rect key="frame" x="50" y="254.5" width="314" height="57.5"/>
+                                <rect key="frame" x="50" y="252" width="314" height="57.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-Ao-yd3">
                                         <rect key="frame" x="0.0" y="0.0" width="74.5" height="20.5"/>
@@ -189,7 +189,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-e9-Bgm">
-                                <rect key="frame" x="50" y="342" width="314" height="57.5"/>
+                                <rect key="frame" x="50" y="339.5" width="314" height="57.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkg-5j-RBQ">
                                         <rect key="frame" x="0.0" y="0.0" width="113.5" height="20.5"/>
@@ -434,7 +434,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                             <color key="textColor" name="Primary Color"/>
                         </textAttributes>
                     </navigationBar>
