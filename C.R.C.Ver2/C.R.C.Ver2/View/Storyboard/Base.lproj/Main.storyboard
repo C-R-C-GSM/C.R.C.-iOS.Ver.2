@@ -292,7 +292,9 @@
                             <constraint firstItem="mq5-e9-Bgm" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="ukc-oa-PvS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="C.R.C." prompt=" " id="1bh-Vu-B2H"/>
+                    <navigationItem key="navigationItem" title="C.R.C." prompt=" " id="1bh-Vu-B2H">
+                        <barButtonItem key="backBarButtonItem" title=" " id="61e-12-wrI"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="G3b-5Z-Xa1" id="vdb-OR-dAp"/>
                         <outlet property="passwordTextField" destination="uqy-8g-dq5" id="aNA-ky-y7Z"/>
@@ -303,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="-249.27536231884059" y="-583.25892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Student Number View Controller-->
         <scene sceneID="1xu-jh-BZY">
             <objects>
-                <viewController id="ZSS-N4-5vy" sceneMemberID="viewController">
+                <viewController id="ZSS-N4-5vy" customClass="SignUpStudentNumberViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E2H-zM-hvl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,10 +329,10 @@
             </objects>
             <point key="canvasLocation" x="4289.855072463768" y="-583.25892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Name View Controller-->
         <scene sceneID="pA6-XF-ugu">
             <objects>
-                <viewController id="VBc-HS-O6O" sceneMemberID="viewController">
+                <viewController id="VBc-HS-O6O" customClass="SignUpNameViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4y9-Ws-3gY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,10 +353,10 @@
             </objects>
             <point key="canvasLocation" x="3505.7971014492755" y="-581.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Password Check View Controller-->
         <scene sceneID="8Nf-K8-Gvq">
             <objects>
-                <viewController id="ld7-Wc-ZGA" sceneMemberID="viewController">
+                <viewController id="ld7-Wc-ZGA" customClass="SignUpPasswordCheckViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7rv-Ve-RaP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="2644.9275362318845" y="-581.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up Password View Controller-->
         <scene sceneID="GX0-KA-BOt">
             <objects>
-                <viewController id="3wo-I5-LO6" sceneMemberID="viewController">
+                <viewController id="3wo-I5-LO6" customClass="SignUpPasswordViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N79-UP-uGX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="1671.0144927536232" y="-583.25892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--C.R.C.-->
         <scene sceneID="rj7-KS-oyr">
             <objects>
-                <viewController id="9MR-Ii-bSF" sceneMemberID="viewController">
+                <viewController id="9MR-Ii-bSF" customClass="SignUpEmailViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVK-UO-vfY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -418,7 +420,7 @@
                         <viewLayoutGuide key="safeArea" id="m80-eb-hW1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mAS-UE-5Rt"/>
+                    <navigationItem key="navigationItem" title="C.R.C." id="mAS-UE-5Rt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZ6-uD-nxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -451,10 +453,10 @@
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <namedColor name="Primary Color">
-            <color red="0.53333333333333333" green="0.75686274509803919" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.53299999237060547" green="0.75700002908706665" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Second Color">
-            <color red="0.94901960784313721" green="0.70588235294117641" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94900000095367432" green="0.70599997043609619" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
