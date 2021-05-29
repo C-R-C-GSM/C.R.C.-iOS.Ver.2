@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.clipsToBounds = true
+        self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
         
         emailTextField.delegate = self
         emailTextField.keyboardType = .emailAddress
