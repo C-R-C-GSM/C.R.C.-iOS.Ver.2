@@ -51,7 +51,7 @@ extension SignUpEmailViewController: UITextFieldDelegate {
             let keyboardHeight = keybaordRectangle.height
             
             if self.continueBtnBottomConstraint.constant == 30 {
-                self.continueBtnBottomConstraint.constant += keyboardHeight - 40
+                self.continueBtnBottomConstraint.constant += keyboardHeight - 25
                 self.view.layoutIfNeeded()
             }
             

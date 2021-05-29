@@ -52,7 +52,7 @@ extension SignUpClassNumberViewController: UITextFieldDelegate {
             let keyboardHeight = keybaordRectangle.height
             
             if self.doneBtnBottomConstraint.constant == 30 {
-                self.doneBtnBottomConstraint.constant += keyboardHeight - 40
+                self.doneBtnBottomConstraint.constant += keyboardHeight - 25
                 self.view.layoutIfNeeded()
             }
             
