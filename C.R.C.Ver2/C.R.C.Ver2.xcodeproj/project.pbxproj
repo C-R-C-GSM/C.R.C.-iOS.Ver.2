@@ -19,6 +19,7 @@
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
 		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
+		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */,
 				BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +160,7 @@
 			name = C.R.C.Ver2;
 			packageProductDependencies = (
 				BD6B4E3B26607B8D00BEBF7F /* Alamofire */,
+				BDFE5EC1266521B70070FBAC /* KeychainAccess */,
 			);
 			productName = C.R.C.Ver2;
 			productReference = BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */;
@@ -188,6 +191,7 @@
 			mainGroup = BD6B4E12265DD42800BEBF7F;
 			packageReferences = (
 				BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = BD6B4E1C265DD42800BEBF7F /* Products */;
 			projectDirPath = "";
@@ -437,6 +441,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -444,6 +456,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		BDFE5EC1266521B70070FBAC /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
