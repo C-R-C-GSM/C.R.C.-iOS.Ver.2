@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로고" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-D8-Hkh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로고1234" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-D8-Hkh">
                                 <rect key="frame" x="57" y="233" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="M8e-Kc-KJ3"/>
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="로고" width="1024" height="1024"/>
+        <image name="로고1234" width="1024" height="1024"/>
         <namedColor name="Primary Color">
             <color red="0.53299999237060547" green="0.75700002908706665" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

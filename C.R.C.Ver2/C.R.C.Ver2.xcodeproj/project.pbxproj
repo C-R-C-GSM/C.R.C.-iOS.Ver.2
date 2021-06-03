@@ -19,6 +19,7 @@
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
 		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
+		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
+		BDEB3E502668F0730008DDCA /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6B4E35265DD98A00BEBF7F /* Delegate */,
+				BDEB3E4F2668EFB60008DDCA /* Manager */,
 				BD6B4E32265DD95F00BEBF7F /* Model */,
 				BD6B4E34265DD97600BEBF7F /* View */,
 				BD6B4E33265DD96600BEBF7F /* Controller */,
@@ -148,6 +151,14 @@
 				BD6B4E22265DD42800BEBF7F /* StudentStatusBoardViewController.swift */,
 			);
 			path = StudentStatusBoard;
+			sourceTree = "<group>";
+		};
+		BDEB3E4F2668EFB60008DDCA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB3E502668F0730008DDCA /* SignUpManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +245,7 @@
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
 				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
+				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 			);

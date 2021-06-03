@@ -64,10 +64,7 @@ extension SignUpPasswordViewController: UITextFieldDelegate {
             self.continueBtnBottomConstraint.constant = 30
             self.view.layoutIfNeeded()
         }
-        
     }
-    
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)

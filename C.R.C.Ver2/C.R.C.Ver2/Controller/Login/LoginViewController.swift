@@ -35,8 +35,6 @@ class LoginViewController: UIViewController {
     @IBAction func signInButton(_ sender: UIButton) {
         
     }
-    
-    
 }
 
 extension LoginViewController: UITextFieldDelegate {

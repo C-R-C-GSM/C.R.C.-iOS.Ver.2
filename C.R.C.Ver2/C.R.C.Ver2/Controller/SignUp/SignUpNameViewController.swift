@@ -54,7 +54,6 @@ extension SignUpNameViewController: UITextFieldDelegate {
                 self.continueBtnBottomConstraint.constant += keyboardHeight - 25
                 self.view.layoutIfNeeded()
             }
-            
         }
     }
     
@@ -63,7 +62,6 @@ extension SignUpNameViewController: UITextFieldDelegate {
             self.continueBtnBottomConstraint.constant = 30
             self.view.layoutIfNeeded()
         }
-        
     }
     
     

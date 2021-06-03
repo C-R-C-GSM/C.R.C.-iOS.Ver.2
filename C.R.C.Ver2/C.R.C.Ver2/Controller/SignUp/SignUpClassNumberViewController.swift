@@ -17,7 +17,6 @@ class SignUpClassNumberViewController: UIViewController {
         super.viewDidLoad()
         
         setting()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,7 +41,6 @@ class SignUpClassNumberViewController: UIViewController {
         classNumberTextField.delegate = self
         doneBtn.layer.cornerRadius = 10
     }
-
 }
 
 extension SignUpClassNumberViewController: UITextFieldDelegate {
@@ -64,10 +62,7 @@ extension SignUpClassNumberViewController: UITextFieldDelegate {
             self.doneBtnBottomConstraint.constant = 30
             self.view.layoutIfNeeded()
         }
-        
     }
-    
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
