@@ -19,6 +19,8 @@
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
 		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
+		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
+		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,7 @@
 		BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
+		BDEB3E502668F0730008DDCA /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 			files = (
 				BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */,
 				BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */,
+				BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6B4E35265DD98A00BEBF7F /* Delegate */,
+				BDEB3E4F2668EFB60008DDCA /* Manager */,
 				BD6B4E32265DD95F00BEBF7F /* Model */,
 				BD6B4E34265DD97600BEBF7F /* View */,
 				BD6B4E33265DD96600BEBF7F /* Controller */,
@@ -150,6 +155,14 @@
 			path = StudentStatusBoard;
 			sourceTree = "<group>";
 		};
+		BDEB3E4F2668EFB60008DDCA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BDEB3E502668F0730008DDCA /* SignUpManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +182,7 @@
 			packageProductDependencies = (
 				BD6B4E3B26607B8D00BEBF7F /* Alamofire */,
 				BDFE5EC1266521B70070FBAC /* KeychainAccess */,
+				BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */,
 			);
 			productName = C.R.C.Ver2;
 			productReference = BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */;
@@ -200,6 +214,7 @@
 			packageReferences = (
 				BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */,
 				BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = BD6B4E1C265DD42800BEBF7F /* Products */;
 			projectDirPath = "";
@@ -234,6 +249,7 @@
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
 				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
+				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 			);
@@ -449,6 +465,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
@@ -464,6 +488,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
 		};
 		BDFE5EC1266521B70070FBAC /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;

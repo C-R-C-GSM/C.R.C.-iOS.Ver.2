@@ -42,6 +42,11 @@ class SignUpNameViewController: UIViewController {
         continueBtn.layer.cornerRadius = 10
     }
 
+    @IBAction func continueButton(_ sender: UIButton) {
+        SignUpManager.saveName(name: nameTextField.text ?? "")
+        let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpClassNumberViewController") as! SignUpClassNumberViewController
+        navigationController?.pushViewController(nextController, animated: true)
+    }
 }
 
 extension SignUpNameViewController: UITextFieldDelegate {
@@ -54,7 +59,6 @@ extension SignUpNameViewController: UITextFieldDelegate {
                 self.continueBtnBottomConstraint.constant += keyboardHeight - 25
                 self.view.layoutIfNeeded()
             }
-            
         }
     }
     
@@ -63,7 +67,6 @@ extension SignUpNameViewController: UITextFieldDelegate {
             self.continueBtnBottomConstraint.constant = 30
             self.view.layoutIfNeeded()
         }
-        
     }
     
     
