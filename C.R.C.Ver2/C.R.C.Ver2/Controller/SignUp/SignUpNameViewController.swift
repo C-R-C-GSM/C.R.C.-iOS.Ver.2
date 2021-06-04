@@ -42,6 +42,11 @@ class SignUpNameViewController: UIViewController {
         continueBtn.layer.cornerRadius = 10
     }
 
+    @IBAction func continueButton(_ sender: UIButton) {
+        SignUpManager.saveName(name: nameTextField.text ?? "")
+        let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpClassNumberViewController") as! SignUpClassNumberViewController
+        navigationController?.pushViewController(nextController, animated: true)
+    }
 }
 
 extension SignUpNameViewController: UITextFieldDelegate {

@@ -43,6 +43,11 @@ class SignUpPasswordViewController: UIViewController {
         continueBtn.layer.cornerRadius = 10
     }
 
+    @IBAction func continueButton(_ sender: UIButton) {
+        SignUpManager.savePassword(password: passwordTextField.text ?? "")
+        let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpNameViewController") as! SignUpNameViewController
+        navigationController?.pushViewController(nextController, animated: true)
+    }
 }
 
 extension SignUpPasswordViewController: UITextFieldDelegate {

@@ -33,7 +33,7 @@ class SignUpEmailViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-
+    
     func setting() {
         self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
         
@@ -41,6 +41,12 @@ class SignUpEmailViewController: UIViewController {
         emailTextField.keyboardType = .emailAddress
         
         continueBtn.layer.cornerRadius = 10
+    }
+    
+    @IBAction func continueButton(_ sender: UIButton) {
+        SignUpManager.saveEmail(email: emailTextField.text ?? "")
+        let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpPasswordViewController") as! SignUpPasswordViewController
+        navigationController?.pushViewController(nextController, animated: true)
     }
 }
 
