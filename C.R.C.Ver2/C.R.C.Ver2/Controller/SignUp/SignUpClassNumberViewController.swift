@@ -7,8 +7,11 @@
 
 import UIKit
 import Alamofire
+import NVActivityIndicatorView
 
 class SignUpClassNumberViewController: UIViewController {
+    
+    let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
     
     @IBOutlet weak var classNumberTextField: UITextField!
     @IBOutlet weak var doneBtn: UIButton!
@@ -18,6 +21,7 @@ class SignUpClassNumberViewController: UIViewController {
         super.viewDidLoad()
         
         setting()
+        indicatorAutolayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,7 +40,18 @@ class SignUpClassNumberViewController: UIViewController {
     
     func setting() {
         classNumberTextField.delegate = self
+        classNumberTextField.keyboardType = .numberPad
+        
         doneBtn.layer.cornerRadius = 10
+    }
+    
+    func indicatorAutolayout() {
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
     }
     
     func failAlert(messages: String) {
@@ -75,15 +90,19 @@ class SignUpClassNumberViewController: UIViewController {
                     if let code = dic["code"] as? Int {
                         switch code {
                         case 0:
+                            self.indicator.stopAnimating()
                             self.sucessAlert()
                         case -200:
+                            self.indicator.stopAnimating()
                             self.failAlert(messages: "이미 가입된 메일입니다.")
                         default:
+                            self.indicator.stopAnimating()
                             self.failAlert(messages: "오류 발생")
                         }
                     }
                 }
             case .failure(let e):
+                self.indicator.stopAnimating()
                 self.failAlert(messages: "네트워크가 원활하지 않습니다.")
                 print("error: \(e.localizedDescription)")
             }
@@ -91,6 +110,7 @@ class SignUpClassNumberViewController: UIViewController {
     }
     
     @IBAction func doneButton(_ sender: UIButton) {
+        indicator.startAnimating()
         postData(email: SignUpManager.getEmail(), password: SignUpManager.getPassword(), name: SignUpManager.getName(), student_data: classNumberTextField.text ?? "")
     }
 }
