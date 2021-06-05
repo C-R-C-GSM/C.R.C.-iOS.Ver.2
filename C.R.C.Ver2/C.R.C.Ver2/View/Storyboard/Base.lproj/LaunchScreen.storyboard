@@ -16,27 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로고1234" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-D8-Hkh">
-                                <rect key="frame" x="57" y="233" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="M8e-Kc-KJ3"/>
-                                    <constraint firstAttribute="height" constant="300" id="Ynf-FH-sz2"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFX-LL-lcs">
-                                <rect key="frame" x="120" y="533" width="174" height="72"/>
+                                <rect key="frame" x="120" y="528" width="174" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C.R.C.Ver.2로고.png" translatesAutoresizingMaskIntoConstraints="NO" id="bbm-vQ-j0r">
+                                <rect key="frame" x="57" y="228" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8C0-MV-6vf"/>
+                                    <constraint firstAttribute="width" constant="300" id="yGZ-5f-gIx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Primary Color"/>
                         <constraints>
                             <constraint firstItem="TFX-LL-lcs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8pE-ZV-pNn"/>
-                            <constraint firstItem="TFX-LL-lcs" firstAttribute="top" secondItem="ULA-D8-Hkh" secondAttribute="bottom" id="Ke8-Dk-W7H"/>
-                            <constraint firstItem="ULA-D8-Hkh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LVJ-LC-pbe"/>
-                            <constraint firstItem="ULA-D8-Hkh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-65" id="cz4-5n-BVv"/>
+                            <constraint firstItem="bbm-vQ-j0r" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-70" id="Eea-ay-1kb"/>
+                            <constraint firstItem="TFX-LL-lcs" firstAttribute="top" secondItem="bbm-vQ-j0r" secondAttribute="bottom" id="xGa-6J-QUE"/>
+                            <constraint firstItem="bbm-vQ-j0r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zLE-4e-Qjn"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="로고1234" width="1024" height="1024"/>
+        <image name="C.R.C.Ver.2로고.png" width="1024" height="1024"/>
         <namedColor name="Primary Color">
             <color red="0.53299999237060547" green="0.75700002908706665" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
