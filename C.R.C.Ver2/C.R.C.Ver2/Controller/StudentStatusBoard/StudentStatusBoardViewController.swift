@@ -23,18 +23,20 @@ class StudentStatusBoardViewController: UIViewController {
         comeStudentTableView.dataSource = self
         comeStudentTableView.tag = 1
         comeStudentTableView.tableFooterView = UIView()
+        comeStudentTableView.layer.cornerRadius = 10
         
         notComeStudentTableView.delegate = self
         notComeStudentTableView.dataSource = self
         notComeStudentTableView.tag = 2
         notComeStudentTableView.tableFooterView = UIView()
+        notComeStudentTableView.layer.cornerRadius = 10
     }
 
 }
 
 extension StudentStatusBoardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
