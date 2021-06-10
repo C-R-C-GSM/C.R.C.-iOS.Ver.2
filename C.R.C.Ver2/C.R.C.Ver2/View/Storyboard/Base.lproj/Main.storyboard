@@ -811,7 +811,9 @@
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.93725490196078431" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="H0h-0r-hCY" firstAttribute="leading" secondItem="igy-ch-LEc" secondAttribute="leading" constant="15" id="0kh-BQ-bIB"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="H0h-0r-hCY" secondAttribute="trailing" constant="153" id="NfC-PN-OPc"/>
                                     <constraint firstItem="bTa-z9-ESZ" firstAttribute="top" secondItem="igy-ch-LEc" secondAttribute="top" constant="15" id="ORh-FD-AuU"/>
+                                    <constraint firstItem="bTa-z9-ESZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="igy-ch-LEc" secondAttribute="leading" constant="178" id="aS4-iR-uGf"/>
                                     <constraint firstAttribute="trailing" secondItem="bTa-z9-ESZ" secondAttribute="trailing" constant="15" id="bVK-6w-uAA"/>
                                     <constraint firstItem="H0h-0r-hCY" firstAttribute="top" secondItem="igy-ch-LEc" secondAttribute="top" constant="15" id="iT2-BD-yRP"/>
                                     <constraint firstAttribute="trailing" secondItem="oj7-sj-mg6" secondAttribute="trailing" constant="5" id="kIU-hq-5gh"/>
@@ -884,6 +886,8 @@
                                     <constraint firstItem="b90-aC-KRU" firstAttribute="top" secondItem="HAa-ha-RWe" secondAttribute="bottom" constant="5" id="Ub2-OO-qBV"/>
                                     <constraint firstItem="HAa-ha-RWe" firstAttribute="leading" secondItem="oDI-ce-DEK" secondAttribute="leading" constant="15" id="Vy4-oU-WJ4"/>
                                     <constraint firstAttribute="bottom" secondItem="b90-aC-KRU" secondAttribute="bottom" id="eSj-ZE-EOs"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="HAa-ha-RWe" secondAttribute="trailing" constant="134.5" id="sY0-7C-pKo"/>
+                                    <constraint firstItem="VZR-pV-VsP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="oDI-ce-DEK" secondAttribute="leading" constant="178" id="w6n-68-vxa"/>
                                 </constraints>
                             </view>
                         </subviews>
