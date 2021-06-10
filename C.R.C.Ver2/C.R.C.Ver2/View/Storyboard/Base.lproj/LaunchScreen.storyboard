@@ -22,7 +22,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C.R.C.Ver.2로고.png" translatesAutoresizingMaskIntoConstraints="NO" id="bbm-vQ-j0r">
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C.R.C.Ver.2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bbm-vQ-j0r">
                                 <rect key="frame" x="57" y="228" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="8C0-MV-6vf"/>
@@ -31,7 +31,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="Primary Color"/>
+                        <color key="backgroundColor" name="Primary Color1"/>
                         <constraints>
                             <constraint firstItem="TFX-LL-lcs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8pE-ZV-pNn"/>
                             <constraint firstItem="bbm-vQ-j0r" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-70" id="Eea-ay-1kb"/>
@@ -46,8 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="C.R.C.Ver.2로고.png" width="1024" height="1024"/>
-        <namedColor name="Primary Color">
+        <image name="C.R.C.Ver.2.png" width="600" height="600"/>
+        <namedColor name="Primary Color1">
             <color red="0.11764705882352941" green="0.28627450980392155" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
