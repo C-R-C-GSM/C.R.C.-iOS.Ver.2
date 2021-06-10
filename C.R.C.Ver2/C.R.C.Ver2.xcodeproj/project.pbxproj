@@ -22,6 +22,7 @@
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
 		BDC2B14F2671E31400D2B108 /* C.R.C.Ver.2.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */; };
+		BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */; };
 		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
 		BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C.R.C.Ver.2.png; path = ../../../../Desktop/C.R.C.Ver.2.png; sourceTree = "<group>"; };
+		BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C.R.C.Ver.2로고.png"; path = "../../../../Downloads/C.R.C.Ver.2로고.png"; sourceTree = "<group>"; };
 		BDEB3E502668F0730008DDCA /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */,
+				BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */,
 				BD6B4E1D265DD42800BEBF7F /* C.R.C.Ver2 */,
 				BD6B4E1C265DD42800BEBF7F /* Products */,
 			);
@@ -248,6 +251,7 @@
 				BDC2B14F2671E31400D2B108 /* C.R.C.Ver.2.png in Resources */,
 				BD6B4E28265DD42900BEBF7F /* Assets.xcassets in Resources */,
 				BD6B4E26265DD42800BEBF7F /* Main.storyboard in Resources */,
+				BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
