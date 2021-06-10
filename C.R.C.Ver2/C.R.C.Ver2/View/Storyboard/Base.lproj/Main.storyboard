@@ -46,6 +46,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YWC-a5-LpQ" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="OIC-iD-YhR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Enb-hT-8Nt">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,6 +224,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="4FK-OR-PmB" eventType="touchUpInside" id="d24-x7-Znn"/>
+                                    <segue destination="YWC-a5-LpQ" kind="modal" modalPresentationStyle="fullScreen" id="AaZ-oy-ud7"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-zw-Baf">
@@ -766,31 +768,40 @@
                                         <color key="textColor" red="0.1176470588" green="0.28627450980000002" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oj7-sj-mg6">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oj7-sj-mg6">
                                         <rect key="frame" x="5" y="47" width="197" height="595"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentStatusBoardTableViewCell" id="p7d-WC-eWh" customClass="StudentStatusBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentStatusBoardTableViewCell" rowHeight="44" id="p7d-WC-eWh" customClass="StudentStatusBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.5" width="197" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p7d-WC-eWh" id="v9a-xR-bbL">
                                                     <rect key="frame" x="0.0" y="0.0" width="197" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3318" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-TG-Dta">
-                                                            <rect key="frame" x="16" y="11" width="39" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3318" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-TG-Dta">
+                                                            <rect key="frame" x="0.0" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.11764705882352941" green="0.28627450980392155" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" name="Primary Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="조주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-C5-FrK">
-                                                            <rect key="frame" x="139" y="11" width="45" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조주혁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-C5-FrK">
+                                                            <rect key="frame" x="98.5" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.11764705882352941" green="0.28627450980392155" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="Mhr-TG-Dta" firstAttribute="width" secondItem="v9a-xR-bbL" secondAttribute="width" multiplier="0.5" id="3RG-nf-ymq"/>
+                                                        <constraint firstItem="z9J-C5-FrK" firstAttribute="top" secondItem="v9a-xR-bbL" secondAttribute="top" id="Thd-wj-WPM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Mhr-TG-Dta" secondAttribute="bottom" id="ajx-zV-yhR"/>
+                                                        <constraint firstItem="Mhr-TG-Dta" firstAttribute="leading" secondItem="v9a-xR-bbL" secondAttribute="leading" id="bKi-hR-XUV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z9J-C5-FrK" secondAttribute="trailing" id="lxh-Go-pdE"/>
+                                                        <constraint firstItem="z9J-C5-FrK" firstAttribute="leading" secondItem="Mhr-TG-Dta" secondAttribute="trailing" id="ozD-qP-FLi"/>
+                                                        <constraint firstItem="Mhr-TG-Dta" firstAttribute="top" secondItem="v9a-xR-bbL" secondAttribute="top" id="pNs-WD-JKS"/>
+                                                        <constraint firstItem="z9J-C5-FrK" firstAttribute="width" secondItem="Mhr-TG-Dta" secondAttribute="width" id="qKo-Dv-aFB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="z9J-C5-FrK" secondAttribute="bottom" id="stl-w8-gwG"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -823,31 +834,40 @@
                                         <color key="textColor" red="0.5607843137254902" green="0.23529411764705882" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b90-aC-KRU">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b90-aC-KRU">
                                         <rect key="frame" x="5" y="47" width="197" height="595"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentStatusBoardTableViewCell" id="oA7-r2-UE0" customClass="StudentStatusBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentStatusBoardTableViewCell" rowHeight="44" id="yVS-ej-Thn" customClass="StudentStatusBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.5" width="197" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oA7-r2-UE0" id="0Fc-mm-5d6">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVS-ej-Thn" id="09v-NW-hFk">
                                                     <rect key="frame" x="0.0" y="0.0" width="197" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3318" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbr-mj-OFU">
-                                                            <rect key="frame" x="16" y="11" width="39" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3318" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0K-ly-g2F">
+                                                            <rect key="frame" x="0.0" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.5607843137254902" green="0.23529411764705882" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" name="Second Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="조주혁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXc-3B-G2i">
-                                                            <rect key="frame" x="139" y="11" width="45" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조주혁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-yC-uk9">
+                                                            <rect key="frame" x="98.5" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="0.5607843137254902" green="0.23529411764705882" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" name="Second Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="N0K-ly-g2F" firstAttribute="width" secondItem="09v-NW-hFk" secondAttribute="width" multiplier="0.5" id="2SE-bC-aVE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Xhg-yC-uk9" secondAttribute="bottom" id="5Hm-TB-ziy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="N0K-ly-g2F" secondAttribute="bottom" id="DDf-Zc-56W"/>
+                                                        <constraint firstItem="Xhg-yC-uk9" firstAttribute="top" secondItem="09v-NW-hFk" secondAttribute="top" id="Ddl-Hk-BUh"/>
+                                                        <constraint firstItem="N0K-ly-g2F" firstAttribute="leading" secondItem="09v-NW-hFk" secondAttribute="leading" id="EOB-ND-Mip"/>
+                                                        <constraint firstItem="Xhg-yC-uk9" firstAttribute="leading" secondItem="N0K-ly-g2F" secondAttribute="trailing" id="OeS-7O-8KH"/>
+                                                        <constraint firstItem="N0K-ly-g2F" firstAttribute="top" secondItem="09v-NW-hFk" secondAttribute="top" id="vlG-eo-h2K"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xhg-yC-uk9" secondAttribute="trailing" id="wNU-xJ-hh1"/>
+                                                        <constraint firstItem="Xhg-yC-uk9" firstAttribute="width" secondItem="N0K-ly-g2F" secondAttribute="width" id="zij-HY-itK"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -896,7 +916,7 @@
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <namedColor name="Primary Color">
-            <color red="0.76470588235294112" green="0.84705882352941175" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11764705882352941" green="0.28627450980392155" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Second Color">
             <color red="0.5607843137254902" green="0.23529411764705882" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -48,7 +48,7 @@
     <resources>
         <image name="C.R.C.Ver.2로고.png" width="1024" height="1024"/>
         <namedColor name="Primary Color">
-            <color red="0.53299999237060547" green="0.75700002908706665" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11764705882352941" green="0.28627450980392155" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
