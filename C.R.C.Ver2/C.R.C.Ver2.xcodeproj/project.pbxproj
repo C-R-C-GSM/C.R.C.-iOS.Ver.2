@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4F2B8A2673447900790E56 /* ComprehensiveStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* ComprehensiveStatusBoardViewController.swift */; };
 		BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */; };
 		BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E20265DD42800BEBF7F /* SceneDelegate.swift */; };
 		BD6B4E23265DD42800BEBF7F /* StudentStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E22265DD42800BEBF7F /* StudentStatusBoardViewController.swift */; };
@@ -21,13 +22,13 @@
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
-		BDC2B14F2671E31400D2B108 /* C.R.C.Ver.2.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */; };
 		BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */; };
 		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4F2B892673447900790E56 /* ComprehensiveStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprehensiveStatusBoardViewController.swift; sourceTree = "<group>"; };
 		BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C.R.C.Ver2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6B4E20265DD42800BEBF7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
 		BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardTableViewCell.swift; sourceTree = "<group>"; };
-		BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = C.R.C.Ver.2.png; path = ../../../../Desktop/C.R.C.Ver.2.png; sourceTree = "<group>"; };
 		BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C.R.C.Ver.2로고.png"; path = "../../../../Downloads/C.R.C.Ver.2로고.png"; sourceTree = "<group>"; };
 		BDEB3E502668F0730008DDCA /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,10 +61,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD4F2B8826733CE100790E56 /* ComprehensiveStatusBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F2B892673447900790E56 /* ComprehensiveStatusBoardViewController.swift */,
+			);
+			path = ComprehensiveStatusBoard;
+			sourceTree = "<group>";
+		};
 		BD6B4E12265DD42800BEBF7F = {
 			isa = PBXGroup;
 			children = (
-				BDC2B14E2671E31400D2B108 /* C.R.C.Ver.2.png */,
 				BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */,
 				BD6B4E1D265DD42800BEBF7F /* C.R.C.Ver2 */,
 				BD6B4E1C265DD42800BEBF7F /* Products */,
@@ -105,6 +112,7 @@
 			children = (
 				BD6B4E37265F3FD300BEBF7F /* Login */,
 				BD6B4E3D26607EF700BEBF7F /* SignUp */,
+				BD4F2B8826733CE100790E56 /* ComprehensiveStatusBoard */,
 				BDC0DB0F26677EE900175A85 /* StudentStatusBoard */,
 			);
 			path = Controller;
@@ -248,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */,
-				BDC2B14F2671E31400D2B108 /* C.R.C.Ver.2.png in Resources */,
 				BD6B4E28265DD42900BEBF7F /* Assets.xcassets in Resources */,
 				BD6B4E26265DD42800BEBF7F /* Main.storyboard in Resources */,
 				BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */,
@@ -269,6 +276,7 @@
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
 				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
+				BD4F2B8A2673447900790E56 /* ComprehensiveStatusBoardViewController.swift in Sources */,
 				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
