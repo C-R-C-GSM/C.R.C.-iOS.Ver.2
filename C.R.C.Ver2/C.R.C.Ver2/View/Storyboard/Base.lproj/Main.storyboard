@@ -46,6 +46,22 @@
             </objects>
             <point key="canvasLocation" x="1971.0144927536232" y="1609.8214285714284"/>
         </scene>
+        <!--더보기-->
+        <scene sceneID="yeN-Z2-GXo">
+            <objects>
+                <viewController id="x27-GB-AIg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0uJ-Av-i7P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7Ti-9M-Uu8"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="더보기" id="dBO-rI-7yc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4o-xA-f65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="1610"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iOO-ic-sC2">
             <objects>
@@ -63,6 +79,7 @@
                         <segue destination="HAy-ay-FJW" kind="relationship" relationship="viewControllers" id="lE8-f5-Q6B"/>
                         <segue destination="vpG-es-UFO" kind="relationship" relationship="viewControllers" id="iiE-VF-iW2"/>
                         <segue destination="DSS-gb-kHi" kind="relationship" relationship="viewControllers" id="XdG-Qx-Bea"/>
+                        <segue destination="QSU-LA-Rbe" kind="relationship" relationship="viewControllers" id="4ai-Nt-0gi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DF-16-IHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1149,10 +1166,30 @@
             </objects>
             <point key="canvasLocation" x="-865" y="897"/>
         </scene>
+        <!--더보기-->
+        <scene sceneID="KKY-hR-rHV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QSU-LA-Rbe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="더보기" image="ellipsis" catalog="system" id="3gh-5X-s99"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RkY-VE-pVz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x27-GB-AIg" kind="relationship" relationship="rootViewController" id="6rp-LZ-MeN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-As-Zbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3017" y="897"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="bubble.left.and.bubble.right.fill" catalog="system" width="128" height="97"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="graduationcap.fill" catalog="system" width="128" height="108"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
