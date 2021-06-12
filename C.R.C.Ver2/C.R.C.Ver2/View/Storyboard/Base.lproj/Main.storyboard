@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -295,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALm-N7-zob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-249.27536231884059" y="-583.25892857142856"/>
+            <point key="canvasLocation" x="138" y="-581"/>
         </scene>
         <!--C.R.C.-->
         <scene sceneID="1xu-jh-BZY">
@@ -388,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfP-o5-utD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3520" y="-583"/>
+            <point key="canvasLocation" x="3593" y="-583"/>
         </scene>
         <!--C.R.C.-->
         <scene sceneID="pA6-XF-ugu">
@@ -483,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RC6-Xs-fgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="-583"/>
+            <point key="canvasLocation" x="2781" y="-583"/>
         </scene>
         <!--C.R.C.-->
         <scene sceneID="GX0-KA-BOt">
@@ -622,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6X-9D-cn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671.0144927536232" y="-583.25892857142856"/>
+            <point key="canvasLocation" x="1971" y="-581"/>
         </scene>
         <!--C.R.C.-->
         <scene sceneID="rj7-KS-oyr">
@@ -717,7 +718,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZ6-uD-nxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755.07246376811599" y="-581.25"/>
+            <point key="canvasLocation" x="1048" y="-581"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PtJ-rI-DhV">
@@ -740,23 +741,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMu-bR-vcG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1159.4202898550725" y="-583.25892857142856"/>
+            <point key="canvasLocation" x="-714" y="-581"/>
         </scene>
         <!--종합 현황판-->
         <scene sceneID="Och-1w-CgM">
             <objects>
-                <viewController id="NUX-mN-3Yg" sceneMemberID="viewController">
+                <viewController id="NUX-mN-3Yg" customClass="ComprehensiveStatusBoardViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbK-Tq-VA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-zx-2W1">
-                                <rect key="frame" x="50" y="240" width="314" height="66"/>
+                                <rect key="frame" x="50" y="220" width="314" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총 인원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-Zi-uqC">
                                         <rect key="frame" x="71" y="15" width="72" height="36.5"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="25"/>
-                                        <color key="textColor" name="Primary Color"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqG-b7-PYr">
@@ -765,7 +766,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IDp-fr-MYV">
                                                 <rect key="frame" x="6.5" y="8" width="43" height="40"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
-                                                <color key="tintColor" name="Primary Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="Xn7-g1-VuD"/>
                                                     <constraint firstAttribute="width" constant="43" id="eIm-40-wZV"/>
@@ -783,7 +784,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="230" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odv-AQ-C5K">
                                         <rect key="frame" x="213" y="15" width="43.5" height="38"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="26"/>
-                                        <color key="textColor" name="Primary Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -796,16 +796,16 @@
                                     <constraint firstAttribute="bottom" secondItem="odv-AQ-C5K" secondAttribute="bottom" constant="13" id="Khe-IY-pCL"/>
                                     <constraint firstAttribute="bottom" secondItem="qbb-Zi-uqC" secondAttribute="bottom" constant="14.5" id="Oki-04-f8r"/>
                                     <constraint firstItem="yqG-b7-PYr" firstAttribute="top" secondItem="Dmk-zx-2W1" secondAttribute="top" constant="5" id="PUu-8R-IUx"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="odv-AQ-C5K" secondAttribute="trailing" constant="57.5" id="lgN-kl-tje"/>
+                                    <constraint firstAttribute="trailing" secondItem="odv-AQ-C5K" secondAttribute="trailing" constant="57.5" id="lgN-kl-tje"/>
                                     <constraint firstItem="odv-AQ-C5K" firstAttribute="top" secondItem="Dmk-zx-2W1" secondAttribute="top" constant="15" id="pRM-kf-3hg"/>
                                     <constraint firstAttribute="bottom" secondItem="yqG-b7-PYr" secondAttribute="bottom" constant="5" id="yQB-3H-R2X"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-Vp-IG1">
-                                <rect key="frame" x="50" y="356" width="314" height="66"/>
+                                <rect key="frame" x="50" y="336" width="314" height="66"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미입장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXE-8I-bUh">
-                                        <rect key="frame" x="71" y="15" width="65" height="36.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXE-8I-bUh">
+                                        <rect key="frame" x="71" y="15" width="43.5" height="36.5"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="25"/>
                                         <color key="textColor" name="Primary Color"/>
                                         <nil key="highlightedColor"/>
@@ -840,25 +840,25 @@
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
-                                    <constraint firstItem="xav-Vn-Uja" firstAttribute="leading" relation="lessThanOrEqual" secondItem="aXE-8I-bUh" secondAttribute="trailing" constant="77" id="7JH-cX-erM"/>
                                     <constraint firstItem="xav-Vn-Uja" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="top" constant="15" id="EzV-0o-CGq"/>
                                     <constraint firstAttribute="bottom" secondItem="aXE-8I-bUh" secondAttribute="bottom" constant="14.5" id="MAM-f4-1b5"/>
                                     <constraint firstAttribute="bottom" secondItem="xav-Vn-Uja" secondAttribute="bottom" constant="13" id="OsO-wo-swq"/>
                                     <constraint firstItem="tJS-qa-Jqr" firstAttribute="leading" secondItem="ESJ-Vp-IG1" secondAttribute="leading" constant="10" id="T3O-lg-4Nn"/>
                                     <constraint firstAttribute="bottom" secondItem="tJS-qa-Jqr" secondAttribute="bottom" constant="5" id="XCN-Lc-ziT"/>
                                     <constraint firstItem="tJS-qa-Jqr" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="top" constant="5" id="sOi-98-3L3"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xav-Vn-Uja" secondAttribute="trailing" constant="57.5" id="xDS-ob-lCO"/>
+                                    <constraint firstAttribute="trailing" secondItem="xav-Vn-Uja" secondAttribute="trailing" constant="57.5" id="xDS-ob-lCO"/>
                                     <constraint firstItem="aXE-8I-bUh" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="top" constant="15" id="xfl-uk-DtK"/>
                                     <constraint firstItem="aXE-8I-bUh" firstAttribute="leading" secondItem="tJS-qa-Jqr" secondAttribute="trailing" constant="5" id="yMD-FM-KEb"/>
+                                    <constraint firstItem="xav-Vn-Uja" firstAttribute="leading" relation="lessThanOrEqual" secondItem="aXE-8I-bUh" secondAttribute="trailing" constant="98.5" id="ywn-nb-Cjq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6C8-eM-A8s">
-                                <rect key="frame" x="50" y="472" width="314" height="66"/>
+                                <rect key="frame" x="50" y="452" width="314" height="66"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dq-vv-lGO">
-                                        <rect key="frame" x="71" y="15" width="43.5" height="36.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미입장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dq-vv-lGO">
+                                        <rect key="frame" x="71" y="15" width="65" height="36.5"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="25"/>
-                                        <color key="textColor" name="Primary Color"/>
+                                        <color key="textColor" name="Second Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-66-XJM">
@@ -867,7 +867,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gg4-OC-tdZ">
                                                 <rect key="frame" x="6.5" y="7" width="43" height="41"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
-                                                <color key="tintColor" name="Primary Color"/>
+                                                <color key="tintColor" name="Second Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="43" id="358-sp-Fp9"/>
                                                     <constraint firstAttribute="height" constant="43" id="hAL-L8-rv8"/>
@@ -885,22 +885,22 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="230" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa5-Mv-NyH">
                                         <rect key="frame" x="213" y="15" width="43.5" height="38"/>
                                         <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="26"/>
-                                        <color key="textColor" name="Primary Color"/>
+                                        <color key="textColor" name="Second Color"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstItem="0Dq-vv-lGO" firstAttribute="top" secondItem="6C8-eM-A8s" secondAttribute="top" constant="15" id="02k-is-o0u"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Aa5-Mv-NyH" secondAttribute="trailing" constant="57.5" id="28e-Rg-F1u"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aa5-Mv-NyH" secondAttribute="trailing" constant="57.5" id="28e-Rg-F1u"/>
                                     <constraint firstAttribute="bottom" secondItem="Aa5-Mv-NyH" secondAttribute="bottom" constant="13" id="8WM-rh-eMV"/>
                                     <constraint firstAttribute="bottom" secondItem="0Dq-vv-lGO" secondAttribute="bottom" constant="14.5" id="Kfg-Ok-oyH"/>
                                     <constraint firstAttribute="bottom" secondItem="7TH-66-XJM" secondAttribute="bottom" constant="5" id="ObQ-7K-Rx3"/>
                                     <constraint firstItem="Aa5-Mv-NyH" firstAttribute="top" secondItem="6C8-eM-A8s" secondAttribute="top" constant="15" id="aCU-hi-VxG"/>
+                                    <constraint firstItem="Aa5-Mv-NyH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0Dq-vv-lGO" secondAttribute="trailing" constant="91.5" id="pZn-El-jgZ"/>
                                     <constraint firstItem="0Dq-vv-lGO" firstAttribute="leading" secondItem="7TH-66-XJM" secondAttribute="trailing" constant="5" id="q0q-Hq-aQX"/>
                                     <constraint firstItem="7TH-66-XJM" firstAttribute="leading" secondItem="6C8-eM-A8s" secondAttribute="leading" constant="10" id="t3B-n8-jsu"/>
                                     <constraint firstItem="7TH-66-XJM" firstAttribute="top" secondItem="6C8-eM-A8s" secondAttribute="top" constant="5" id="xEY-mP-VbU"/>
-                                    <constraint firstItem="Aa5-Mv-NyH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0Dq-vv-lGO" secondAttribute="trailing" constant="98.5" id="z8C-61-SKe"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -909,7 +909,7 @@
                         <constraints>
                             <constraint firstItem="Wq2-Ta-j1K" firstAttribute="trailing" secondItem="6C8-eM-A8s" secondAttribute="trailing" constant="50" id="1Uc-pC-Lgx"/>
                             <constraint firstItem="6C8-eM-A8s" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="bottom" constant="50" id="2e4-VI-G7h"/>
-                            <constraint firstItem="Dmk-zx-2W1" firstAttribute="top" secondItem="Wq2-Ta-j1K" secondAttribute="top" constant="100" id="Guw-ov-Zts"/>
+                            <constraint firstItem="Dmk-zx-2W1" firstAttribute="top" secondItem="Wq2-Ta-j1K" secondAttribute="top" constant="80" id="Guw-ov-Zts"/>
                             <constraint firstItem="Dmk-zx-2W1" firstAttribute="centerX" secondItem="dbK-Tq-VA6" secondAttribute="centerX" id="IkJ-cA-7hh"/>
                             <constraint firstItem="Dmk-zx-2W1" firstAttribute="leading" secondItem="Wq2-Ta-j1K" secondAttribute="leading" constant="50" id="Qei-0z-8nK"/>
                             <constraint firstItem="Wq2-Ta-j1K" firstAttribute="trailing" secondItem="Dmk-zx-2W1" secondAttribute="trailing" constant="50" id="SJX-0N-g5Y"/>
@@ -922,8 +922,15 @@
                     <navigationItem key="navigationItem" title="종합 현황판" id="zMI-Ip-UOs">
                         <barButtonItem key="rightBarButtonItem" image="arrow.triangle.2.circlepath" catalog="system" id="WOC-5a-2Fn">
                             <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="refreshButton:" destination="NUX-mN-3Yg" id="eCS-hH-dVU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="comeStudentCount" destination="xav-Vn-Uja" id="KeJ-WA-qFA"/>
+                        <outlet property="notComeStudentCount" destination="Aa5-Mv-NyH" id="qy0-j0-ax9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrx-Xn-zaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1161,5 +1168,8 @@
         <namedColor name="Second Color">
             <color red="0.94900000095367432" green="0.70599997043609619" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

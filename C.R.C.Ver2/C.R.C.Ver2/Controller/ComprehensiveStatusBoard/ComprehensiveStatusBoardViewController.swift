@@ -9,10 +9,16 @@ import UIKit
 
 class ComprehensiveStatusBoardViewController: UIViewController {
 
+    @IBOutlet weak var comeStudentCount: UILabel!
+    @IBOutlet weak var notComeStudentCount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
     }
-
+    @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+        
+    }
+    
 }
