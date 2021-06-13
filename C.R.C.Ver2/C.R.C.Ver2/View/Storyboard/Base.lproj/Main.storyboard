@@ -17,7 +17,7 @@
         <!--급식 리뷰-->
         <scene sceneID="yP1-lH-w9W">
             <objects>
-                <viewController id="ZZk-mB-Xlk" sceneMemberID="viewController">
+                <viewController id="ZZk-mB-Xlk" customClass="MealReviewViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kyf-zK-dVn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

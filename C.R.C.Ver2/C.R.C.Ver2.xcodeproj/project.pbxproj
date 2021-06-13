@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD49019F267613FD000CB091 /* MealReviewViewController.swift */; };
 		BD4F2B8A2673447900790E56 /* ComprehensiveStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* ComprehensiveStatusBoardViewController.swift */; };
 		BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */; };
 		BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E20265DD42800BEBF7F /* SceneDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD49019F267613FD000CB091 /* MealReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewViewController.swift; sourceTree = "<group>"; };
 		BD4F2B892673447900790E56 /* ComprehensiveStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprehensiveStatusBoardViewController.swift; sourceTree = "<group>"; };
 		BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C.R.C.Ver2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD49019E267613C4000CB091 /* MealReview */ = {
+			isa = PBXGroup;
+			children = (
+				BD49019F267613FD000CB091 /* MealReviewViewController.swift */,
+			);
+			path = MealReview;
+			sourceTree = "<group>";
+		};
 		BD4F2B8826733CE100790E56 /* ComprehensiveStatusBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 				BD6B4E3D26607EF700BEBF7F /* SignUp */,
 				BD4F2B8826733CE100790E56 /* ComprehensiveStatusBoard */,
 				BDC0DB0F26677EE900175A85 /* StudentStatusBoard */,
+				BD49019E267613C4000CB091 /* MealReview */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +289,7 @@
 				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
 				BD4F2B8A2673447900790E56 /* ComprehensiveStatusBoardViewController.swift in Sources */,
 				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
+				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 			);
