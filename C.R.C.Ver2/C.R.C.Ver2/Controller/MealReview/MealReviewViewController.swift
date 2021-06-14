@@ -9,9 +9,33 @@ import UIKit
 
 class MealReviewViewController: UIViewController {
 
+    @IBOutlet weak var mealReviewTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setting()
+    }
+    
+    func setting() {
+        mealReviewTableView.delegate = self
+        mealReviewTableView.dataSource = self
     }
 
+}
+
+extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MealReviewTableViewCell", for: indexPath) as! MealReviewTableViewCell
+        
+        
+        return cell
+    }
+    
+    
+    
+    
 }
