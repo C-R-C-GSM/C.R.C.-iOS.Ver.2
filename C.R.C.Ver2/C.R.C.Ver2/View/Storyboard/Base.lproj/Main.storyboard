@@ -175,7 +175,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="iOO-ic-sC2">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YWC-a5-LpQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBar" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YWC-a5-LpQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="OIC-iD-YhR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Enb-hT-8Nt">
@@ -358,7 +358,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButton:" destination="4FK-OR-PmB" eventType="touchUpInside" id="d24-x7-Znn"/>
-                                    <segue destination="YWC-a5-LpQ" kind="modal" modalPresentationStyle="fullScreen" id="AaZ-oy-ud7"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-zw-Baf">
