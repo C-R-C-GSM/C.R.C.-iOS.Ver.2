@@ -82,7 +82,7 @@ class SignUpClassNumberViewController: UIViewController {
             "name": name,
             "student_data": student_data
         ]
-        AF.request(URL, method: .post, parameters: PARAM, encoding: JSONEncoding.default).responseJSON { data in
+        AF.request(URL, method: .post, parameters: PARAM).responseJSON { data in
             switch data.result {
             case .success(let value):
                 print(value)

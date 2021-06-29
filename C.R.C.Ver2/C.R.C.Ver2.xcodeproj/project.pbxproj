@@ -20,6 +20,7 @@
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
 		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
+		BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD751E832689EF7800BAD08B /* TokenManager.swift */; };
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
@@ -45,6 +46,7 @@
 		BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
+		BD751E832689EF7800BAD08B /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C.R.C.Ver.2로고.png"; path = "../../../../Downloads/C.R.C.Ver.2로고.png"; sourceTree = "<group>"; };
 		BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewTableViewCell.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		BDEB3E4F2668EFB60008DDCA /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				BD751E832689EF7800BAD08B /* TokenManager.swift */,
 				BDEB3E502668F0730008DDCA /* SignUpManager.swift */,
 			);
 			path = Manager;
@@ -312,6 +315,7 @@
 				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
+				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
