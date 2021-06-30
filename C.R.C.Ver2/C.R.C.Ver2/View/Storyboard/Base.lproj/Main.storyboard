@@ -872,7 +872,7 @@
         <!--종합 현황판-->
         <scene sceneID="Och-1w-CgM">
             <objects>
-                <viewController id="NUX-mN-3Yg" customClass="ComprehensiveStatusBoardViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NUX-mN-3Yg" customClass="TotalStatusBoardViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbK-Tq-VA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1056,6 +1056,7 @@
                     <connections>
                         <outlet property="comeStudentCount" destination="xav-Vn-Uja" id="KeJ-WA-qFA"/>
                         <outlet property="notComeStudentCount" destination="Aa5-Mv-NyH" id="qy0-j0-ax9"/>
+                        <outlet property="totalStudentCount" destination="odv-AQ-C5K" id="1xe-1Y-Zch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrx-Xn-zaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
