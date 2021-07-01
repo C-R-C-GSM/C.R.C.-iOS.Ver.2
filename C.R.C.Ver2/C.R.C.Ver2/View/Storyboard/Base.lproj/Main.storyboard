@@ -1079,6 +1079,9 @@
                                     <segment title="3학년"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" name="Primary Color"/>
+                                <connections>
+                                    <action selector="studentGradeSegmentedControl:" destination="StI-nR-ckk" eventType="valueChanged" id="nGe-fe-PfH"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igy-ch-LEc">
                                 <rect key="frame" x="0.0" y="171" width="207" height="642"/>
@@ -1108,13 +1111,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="197" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3318" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-TG-Dta">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-TG-Dta">
                                                             <rect key="frame" x="0.0" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                             <color key="textColor" name="Primary Color"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조주혁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-C5-FrK">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rrr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9J-C5-FrK">
                                                             <rect key="frame" x="98.5" y="0.0" width="98.5" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                             <color key="textColor" name="Primary Color"/>
@@ -1134,6 +1137,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="studentClassNumber" destination="Mhr-TG-Dta" id="416-YF-Eqo"/>
+                                                    <outlet property="studentName" destination="z9J-C5-FrK" id="5g2-oe-gxf"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -1207,6 +1214,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="studentClassNumber" destination="N0K-ly-g2F" id="Qgp-Fx-gdH"/>
+                                                    <outlet property="studentName" destination="Xhg-yC-uk9" id="OnB-gi-FUh"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -1245,11 +1256,16 @@
                     <navigationItem key="navigationItem" title="학생 현황판" largeTitleDisplayMode="always" id="cJK-Pp-4Al">
                         <barButtonItem key="rightBarButtonItem" image="arrow.triangle.2.circlepath" catalog="system" id="V0T-ZL-cKm">
                             <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="refreshButton:" destination="StI-nR-ckk" id="Vqj-KV-5Jk"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="comeStudentTableView" destination="oj7-sj-mg6" id="inI-g3-Od9"/>
+                        <outlet property="comeStudentTotalCountLabel" destination="bTa-z9-ESZ" id="Zyk-f4-uGS"/>
                         <outlet property="notComeStudentTableView" destination="b90-aC-KRU" id="rl1-a6-FE7"/>
+                        <outlet property="notComeStudentTotalCountLabel" destination="VZR-pV-VsP" id="oCs-sG-1bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJZ-Dx-sOO" sceneMemberID="firstResponder"/>
