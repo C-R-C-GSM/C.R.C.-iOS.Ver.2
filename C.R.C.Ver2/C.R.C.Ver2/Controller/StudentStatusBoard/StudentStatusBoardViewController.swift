@@ -23,6 +23,9 @@ class StudentStatusBoardViewController: UIViewController {
     @IBOutlet weak var comeStudentTableView: UITableView!
     @IBOutlet weak var notComeStudentTableView: UITableView!
     
+    @IBOutlet weak var comeStudentTotalCountLabel: UILabel!
+    @IBOutlet weak var notComeStudentTotalCountLabel: UILabel!
+    
     var comeStudentCount = 0
     var notComeStudentCount = 0
     
@@ -79,6 +82,9 @@ class StudentStatusBoardViewController: UIViewController {
                 notComeStudentCount += 1
             }
         }
+        
+        comeStudentTotalCountLabel.text = "\(comeStudentCount)"
+        notComeStudentTotalCountLabel.text = "\(notComeStudentCount)"
         
         comeStudentTableView.reloadData()
         notComeStudentTableView.reloadData()

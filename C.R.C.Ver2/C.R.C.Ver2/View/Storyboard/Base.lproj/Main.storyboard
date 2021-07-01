@@ -1260,7 +1260,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="comeStudentTableView" destination="oj7-sj-mg6" id="inI-g3-Od9"/>
+                        <outlet property="comeStudentTotalCountLabel" destination="bTa-z9-ESZ" id="Zyk-f4-uGS"/>
                         <outlet property="notComeStudentTableView" destination="b90-aC-KRU" id="rl1-a6-FE7"/>
+                        <outlet property="notComeStudentTotalCountLabel" destination="VZR-pV-VsP" id="oCs-sG-1bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJZ-Dx-sOO" sceneMemberID="firstResponder"/>
