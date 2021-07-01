@@ -10,11 +10,11 @@ import Foundation
 struct StudentStatusBoardModel: Codable {
     let success: Bool
     let code: Int
-    let oneData: [OneData]
+    let data: [Data]
 }
 
-struct OneData: Codable {
-    let student_data1: Int
-    let student_name1: String
-    let check1: Int
+struct Data: Codable {
+    let student_data: Int
+    let student_name: String
+    let student_check: Int
 }
