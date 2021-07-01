@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */; };
+		BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */; };
 		BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD49019F267613FD000CB091 /* MealReviewViewController.swift */; };
 		BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */; };
 		BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStudentModel.swift; sourceTree = "<group>"; };
+		BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardModel.swift; sourceTree = "<group>"; };
 		BD49019F267613FD000CB091 /* MealReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewViewController.swift; sourceTree = "<group>"; };
 		BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStatusBoardViewController.swift; sourceTree = "<group>"; };
 		BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C.R.C.Ver2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */,
+				BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */,
 				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
 				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
+				BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
