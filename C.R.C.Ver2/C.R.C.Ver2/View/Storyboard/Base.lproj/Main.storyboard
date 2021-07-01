@@ -94,6 +94,16 @@
                                                 <constraint firstItem="BIk-rN-pgr" firstAttribute="top" secondItem="XaZ-4y-NQ3" secondAttribute="bottom" constant="10" id="yzm-za-P28"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mealReviewContent" destination="Egw-Ep-MLK" id="1dC-p0-yoa"/>
+                                            <outlet property="mealReviewDate" destination="XaZ-4y-NQ3" id="HFa-Hn-ALF"/>
+                                            <outlet property="mealReviewNicname" destination="bjv-9l-7cf" id="Yot-vJ-IWv"/>
+                                            <outlet property="mealReviewStar1" destination="97M-fa-Qkz" id="sjZ-NW-EGf"/>
+                                            <outlet property="mealReviewStar2" destination="aRS-V3-UMO" id="vIF-xK-Bqc"/>
+                                            <outlet property="mealReviewStar3" destination="adl-IP-JMk" id="LJC-Uf-viO"/>
+                                            <outlet property="mealReviewStar4" destination="BBv-eT-CjW" id="Pvn-lT-7Ag"/>
+                                            <outlet property="mealReviewStar5" destination="Z10-11-9eE" id="c4H-J8-acE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

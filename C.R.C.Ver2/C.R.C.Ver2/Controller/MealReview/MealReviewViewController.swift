@@ -6,19 +6,40 @@
 //
 
 import UIKit
+import Alamofire
 
 class MealReviewViewController: UIViewController {
 
     @IBOutlet weak var mealReviewTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setting()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        apiCall()
+    }
+    
     func setting() {
         mealReviewTableView.delegate = self
         mealReviewTableView.dataSource = self
+    }
+    
+    func apiCall() {
+        let URL = "http://10.120.75.224:3000/review/check"
+        let token = TokenManager.getToken()
+        AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                print(value)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 }
