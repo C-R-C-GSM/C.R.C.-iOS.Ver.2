@@ -1079,6 +1079,9 @@
                                     <segment title="3학년"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" name="Primary Color"/>
+                                <connections>
+                                    <action selector="studentGradeSegmentedControl:" destination="StI-nR-ckk" eventType="valueChanged" id="nGe-fe-PfH"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igy-ch-LEc">
                                 <rect key="frame" x="0.0" y="171" width="207" height="642"/>
