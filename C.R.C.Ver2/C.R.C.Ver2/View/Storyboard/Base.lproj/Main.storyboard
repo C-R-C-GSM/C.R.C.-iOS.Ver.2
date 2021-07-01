@@ -1256,6 +1256,9 @@
                     <navigationItem key="navigationItem" title="학생 현황판" largeTitleDisplayMode="always" id="cJK-Pp-4Al">
                         <barButtonItem key="rightBarButtonItem" image="arrow.triangle.2.circlepath" catalog="system" id="V0T-ZL-cKm">
                             <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="refreshButton:" destination="StI-nR-ckk" id="Vqj-KV-5Jk"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

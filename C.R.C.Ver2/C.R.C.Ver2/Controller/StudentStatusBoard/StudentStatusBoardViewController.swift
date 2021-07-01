@@ -56,6 +56,9 @@ class StudentStatusBoardViewController: UIViewController {
             return
         }
     }
+    @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+        apiCall(grade: studentGrade.rawValue)
+    }
     
     func setting() {
         comeStudentTableView.delegate = self
