@@ -78,16 +78,24 @@
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아침" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-Ck-YbD">
+                                                    <rect key="frame" x="113" y="34.5" width="29.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="ZJB-Ck-YbD" firstAttribute="leading" secondItem="XaZ-4y-NQ3" secondAttribute="trailing" constant="5" id="0Iw-i4-rIg"/>
                                                 <constraint firstItem="Egw-Ep-MLK" firstAttribute="leading" secondItem="szB-Ra-phm" secondAttribute="leading" constant="10" id="9EJ-QA-e3Y"/>
                                                 <constraint firstItem="Egw-Ep-MLK" firstAttribute="top" secondItem="BIk-rN-pgr" secondAttribute="bottom" constant="10" id="FDR-6X-RML"/>
                                                 <constraint firstItem="XaZ-4y-NQ3" firstAttribute="top" secondItem="bjv-9l-7cf" secondAttribute="bottom" id="Lpf-8R-DCi"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Egw-Ep-MLK" secondAttribute="trailing" constant="5" id="Won-Rj-bst"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="ZJB-Ck-YbD" secondAttribute="trailing" constant="256.5" id="Zha-JX-6W5"/>
                                                 <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bjv-9l-7cf" secondAttribute="trailing" constant="248" id="abK-h2-1fc"/>
                                                 <constraint firstItem="bjv-9l-7cf" firstAttribute="leading" secondItem="szB-Ra-phm" secondAttribute="leading" constant="10" id="bO6-I3-ZVT"/>
                                                 <constraint firstAttribute="bottom" secondItem="Egw-Ep-MLK" secondAttribute="bottom" constant="5" id="coF-n5-0Ig"/>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="XaZ-4y-NQ3" secondAttribute="trailing" constant="306" id="elu-M5-s0g"/>
+                                                <constraint firstItem="ZJB-Ck-YbD" firstAttribute="top" secondItem="bjv-9l-7cf" secondAttribute="bottom" constant="0.5" id="fL4-86-zlz"/>
                                                 <constraint firstItem="XaZ-4y-NQ3" firstAttribute="leading" secondItem="szB-Ra-phm" secondAttribute="leading" constant="10" id="gLF-Cd-AqZ"/>
                                                 <constraint firstItem="bjv-9l-7cf" firstAttribute="top" secondItem="szB-Ra-phm" secondAttribute="top" constant="10" id="iKi-8c-c4s"/>
                                                 <constraint firstItem="BIk-rN-pgr" firstAttribute="leading" secondItem="szB-Ra-phm" secondAttribute="leading" constant="10" id="jzi-cT-uof"/>
@@ -103,6 +111,7 @@
                                             <outlet property="mealReviewStar3" destination="adl-IP-JMk" id="LJC-Uf-viO"/>
                                             <outlet property="mealReviewStar4" destination="BBv-eT-CjW" id="Pvn-lT-7Ag"/>
                                             <outlet property="mealReviewStar5" destination="Z10-11-9eE" id="c4H-J8-acE"/>
+                                            <outlet property="mealReviewTime" destination="ZJB-Ck-YbD" id="5ZS-1t-h3s"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
