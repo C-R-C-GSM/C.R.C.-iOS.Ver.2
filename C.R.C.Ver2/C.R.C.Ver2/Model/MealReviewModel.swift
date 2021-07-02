@@ -15,7 +15,7 @@ struct MealReviewModel: Codable {
 struct Review_Data: Codable {
     let reviewid: Int
     let nickname: String
-    let review_star: Float
+    let review_star: Int
     let content: String
     let empathy: Int
     let review_time: String
