@@ -11,6 +11,7 @@
 		BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */; };
 		BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */; };
 		BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD49019F267613FD000CB091 /* MealReviewViewController.swift */; };
+		BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */; };
 		BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */; };
 		BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */; };
 		BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E20265DD42800BEBF7F /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardModel.swift; sourceTree = "<group>"; };
 		BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewModel.swift; sourceTree = "<group>"; };
 		BD49019F267613FD000CB091 /* MealReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewViewController.swift; sourceTree = "<group>"; };
+		BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewCreateViewController.swift; sourceTree = "<group>"; };
 		BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStatusBoardViewController.swift; sourceTree = "<group>"; };
 		BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C.R.C.Ver2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6B4E1E265DD42800BEBF7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				BD49019F267613FD000CB091 /* MealReviewViewController.swift */,
+				BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */,
 			);
 			path = MealReview;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
 				BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */,
+				BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
