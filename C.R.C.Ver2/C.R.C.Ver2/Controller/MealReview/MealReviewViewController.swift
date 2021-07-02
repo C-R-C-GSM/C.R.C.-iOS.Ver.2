@@ -61,13 +61,40 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealReviewTableViewCell", for: indexPath) as! MealReviewTableViewCell
         
+        cell.updateConstraintsIfNeeded()
+        
         cell.mealReviewNicname.text = model?.review_data[indexPath.row].nickname ?? ""
         cell.mealReviewDate.text = model?.review_data[indexPath.row].review_time ?? ""
         cell.mealReviewTime.text = model?.review_data[indexPath.row].review_when ?? ""
         cell.mealReviewContent.text = model?.review_data[indexPath.row].content ?? ""
         
-        cell.updateConstraintsIfNeeded()
-        print("1")
+        let star = model?.review_data[indexPath.row].review_star ?? 0
+        
+        switch star {
+        case star:
+            cell.mealReviewStar1.image = .init(systemName: "star.fill")
+            print("1")
+            if star > 1 { fallthrough } else { break }
+        case 2:
+            cell.mealReviewStar2.image = .init(systemName: "star.fill")
+            print("2")
+            if star > 2 { fallthrough } else { break }
+        case 3:
+            cell.mealReviewStar3.image = .init(systemName: "star.fill")
+            print("3")
+            if star > 3 { fallthrough } else { break }
+        case 4:
+            cell.mealReviewStar4.image = .init(systemName: "star.fill")
+            print("4")
+            if star > 4 { fallthrough } else { break }
+        case 5:
+            cell.mealReviewStar5.image = .init(systemName: "star.fill")
+            print("5")
+        default:
+            break
+        }
+        
+        
         
         return cell
     }
