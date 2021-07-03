@@ -75,7 +75,7 @@ class SignUpClassNumberViewController: UIViewController {
     
     func postData(email: String, password: String, name: String, student_data: String) {
         
-        let URL = "http://10.120.75.224:3000/register"
+        let URL = "http://192.168.219.126:3000/register"
         let PARAM: Parameters = [
             "email": email,
             "password": password,

@@ -15,7 +15,7 @@ class StudentStatusBoardViewController: UIViewController {
         case Two = "two"
         case Three = "three"
     }
-
+    
     var model: StudentStatusBoardModel?
     
     var studentGrade: StudentGrade = .One
@@ -26,8 +26,11 @@ class StudentStatusBoardViewController: UIViewController {
     @IBOutlet weak var comeStudentTotalCountLabel: UILabel!
     @IBOutlet weak var notComeStudentTotalCountLabel: UILabel!
     
-    var comeStudentCount = 0
-    var notComeStudentCount = 0
+    var comeStudentName = [String]()
+    var comeStudentClassNumber = [Int]()
+    
+    var notComeStudentName = [String]()
+    var notComeStudentClassNumber = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,59 +78,64 @@ class StudentStatusBoardViewController: UIViewController {
     }
     
     func studentFilter() {
-        comeStudentCount = 0
-        notComeStudentCount = 0
+        comeStudentName.removeAll()
+        comeStudentClassNumber.removeAll()
+        
+        notComeStudentName.removeAll()
+        notComeStudentClassNumber.removeAll()
         
         for i in 0 ..< (model?.data.count ?? 0) {
             if model?.data[i].student_check == 1 {
-                comeStudentCount += 1
+                comeStudentName.append(model?.data[i].student_name ?? "")
+                comeStudentClassNumber.append(model?.data[i].student_data ?? 0)
             } else {
-                notComeStudentCount += 1
+                notComeStudentName.append(model?.data[i].student_name ?? "")
+                notComeStudentClassNumber.append(model?.data[i].student_data ?? 0)
             }
         }
         
-        comeStudentTotalCountLabel.text = "\(comeStudentCount)"
-        notComeStudentTotalCountLabel.text = "\(notComeStudentCount)"
-        
         comeStudentTableView.reloadData()
         notComeStudentTableView.reloadData()
+        
+        comeStudentTotalCountLabel.text = "\(comeStudentName.count)"
+        notComeStudentTotalCountLabel.text = "\(notComeStudentName.count)"
     }
     
     func apiCall(grade: String) {
-        let URL = "http://10.120.75.224:3000/check/\(grade)"
+        let URL = "http://192.168.219.126:3000/check/\(grade)"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
             case .success(let value):
                 guard let data = response.data else { return }
                 self.model = try? JSONDecoder().decode(StudentStatusBoardModel.self, from: data)
-                print(value)
                 self.studentFilter()
+                print(value)
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
     }
-
+    
 }
 
 extension StudentStatusBoardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return tableView.tag == 1 ? comeStudentCount : notComeStudentCount
+        print("2222")
+        return tableView.tag == 1 ? comeStudentName.count : notComeStudentName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentStatusBoardTableViewCell", for: indexPath) as! StudentStatusBoardTableViewCell
-        
-        if tableView.tag == 1 && model?.data[indexPath.row].student_check == 1 {
-            cell.studentName.text = model?.data[indexPath.row].student_name ?? ""
-            cell.studentClassNumber.text = "\(model?.data[indexPath.row].student_data ?? 0)"
+        if tableView.tag == 1 {
+            cell.studentName.text = comeStudentName[indexPath.row]
+            cell.studentClassNumber.text = "\(comeStudentClassNumber[indexPath.row])"
+            print("0000")
             
-        } else if tableView.tag == 2 && model?.data[indexPath.row].student_check == 0 {
-            cell.studentName.text = model?.data[indexPath.row].student_name ?? ""
-            cell.studentClassNumber.text = "\(model?.data[indexPath.row].student_data ?? 0)"
-            
+        } else if tableView.tag == 2 {
+            cell.studentName.text = notComeStudentName[indexPath.row]
+            cell.studentClassNumber.text = "\(notComeStudentClassNumber[indexPath.row])"
+            print("1111")
         }
         
         return cell
