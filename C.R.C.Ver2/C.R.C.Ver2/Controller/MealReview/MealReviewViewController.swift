@@ -33,7 +33,7 @@ class MealReviewViewController: UIViewController {
     }
     
     func apiCall() {
-        let URL = "http://192.168.35.159:3000/review/check"
+        let URL = "http://192.168.219.126:3000/review/check"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON(completionHandler: { response in
             switch response.result {
