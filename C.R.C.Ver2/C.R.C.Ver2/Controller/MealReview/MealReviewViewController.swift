@@ -29,10 +29,11 @@ class MealReviewViewController: UIViewController {
     func setting() {
         mealReviewTableView.delegate = self
         mealReviewTableView.dataSource = self
+        mealReviewTableView.tableFooterView = UIView()
     }
     
     func apiCall() {
-        let URL = "http://10.120.75.224:3000/review/check"
+        let URL = "http://192.168.35.159:3000/review/check"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON(completionHandler: { response in
             switch response.result {
