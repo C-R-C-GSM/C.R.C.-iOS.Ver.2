@@ -77,7 +77,7 @@ class LoginViewController: UIViewController {
     
     func loginApi(email: String, password: String) {
         indicator.startAnimating()
-        let URL = "http://192.168.219.126:3000/login"
+        let URL = "http://192.168.43.203:3000/login"
         let PARAM: Parameters = [
             "email": email,
             "password": password
