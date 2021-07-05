@@ -85,7 +85,7 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func apiCall(review_star: Int, content: String, nickname: String, when: String) {
-        let URL = "http://192.168.43.203:3000/review/register"
+        let URL = "http://10.120.75.224:3000/review/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
             "review_star":review_star,
