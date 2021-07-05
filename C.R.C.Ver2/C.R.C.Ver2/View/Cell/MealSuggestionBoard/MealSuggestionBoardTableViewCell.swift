@@ -9,6 +9,8 @@ import UIKit
 
 class MealSuggestionBoardTableViewCell: UITableViewCell {
 
-   
+    @IBOutlet weak var mealSuggestionTitle: UILabel!
+    @IBOutlet weak var mealSuggestionDate: UILabel!
+    
 
 }

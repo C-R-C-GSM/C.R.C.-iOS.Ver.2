@@ -302,20 +302,20 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealSuggestionBoardTableViewCell" id="x7e-BC-gcX" customClass="MealSuggestionBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7e-BC-gcX" id="EyD-Zk-M2M">
-                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식에 벌레가 나왔어요!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efb-76-ReF">
-                                                    <rect key="frame" x="5" y="15" width="166" height="21.5"/>
+                                                    <rect key="frame" x="5" y="15" width="166" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2021.07.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-5E-HTQ">
-                                                    <rect key="frame" x="5" y="41.5" width="69.5" height="16"/>
+                                                    <rect key="frame" x="5" y="41" width="69.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="0.8980392157" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -331,6 +331,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="5QJ-5E-HTQ" secondAttribute="bottom" constant="15" id="fZ7-VN-RFc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mealSuggestionDate" destination="5QJ-5E-HTQ" id="j6j-9H-GzD"/>
+                                            <outlet property="mealSuggestionTitle" destination="efb-76-ReF" id="Jma-Xd-z5F"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
