@@ -27,7 +27,7 @@ class TotalStatusBoardViewController: UIViewController {
     }
     
     func apiCall() {
-        let URL = "http://192.168.219.126:3000/check/total"
+        let URL = "http://10.120.75.224:3000/check/total"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {

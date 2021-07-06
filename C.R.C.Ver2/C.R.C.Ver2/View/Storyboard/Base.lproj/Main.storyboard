@@ -291,14 +291,74 @@
         <!--급식 건의 게시판-->
         <scene sceneID="ZBx-Hc-WbB">
             <objects>
-                <viewController id="Tzb-bO-D31" sceneMemberID="viewController">
+                <viewController id="Tzb-bO-D31" customClass="MealSuggestionBoardViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh7-GL-BgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aug-Ch-9Wj">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealSuggestionBoardTableViewCell" id="x7e-BC-gcX" customClass="MealSuggestionBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="75.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7e-BC-gcX" id="EyD-Zk-M2M">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식에 벌레가 나왔어요!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efb-76-ReF">
+                                                    <rect key="frame" x="5" y="15" width="194.5" height="24.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2021.07.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-5E-HTQ">
+                                                    <rect key="frame" x="5" y="44.5" width="69.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="efb-76-ReF" secondAttribute="trailing" constant="5" id="AwD-MJ-YNt"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5QJ-5E-HTQ" secondAttribute="trailing" constant="310" id="CJ6-90-CKU"/>
+                                                <constraint firstItem="5QJ-5E-HTQ" firstAttribute="top" secondItem="efb-76-ReF" secondAttribute="bottom" constant="5" id="Gu9-ux-Quk"/>
+                                                <constraint firstItem="efb-76-ReF" firstAttribute="leading" secondItem="EyD-Zk-M2M" secondAttribute="leading" constant="5" id="TZE-Op-Yp4"/>
+                                                <constraint firstItem="efb-76-ReF" firstAttribute="top" secondItem="EyD-Zk-M2M" secondAttribute="top" constant="15" id="UJ8-DD-GaT"/>
+                                                <constraint firstItem="5QJ-5E-HTQ" firstAttribute="leading" secondItem="EyD-Zk-M2M" secondAttribute="leading" constant="5" id="YAW-vm-pdv"/>
+                                                <constraint firstAttribute="bottom" secondItem="5QJ-5E-HTQ" secondAttribute="bottom" constant="15" id="fZ7-VN-RFc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mealSuggestionDate" destination="5QJ-5E-HTQ" id="j6j-9H-GzD"/>
+                                            <outlet property="mealSuggestionTitle" destination="efb-76-ReF" id="Jma-Xd-z5F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lbW-rJ-KCX"/>
                         <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="aug-Ch-9Wj" firstAttribute="top" secondItem="lbW-rJ-KCX" secondAttribute="top" id="4WR-w0-dbs"/>
+                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="trailing" secondItem="aug-Ch-9Wj" secondAttribute="trailing" id="Kqd-m8-d4I"/>
+                            <constraint firstItem="aug-Ch-9Wj" firstAttribute="leading" secondItem="lbW-rJ-KCX" secondAttribute="leading" id="N3g-lr-EoA"/>
+                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="bottom" secondItem="aug-Ch-9Wj" secondAttribute="bottom" id="ptG-hU-THW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="급식 건의 게시판" id="UwF-qB-ZeM"/>
+                    <navigationItem key="navigationItem" title="급식 건의 게시판" id="UwF-qB-ZeM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="w8o-IN-mwY">
+                            <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <segue destination="oy1-iz-FcQ" kind="show" id="DrU-iy-6sU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mealSuggestionBoardTableView" destination="aug-Ch-9Wj" id="y2I-Rt-RGM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqr-Yi-fSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4o-xA-f65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3541" y="1610"/>
+            <point key="canvasLocation" x="4241" y="1610"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iOO-ic-sC2">
@@ -1456,7 +1516,104 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-As-Zbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3541" y="897"/>
+            <point key="canvasLocation" x="4242" y="897"/>
+        </scene>
+        <!--급식 건의 등록-->
+        <scene sceneID="V5g-Yv-h6E">
+            <objects>
+                <viewController id="oy1-iz-FcQ" customClass="MealSuggestionBoardCreateViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atM-R1-kdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-ua-RZs">
+                                <rect key="frame" x="50" y="148" width="314" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="익명 이름:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pw-o3-N7d">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) 정인교입큰이" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5FE-5P-kR1">
+                                        <rect key="frame" x="94.5" y="0.0" width="219.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4lf-J8-61T">
+                                <rect key="frame" x="50" y="276" width="314" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaR-9d-7Oj">
+                                        <rect key="frame" x="0.0" y="38" width="40.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="apL-1l-M7V">
+                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="NwZ-cP-HFk"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ji0-be-KHN">
+                                <rect key="frame" x="50" y="212" width="314" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cm8-sh-alr">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C59-4B-pRk">
+                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bV4-Pn-FM4"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="4lf-J8-61T" firstAttribute="centerX" secondItem="atM-R1-kdl" secondAttribute="centerX" id="4Xc-Mq-lve"/>
+                            <constraint firstItem="s5d-ua-RZs" firstAttribute="top" secondItem="bV4-Pn-FM4" secondAttribute="top" constant="60" id="8LQ-6U-QkJ"/>
+                            <constraint firstItem="bV4-Pn-FM4" firstAttribute="trailing" secondItem="ji0-be-KHN" secondAttribute="trailing" constant="50" id="CBa-Ty-Uew"/>
+                            <constraint firstItem="4lf-J8-61T" firstAttribute="top" secondItem="ji0-be-KHN" secondAttribute="bottom" constant="30" id="DMe-3e-feS"/>
+                            <constraint firstItem="4lf-J8-61T" firstAttribute="leading" secondItem="bV4-Pn-FM4" secondAttribute="leading" constant="50" id="G1v-5f-q47"/>
+                            <constraint firstItem="ji0-be-KHN" firstAttribute="centerX" secondItem="atM-R1-kdl" secondAttribute="centerX" id="M1H-rh-y6x"/>
+                            <constraint firstItem="ji0-be-KHN" firstAttribute="top" secondItem="s5d-ua-RZs" secondAttribute="bottom" constant="30" id="SmI-sz-Mbe"/>
+                            <constraint firstItem="bV4-Pn-FM4" firstAttribute="trailing" secondItem="s5d-ua-RZs" secondAttribute="trailing" constant="50" id="WvR-71-hbe"/>
+                            <constraint firstItem="s5d-ua-RZs" firstAttribute="leading" secondItem="bV4-Pn-FM4" secondAttribute="leading" constant="50" id="kgr-6h-Ewf"/>
+                            <constraint firstItem="bV4-Pn-FM4" firstAttribute="trailing" secondItem="4lf-J8-61T" secondAttribute="trailing" constant="50" id="unP-gV-nSZ"/>
+                            <constraint firstItem="ji0-be-KHN" firstAttribute="leading" secondItem="bV4-Pn-FM4" secondAttribute="leading" constant="50" id="v4M-ho-kmd"/>
+                            <constraint firstItem="s5d-ua-RZs" firstAttribute="centerX" secondItem="atM-R1-kdl" secondAttribute="centerX" id="zkX-fw-gUz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="급식 건의 등록" largeTitleDisplayMode="never" id="ioy-7L-PWr">
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="MUc-5X-3oG">
+                            <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="doneButton:" destination="oy1-iz-FcQ" id="ARs-hd-EiR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mealSuggestionContent" destination="apL-1l-M7V" id="Sdr-w6-C05"/>
+                        <outlet property="mealSuggestionNickname" destination="5FE-5P-kR1" id="rPg-Cs-ogx"/>
+                        <outlet property="mealSuggestionTitle" destination="C59-4B-pRk" id="yZt-cd-sak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nX2-F3-zHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="1610"/>
         </scene>
     </scenes>
     <resources>
