@@ -18,6 +18,11 @@ class MealSuggestionBoardViewController: UIViewController {
         super.viewDidLoad()
 
         setting()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         apiCall()
     }
     
