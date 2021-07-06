@@ -7,8 +7,11 @@
 
 import UIKit
 import Alamofire
+import NVActivityIndicatorView
 
 class MealReviewViewController: UIViewController {
+    
+    let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
     
     var model: MealReviewModel?
     
@@ -18,6 +21,7 @@ class MealReviewViewController: UIViewController {
         super.viewDidLoad()
         
         setting()
+        indicatorAutolayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,26 +36,48 @@ class MealReviewViewController: UIViewController {
         mealReviewTableView.tableFooterView = UIView()
     }
     
+    func indicatorAutolayout() {
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    }
+    
+    func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
+        let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
     func apiCall() {
+        indicator.startAnimating()
+        
         let URL = "http://10.120.75.224:3000/review/check"
         let token = TokenManager.getToken()
-        AF.request(URL, method: .get, headers: ["Token": token]).responseJSON(completionHandler: { response in
+        AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
             case .success(let value):
                 do {
                     guard let data = response.data else { return }
                     self.model = try JSONDecoder().decode(MealReviewModel.self, from: data)
                 } catch (let error) {
+                    self.failAlert(messages: "오류가 발생했습니다.")
                     print(error.localizedDescription)
                 }
+                self.indicator.stopAnimating()
                 self.mealReviewTableView.reloadData()
                 print(value)
             case .failure(let error):
+                self.failAlert(messages: "네트워크 연결을 확인해주세요.")
                 print(error.localizedDescription)
             }
-        })
+        }
     }
-    
 }
 
 extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
@@ -74,33 +100,22 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
         switch star {
         case star:
             cell.mealReviewStar1.image = .init(systemName: "star.fill")
-            print("1")
             if star > 1 { fallthrough } else { break }
         case 2:
             cell.mealReviewStar2.image = .init(systemName: "star.fill")
-            print("2")
             if star > 2 { fallthrough } else { break }
         case 3:
             cell.mealReviewStar3.image = .init(systemName: "star.fill")
-            print("3")
             if star > 3 { fallthrough } else { break }
         case 4:
             cell.mealReviewStar4.image = .init(systemName: "star.fill")
-            print("4")
             if star > 4 { fallthrough } else { break }
         case 5:
             cell.mealReviewStar5.image = .init(systemName: "star.fill")
-            print("5")
         default:
             break
         }
         
-        
-        
         return cell
     }
-    
-    
-    
-    
 }

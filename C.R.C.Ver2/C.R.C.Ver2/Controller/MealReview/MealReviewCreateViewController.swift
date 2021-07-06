@@ -6,11 +6,16 @@
 //
 
 import UIKit
-import iOSDropDown
 import Alamofire
+import iOSDropDown
+import NVActivityIndicatorView
 
 class MealReviewCreateViewController: UIViewController {
-
+    
+    let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
+    
+    var mealReviewStarCount = 0
+    
     @IBOutlet weak var mealReviewNickname: UITextField!
     @IBOutlet weak var mealReviewContent: UITextView!
     @IBOutlet weak var mealReviewTime: DropDown!
@@ -21,12 +26,15 @@ class MealReviewCreateViewController: UIViewController {
     @IBOutlet weak var mealReviewStar4: UIButton!
     @IBOutlet weak var mealReviewStar5: UIButton!
     
-    var mealReviewStarCount = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setting()
+        indicatorAutolayout()
+    }
+    
+    @IBAction func doneButton(_ sender: UIBarButtonItem) {
+        checkText() ? apiCall(review_star: mealReviewStarCount, content: mealReviewContent.text ?? "", nickname: mealReviewNickname.text ?? "", when: mealReviewTime.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
     }
     
     func setting() {
@@ -44,11 +52,18 @@ class MealReviewCreateViewController: UIViewController {
         mealReviewTime.selectedRowColor = .init(named: "Primary Color") ?? UIColor.black
     }
     
-    @IBAction func doneButton(_ sender: UIBarButtonItem) {
-        checkText() ? apiCall(review_star: mealReviewStarCount, content: mealReviewContent.text ?? "", nickname: mealReviewNickname.text ?? "", when: mealReviewTime.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
+    func indicatorAutolayout() {
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
     }
     
     func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
@@ -56,6 +71,8 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func sucessAlert() {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: "리뷰 등록 성공", message: "리뷰 등록 성공!!!", preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
             self.navigationController?.popViewController(animated: true)
@@ -81,10 +98,11 @@ class MealReviewCreateViewController: UIViewController {
             sender.setImage(.init(systemName: "star"), for: .normal)
             mealReviewStarCount -= 1
         }
-        print(mealReviewStarCount)
     }
     
     func apiCall(review_star: Int, content: String, nickname: String, when: String) {
+        indicator.startAnimating()
+        
         let URL = "http://10.120.75.224:3000/review/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
@@ -105,11 +123,11 @@ class MealReviewCreateViewController: UIViewController {
                 }
                 print(value)
             case .failure(let error):
+                self.failAlert(messages: "네트워크 연결을 확인해주세요.")
                 print(error.localizedDescription)
             }
         }
     }
-    
 }
 
 extension MealReviewCreateViewController: UITextViewDelegate, UITextFieldDelegate {

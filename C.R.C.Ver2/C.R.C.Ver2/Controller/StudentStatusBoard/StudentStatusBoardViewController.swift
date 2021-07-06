@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import NVActivityIndicatorView
 
 class StudentStatusBoardViewController: UIViewController {
     
@@ -16,15 +17,11 @@ class StudentStatusBoardViewController: UIViewController {
         case Three = "three"
     }
     
+    let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
+    
     var model: StudentStatusBoardModel?
     
     var studentGrade: StudentGrade = .One
-    
-    @IBOutlet weak var comeStudentTableView: UITableView!
-    @IBOutlet weak var notComeStudentTableView: UITableView!
-    
-    @IBOutlet weak var comeStudentTotalCountLabel: UILabel!
-    @IBOutlet weak var notComeStudentTotalCountLabel: UILabel!
     
     var comeStudentName = [String]()
     var comeStudentClassNumber = [Int]()
@@ -32,10 +29,17 @@ class StudentStatusBoardViewController: UIViewController {
     var notComeStudentName = [String]()
     var notComeStudentClassNumber = [Int]()
     
+    @IBOutlet weak var comeStudentTableView: UITableView!
+    @IBOutlet weak var notComeStudentTableView: UITableView!
+    
+    @IBOutlet weak var comeStudentTotalCountLabel: UILabel!
+    @IBOutlet weak var notComeStudentTotalCountLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setting()
+        indicatorAutolayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +81,15 @@ class StudentStatusBoardViewController: UIViewController {
         notComeStudentTableView.layer.cornerRadius = 10
     }
     
+    func indicatorAutolayout() {
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    }
+    
     func studentFilter() {
         comeStudentName.removeAll()
         comeStudentClassNumber.removeAll()
@@ -94,6 +107,8 @@ class StudentStatusBoardViewController: UIViewController {
             }
         }
         
+        indicator.stopAnimating()
+        
         comeStudentTableView.reloadData()
         notComeStudentTableView.reloadData()
         
@@ -101,41 +116,55 @@ class StudentStatusBoardViewController: UIViewController {
         notComeStudentTotalCountLabel.text = "\(notComeStudentName.count)"
     }
     
+    func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
+        let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
     func apiCall(grade: String) {
+        indicator.startAnimating()
+        
         let URL = "http://10.120.75.224:3000/check/\(grade)"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
             case .success(let value):
-                guard let data = response.data else { return }
-                self.model = try? JSONDecoder().decode(StudentStatusBoardModel.self, from: data)
+                do {
+                    guard let data = response.data else { return }
+                    self.model = try JSONDecoder().decode(StudentStatusBoardModel.self, from: data)
+                } catch(let error) {
+                    self.failAlert(messages: error.localizedDescription)
+                    print(error.localizedDescription)
+                }
                 self.studentFilter()
                 print(value)
             case .failure(let error):
+                self.failAlert(messages: "네트워크 연결을 확인해주세요.")
                 print(error.localizedDescription)
             }
         }
     }
-    
 }
 
 extension StudentStatusBoardViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("2222")
+        
         return tableView.tag == 1 ? comeStudentName.count : notComeStudentName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentStatusBoardTableViewCell", for: indexPath) as! StudentStatusBoardTableViewCell
+        
         if tableView.tag == 1 {
             cell.studentName.text = comeStudentName[indexPath.row]
             cell.studentClassNumber.text = "\(comeStudentClassNumber[indexPath.row])"
-            print("0000")
-            
         } else if tableView.tag == 2 {
             cell.studentName.text = notComeStudentName[indexPath.row]
             cell.studentClassNumber.text = "\(notComeStudentClassNumber[indexPath.row])"
-            print("1111")
         }
         
         return cell

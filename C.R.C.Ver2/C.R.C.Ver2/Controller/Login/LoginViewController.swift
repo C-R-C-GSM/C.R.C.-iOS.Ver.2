@@ -12,7 +12,7 @@ import NVActivityIndicatorView
 class LoginViewController: UIViewController {
     
     let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
@@ -23,7 +23,11 @@ class LoginViewController: UIViewController {
         setting()
         indicatorAutolayout()
     }
-
+    
+    @IBAction func signInButton(_ sender: UIButton) {
+        checkTextField() ? loginApi(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
+    }
+    
     func setting() {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -47,6 +51,8 @@ class LoginViewController: UIViewController {
     }
     
     func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
@@ -54,6 +60,8 @@ class LoginViewController: UIViewController {
     }
     
     func sucessAlert() {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: "로그인 성공", message: "로그인 성공!!!", preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
             self.goMainPage()
@@ -77,6 +85,7 @@ class LoginViewController: UIViewController {
     
     func loginApi(email: String, password: String) {
         indicator.startAnimating()
+        
         let URL = "http://10.120.75.224:3000/login"
         let PARAM: Parameters = [
             "email": email,
@@ -91,34 +100,23 @@ class LoginViewController: UIViewController {
                     guard let dic = value as? NSDictionary, let token = dic["Token"] as? String else { return }
                     TokenManager.saveToken(token: token)
                     self.sucessAlert()
-                    self.indicator.stopAnimating()
                 case -100:
                     self.failAlert(messages: "Server Error")
-                    self.indicator.stopAnimating()
                 case -202:
                     self.failAlert(messages: "가입되지 않은 이메일입니다.")
-                    self.indicator.stopAnimating()
                 case -300:
                     self.failAlert(messages: "패스워드가 올바르지 않습니다.")
-                    self.indicator.stopAnimating()
                 case -400:
                     self.failAlert(messages: "Server Error")
-                    self.indicator.stopAnimating()
                 default:
                     self.failAlert(messages: "알 수 없는 오류")
-                    self.indicator.stopAnimating()
                 }
                 print(value)
             case .failure(let error):
-                self.indicator.stopAnimating()
                 self.failAlert(messages: "네트워크가 원활하지 않습니다.")
-                print(error)
+                print(error.localizedDescription)
             }
         }
-    }
-    
-    @IBAction func signInButton(_ sender: UIButton) {
-        checkTextField() ? loginApi(email: emailTextField.text ?? "", password: passwordTextField.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
     }
 }
 

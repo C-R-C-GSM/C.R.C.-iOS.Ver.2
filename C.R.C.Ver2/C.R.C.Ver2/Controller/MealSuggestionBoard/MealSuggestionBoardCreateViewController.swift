@@ -7,17 +7,20 @@
 
 import UIKit
 import Alamofire
+import NVActivityIndicatorView
 
 class MealSuggestionBoardCreateViewController: UIViewController {
-
+    
+    let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
+    
     @IBOutlet weak var mealSuggestionNickname: UITextField!
     @IBOutlet weak var mealSuggestionTitle: UITextField!
     @IBOutlet weak var mealSuggestionContent: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        indicatorAutolayout()
     }
     
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
@@ -30,7 +33,18 @@ class MealSuggestionBoardCreateViewController: UIViewController {
         mealSuggestionNickname.delegate = self
     }
     
+    func indicatorAutolayout() {
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    }
+    
     func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
@@ -38,6 +52,8 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     }
     
     func sucessAlert() {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: "건의 등록 성공", message: "건의 등록 성공!!!", preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
             self.navigationController?.popViewController(animated: true)
@@ -54,6 +70,8 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     }
     
     func apiCall(title: String, content: String, nickname: String) {
+        indicator.startAnimating()
+        
         let URL = "http://10.120.75.224:3000/suggest/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
@@ -73,12 +91,11 @@ class MealSuggestionBoardCreateViewController: UIViewController {
                 }
                 print(value)
             case .failure(let error):
+                self.failAlert(messages: "네트워크 연결을 확인해주세요.")
                 print(error.localizedDescription)
             }
         }
     }
-    
-    
 }
 
 extension MealSuggestionBoardCreateViewController: UITextFieldDelegate, UITextViewDelegate {
