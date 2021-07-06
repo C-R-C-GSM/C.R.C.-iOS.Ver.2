@@ -296,25 +296,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aug-Ch-9Wj">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-Fr-uSP">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealSuggestionBoardTableViewCell" id="x7e-BC-gcX" customClass="MealSuggestionBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealSuggestionBoardTableViewCell" id="Et8-8l-4mU" customClass="MealSuggestionBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="75.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7e-BC-gcX" id="EyD-Zk-M2M">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Et8-8l-4mU" id="WaH-Uc-06e">
                                             <rect key="frame" x="0.0" y="0.0" width="384.5" height="75.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식에 벌레가 나왔어요!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efb-76-ReF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식에 벌레가 나왔어요!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZf-Ar-GtU">
                                                     <rect key="frame" x="5" y="15" width="194.5" height="24.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2021.07.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-5E-HTQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2021.07.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw1-Zj-02i">
                                                     <rect key="frame" x="5" y="44.5" width="69.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="0.8980392157" colorSpace="calibratedRGB"/>
@@ -322,18 +321,18 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="efb-76-ReF" secondAttribute="trailing" constant="5" id="AwD-MJ-YNt"/>
-                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5QJ-5E-HTQ" secondAttribute="trailing" constant="310" id="CJ6-90-CKU"/>
-                                                <constraint firstItem="5QJ-5E-HTQ" firstAttribute="top" secondItem="efb-76-ReF" secondAttribute="bottom" constant="5" id="Gu9-ux-Quk"/>
-                                                <constraint firstItem="efb-76-ReF" firstAttribute="leading" secondItem="EyD-Zk-M2M" secondAttribute="leading" constant="5" id="TZE-Op-Yp4"/>
-                                                <constraint firstItem="efb-76-ReF" firstAttribute="top" secondItem="EyD-Zk-M2M" secondAttribute="top" constant="15" id="UJ8-DD-GaT"/>
-                                                <constraint firstItem="5QJ-5E-HTQ" firstAttribute="leading" secondItem="EyD-Zk-M2M" secondAttribute="leading" constant="5" id="YAW-vm-pdv"/>
-                                                <constraint firstAttribute="bottom" secondItem="5QJ-5E-HTQ" secondAttribute="bottom" constant="15" id="fZ7-VN-RFc"/>
+                                                <constraint firstItem="WZf-Ar-GtU" firstAttribute="leading" secondItem="WaH-Uc-06e" secondAttribute="leading" constant="5" id="9Vc-Tb-DTN"/>
+                                                <constraint firstItem="yw1-Zj-02i" firstAttribute="top" secondItem="WZf-Ar-GtU" secondAttribute="bottom" constant="5" id="Eel-cw-yFO"/>
+                                                <constraint firstItem="yw1-Zj-02i" firstAttribute="leading" secondItem="WaH-Uc-06e" secondAttribute="leading" constant="5" id="FjD-RL-lwN"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WZf-Ar-GtU" secondAttribute="trailing" constant="5" id="I8N-hH-sKW"/>
+                                                <constraint firstItem="WZf-Ar-GtU" firstAttribute="top" secondItem="WaH-Uc-06e" secondAttribute="top" constant="15" id="k04-k2-tN1"/>
+                                                <constraint firstAttribute="bottom" secondItem="yw1-Zj-02i" secondAttribute="bottom" constant="15" id="r7W-25-RbQ"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="yw1-Zj-02i" secondAttribute="trailing" constant="310" id="rrK-aH-OLz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="mealSuggestionDate" destination="5QJ-5E-HTQ" id="j6j-9H-GzD"/>
-                                            <outlet property="mealSuggestionTitle" destination="efb-76-ReF" id="Jma-Xd-z5F"/>
+                                            <outlet property="mealSuggestionDate" destination="yw1-Zj-02i" id="0mc-gy-25O"/>
+                                            <outlet property="mealSuggestionTitle" destination="WZf-Ar-GtU" id="GcF-Xp-RHA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -342,27 +341,27 @@
                         <viewLayoutGuide key="safeArea" id="lbW-rJ-KCX"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="aug-Ch-9Wj" firstAttribute="top" secondItem="lbW-rJ-KCX" secondAttribute="top" id="4WR-w0-dbs"/>
-                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="trailing" secondItem="aug-Ch-9Wj" secondAttribute="trailing" id="Kqd-m8-d4I"/>
-                            <constraint firstItem="aug-Ch-9Wj" firstAttribute="leading" secondItem="lbW-rJ-KCX" secondAttribute="leading" id="N3g-lr-EoA"/>
-                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="bottom" secondItem="aug-Ch-9Wj" secondAttribute="bottom" id="ptG-hU-THW"/>
+                            <constraint firstItem="n3L-Fr-uSP" firstAttribute="leading" secondItem="lbW-rJ-KCX" secondAttribute="leading" id="GDo-ad-FIF"/>
+                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="trailing" secondItem="n3L-Fr-uSP" secondAttribute="trailing" id="RfD-TN-k4p"/>
+                            <constraint firstItem="lbW-rJ-KCX" firstAttribute="bottom" secondItem="n3L-Fr-uSP" secondAttribute="bottom" id="oAj-sr-fZG"/>
+                            <constraint firstItem="n3L-Fr-uSP" firstAttribute="top" secondItem="lbW-rJ-KCX" secondAttribute="top" id="y9A-8L-GNk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="급식 건의 게시판" id="UwF-qB-ZeM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="w8o-IN-mwY">
+                    <navigationItem key="navigationItem" title="급식 건의 게시판" largeTitleDisplayMode="always" id="els-OI-fCo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pRn-xc-o1a">
                             <color key="tintColor" name="Primary Color"/>
                             <connections>
-                                <segue destination="oy1-iz-FcQ" kind="show" id="DrU-iy-6sU"/>
+                                <segue destination="oy1-iz-FcQ" kind="show" id="NO9-e9-rl1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="mealSuggestionBoardTableView" destination="aug-Ch-9Wj" id="y2I-Rt-RGM"/>
+                        <outlet property="mealSuggestionBoardTableView" destination="n3L-Fr-uSP" id="Y4l-T8-0QB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqr-Yi-fSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2619" y="1610"/>
+            <point key="canvasLocation" x="2618.840579710145" y="1609.8214285714284"/>
         </scene>
         <!--더보기-->
         <scene sceneID="yeN-Z2-GXo">
