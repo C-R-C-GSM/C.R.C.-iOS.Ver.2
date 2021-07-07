@@ -463,15 +463,84 @@
                     <navigationItem key="navigationItem" title="공지사항" largeTitleDisplayMode="always" id="wg2-Zr-xUQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="03C-x9-E8H">
                             <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <segue destination="008-R2-ZSV" kind="show" id="2rK-DA-bxG"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="noticeCreateButton" destination="03C-x9-E8H" id="STj-Oj-Lu8"/>
                         <outlet property="noticeTableView" destination="QbE-cl-QaE" id="vlJ-n3-boz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wd-4o-gi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5039" y="1610"/>
+        </scene>
+        <!--공지사항 등록-->
+        <scene sceneID="dAP-tc-mru">
+            <objects>
+                <viewController id="008-R2-ZSV" customClass="NoticeCreateViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jmK-uM-uuq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XOD-LG-5pH">
+                                <rect key="frame" x="50" y="202" width="314" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyp-GL-J3m">
+                                        <rect key="frame" x="0.0" y="38" width="40.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ild-GG-EQC">
+                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="fcM-C1-kP4"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vtd-7s-SLi">
+                                <rect key="frame" x="50" y="138" width="314" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCP-5J-zFo">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDb-F3-ryz">
+                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="26K-OM-IfT"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="XOD-LG-5pH" firstAttribute="centerX" secondItem="jmK-uM-uuq" secondAttribute="centerX" id="1bn-rO-owb"/>
+                            <constraint firstItem="vtd-7s-SLi" firstAttribute="leading" secondItem="26K-OM-IfT" secondAttribute="leading" constant="50" id="ByE-zk-fSP"/>
+                            <constraint firstItem="XOD-LG-5pH" firstAttribute="top" secondItem="vtd-7s-SLi" secondAttribute="bottom" constant="30" id="EbS-sT-xSQ"/>
+                            <constraint firstItem="vtd-7s-SLi" firstAttribute="centerX" secondItem="jmK-uM-uuq" secondAttribute="centerX" id="FQL-cH-M7c"/>
+                            <constraint firstItem="26K-OM-IfT" firstAttribute="trailing" secondItem="XOD-LG-5pH" secondAttribute="trailing" constant="50" id="Vy7-MZ-q9V"/>
+                            <constraint firstItem="26K-OM-IfT" firstAttribute="trailing" secondItem="vtd-7s-SLi" secondAttribute="trailing" constant="50" id="lCF-Zt-cAT"/>
+                            <constraint firstItem="XOD-LG-5pH" firstAttribute="leading" secondItem="26K-OM-IfT" secondAttribute="leading" constant="50" id="qSq-uR-Uqx"/>
+                            <constraint firstItem="vtd-7s-SLi" firstAttribute="top" secondItem="26K-OM-IfT" secondAttribute="top" constant="50" id="yfy-dm-XLB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="공지사항 등록" largeTitleDisplayMode="never" id="5od-Il-NPQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CBX-II-tum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5778" y="1610"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iOO-ic-sC2">

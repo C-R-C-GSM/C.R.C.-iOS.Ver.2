@@ -16,12 +16,15 @@ class NoticeViewController: UIViewController {
     var model: NoticeModel?
 
     @IBOutlet weak var noticeTableView: UITableView!
+    @IBOutlet weak var noticeCreateButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkApiCall()
         setting()
         indicatorAutolayout()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +55,28 @@ class NoticeViewController: UIViewController {
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func checkApiCall() {
+        let URL = "http://10.120.75.224:3000/check/role"
+        let token = TokenManager.getToken()
+        AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                if let dic = value as? NSDictionary, let code = dic["code"] as? Int {
+                    switch code {
+                    case -600:
+                        self.noticeCreateButton.isEnabled = false
+                        self.noticeCreateButton.tintColor = .init(named: "AccentColor")
+                    default:
+                        break
+                    }
+                }
+                print(value)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func apiCall() {
