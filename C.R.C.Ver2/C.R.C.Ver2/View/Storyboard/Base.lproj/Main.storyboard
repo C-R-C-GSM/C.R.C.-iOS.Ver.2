@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
         <array key="NotoSansKR-Medium.otf">
             <string>NotoSansKR-Medium</string>
         </array>
@@ -366,18 +369,109 @@
         <!--더보기-->
         <scene sceneID="yeN-Z2-GXo">
             <objects>
-                <viewController id="x27-GB-AIg" sceneMemberID="viewController">
+                <viewController id="x27-GB-AIg" customClass="AddViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0uJ-Av-i7P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm8-1y-IxQ">
+                                <rect key="frame" x="100" y="170" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="공지사항">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aZM-kP-lBS" kind="show" id="7X8-bx-RVp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ti-9M-Uu8"/>
                         <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="gm8-1y-IxQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="GXH-8i-0sH"/>
+                            <constraint firstItem="gm8-1y-IxQ" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="gmT-hm-Z4L"/>
+                            <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gm8-1y-IxQ" secondAttribute="trailing" constant="100" id="n0i-6b-pqc"/>
+                            <constraint firstItem="gm8-1y-IxQ" firstAttribute="top" secondItem="7Ti-9M-Uu8" secondAttribute="top" constant="30" id="uQM-f6-f6P"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="더보기" id="dBO-rI-7yc"/>
+                    <navigationItem key="navigationItem" title="더보기" largeTitleDisplayMode="always" id="dBO-rI-7yc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4o-xA-f65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4241" y="1610"/>
+        </scene>
+        <!--공지사항-->
+        <scene sceneID="U1i-Zu-sjK">
+            <objects>
+                <viewController id="aZM-kP-lBS" customClass="NoticeViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="32p-LC-rnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-cl-QaE">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NoticeTableViewCell" id="ieN-xN-MUc" customClass="NoticeTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ieN-xN-MUc" id="UWF-9d-7nf">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="연체된 학생들 얼른 반납해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-Eo-X5v">
+                                                    <rect key="frame" x="5" y="15" width="185" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.02.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-IL-C9e">
+                                                    <rect key="frame" x="5" y="36.5" width="79.5" height="12.5"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="10"/>
+                                                    <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="TRU-IL-C9e" secondAttribute="bottom" constant="15" id="EDE-d6-g8S"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TCC-Eo-X5v" secondAttribute="trailing" constant="10" id="JJy-k5-3D0"/>
+                                                <constraint firstItem="TRU-IL-C9e" firstAttribute="top" secondItem="TCC-Eo-X5v" secondAttribute="bottom" constant="5" id="Jfo-b4-9ej"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="TRU-IL-C9e" secondAttribute="trailing" constant="300" id="UvU-lY-m2k"/>
+                                                <constraint firstItem="TCC-Eo-X5v" firstAttribute="top" secondItem="UWF-9d-7nf" secondAttribute="top" constant="15" id="cpK-4P-Kys"/>
+                                                <constraint firstItem="TRU-IL-C9e" firstAttribute="leading" secondItem="UWF-9d-7nf" secondAttribute="leading" constant="5" id="mdr-zH-Opn"/>
+                                                <constraint firstItem="TCC-Eo-X5v" firstAttribute="leading" secondItem="UWF-9d-7nf" secondAttribute="leading" constant="5" id="wAq-Wf-ucA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="noticeDate" destination="TRU-IL-C9e" id="zR0-j9-ZPg"/>
+                                            <outlet property="noticeTitle" destination="TCC-Eo-X5v" id="8jR-Kz-efv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vte-8h-zOt"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="vte-8h-zOt" firstAttribute="trailing" secondItem="QbE-cl-QaE" secondAttribute="trailing" id="160-Lj-wLB"/>
+                            <constraint firstItem="QbE-cl-QaE" firstAttribute="leading" secondItem="vte-8h-zOt" secondAttribute="leading" id="kuV-yt-2PW"/>
+                            <constraint firstItem="QbE-cl-QaE" firstAttribute="top" secondItem="vte-8h-zOt" secondAttribute="top" id="q32-y5-ges"/>
+                            <constraint firstItem="vte-8h-zOt" firstAttribute="bottom" secondItem="QbE-cl-QaE" secondAttribute="bottom" id="ySC-k5-3dV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="공지사항" largeTitleDisplayMode="always" id="wg2-Zr-xUQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="03C-x9-E8H">
+                            <color key="tintColor" name="Primary Color"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noticeTableView" destination="QbE-cl-QaE" id="vlJ-n3-boz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wd-4o-gi5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5039" y="1610"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iOO-ic-sC2">
