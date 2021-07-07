@@ -11,6 +11,8 @@
 		BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */; };
 		BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */; };
 		BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */; };
+		BD3E4CAC2695A00F00ABAA01 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */; };
+		BD3E4CAE2695A02800ABAA01 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */; };
 		BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD49019F267613FD000CB091 /* MealReviewViewController.swift */; };
 		BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */; };
 		BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */; };
@@ -46,6 +48,8 @@
 		BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStudentModel.swift; sourceTree = "<group>"; };
 		BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardModel.swift; sourceTree = "<group>"; };
 		BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewModel.swift; sourceTree = "<group>"; };
+		BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		BD49019F267613FD000CB091 /* MealReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewViewController.swift; sourceTree = "<group>"; };
 		BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewCreateViewController.swift; sourceTree = "<group>"; };
 		BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStatusBoardViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 				703F4D52836E0CB5BC009D84 /* Pods-C.R.C.Ver2.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD3E4CAA26959FEC00ABAA01 /* ADD */ = {
+			isa = PBXGroup;
+			children = (
+				BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */,
+				BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */,
+			);
+			path = ADD;
 			sourceTree = "<group>";
 		};
 		BD49019E267613C4000CB091 /* MealReview */ = {
@@ -175,6 +188,7 @@
 				BDC0DB0F26677EE900175A85 /* StudentStatusBoard */,
 				BD49019E267613C4000CB091 /* MealReview */,
 				BDEE15B826906B64005CC0AF /* MealSuggestionBoard */,
+				BD3E4CAA26959FEC00ABAA01 /* ADD */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -421,6 +435,7 @@
 				BDEE15BD26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift in Sources */,
 				BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */,
 				BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */,
+				BD3E4CAC2695A00F00ABAA01 /* AddViewController.swift in Sources */,
 				BD692E282692B0B1001CF85D /* MealSuggestionBoardModel.swift in Sources */,
 				BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */,
 				BDEE15BA26906C14005CC0AF /* MealSuggestionBoardViewController.swift in Sources */,
@@ -431,6 +446,7 @@
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
 				BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */,
+				BD3E4CAE2695A02800ABAA01 /* NoticeViewController.swift in Sources */,
 				BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
