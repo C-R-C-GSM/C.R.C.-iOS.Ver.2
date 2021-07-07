@@ -33,7 +33,10 @@ class SignUpNameViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-
+    @IBAction func continueButton(_ sender: UIButton) {
+        checkTextField() ? nextController() : failAlert(messages: "빈칸을 채우세요.")
+    }
+    
     func setting() {
         self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
         
@@ -41,11 +44,26 @@ class SignUpNameViewController: UIViewController {
         
         continueBtn.layer.cornerRadius = 10
     }
-
-    @IBAction func continueButton(_ sender: UIButton) {
+    
+    func failAlert(messages: String) {
+        let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func nextController() {
         SignUpManager.saveName(name: nameTextField.text ?? "")
+        
         let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpClassNumberViewController") as! SignUpClassNumberViewController
         navigationController?.pushViewController(nextController, animated: true)
+    }
+    
+    func checkTextField() -> Bool {
+        if (nameTextField.text == "") {
+            return false
+        }
+        return true
     }
 }
 

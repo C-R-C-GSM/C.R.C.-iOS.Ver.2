@@ -33,6 +33,10 @@ class SignUpPasswordViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    
+    @IBAction func continueButton(_ sender: UIButton) {
+        checkTextField()
+    }
 
     func setting() {
         self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
@@ -43,10 +47,29 @@ class SignUpPasswordViewController: UIViewController {
         continueBtn.layer.cornerRadius = 10
     }
 
-    @IBAction func continueButton(_ sender: UIButton) {
-        SignUpManager.savePassword(password: passwordTextField.text ?? "")
+    func failAlert(messages: String) {
+        let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
+        let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func nextController() {
+        SignUpManager.savePassword(password:passwordTextField.text ?? "")
+        
         let nextController = storyboard?.instantiateViewController(withIdentifier: "SignUpNameViewController") as! SignUpNameViewController
         navigationController?.pushViewController(nextController, animated: true)
+    }
+    
+    func checkTextField() {
+        if (passwordTextField.text == "") || (passwordCheckTextField.text == "") {
+            failAlert(messages: "빈칸을 모두 채우세요.")
+        } else if passwordTextField.text != passwordCheckTextField.text {
+            failAlert(messages: "패스워드가 일치하지 않습니다.")
+        } else {
+            nextController()
+        }
+        
     }
 }
 

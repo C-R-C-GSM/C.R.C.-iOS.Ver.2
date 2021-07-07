@@ -38,6 +38,10 @@ class SignUpClassNumberViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    @IBAction func doneButton(_ sender: UIButton) {
+        checkTextField() ? postData(email: SignUpManager.getEmail(), password: SignUpManager.getPassword(), name: SignUpManager.getName(), student_data: classNumberTextField.text ?? "") : failAlert(messages: "빈칸을 모두 채워주세요.")
+    }
+    
     func setting() {
         classNumberTextField.delegate = self
         classNumberTextField.keyboardType = .numberPad
@@ -54,7 +58,16 @@ class SignUpClassNumberViewController: UIViewController {
         indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
     }
     
+    func checkTextField() -> Bool {
+        if (classNumberTextField.text == "") {
+            return false
+        }
+        return true
+    }
+    
     func failAlert(messages: String) {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: messages, message: nil, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
@@ -62,6 +75,8 @@ class SignUpClassNumberViewController: UIViewController {
     }
     
     func sucessAlert() {
+        indicator.stopAnimating()
+        
         let alert = UIAlertController(title: "회원가입 성공", message: "이메일 인증을 해야 로그인이 가능합니다.", preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
             SignUpManager.removeEmail()
@@ -74,6 +89,7 @@ class SignUpClassNumberViewController: UIViewController {
     }
     
     func postData(email: String, password: String, name: String, student_data: String) {
+        indicator.startAnimating()
         
         let URL = "http://10.120.75.224:3000/register"
         let PARAM: Parameters = [
@@ -86,32 +102,22 @@ class SignUpClassNumberViewController: UIViewController {
             switch data.result {
             case .success(let value):
                 print(value)
-                if let dic = value as? NSDictionary {
-                    if let code = dic["code"] as? Int {
-                        switch code {
-                        case 0:
-                            self.indicator.stopAnimating()
-                            self.sucessAlert()
-                        case -200:
-                            self.indicator.stopAnimating()
-                            self.failAlert(messages: "이미 가입된 메일입니다.")
-                        default:
-                            self.indicator.stopAnimating()
-                            self.failAlert(messages: "오류 발생")
-                        }
+                if let dic = value as? NSDictionary,
+                   let code = dic["code"] as? Int {
+                    switch code {
+                    case 0:
+                        self.sucessAlert()
+                    case -200:
+                        self.failAlert(messages: "이미 가입된 메일입니다.")
+                    default:
+                        self.failAlert(messages: "오류 발생")
                     }
                 }
             case .failure(let e):
-                self.indicator.stopAnimating()
                 self.failAlert(messages: "네트워크가 원활하지 않습니다.")
                 print("error: \(e.localizedDescription)")
             }
         }
-    }
-    
-    @IBAction func doneButton(_ sender: UIButton) {
-        indicator.startAnimating()
-        postData(email: SignUpManager.getEmail(), password: SignUpManager.getPassword(), name: SignUpManager.getName(), student_data: classNumberTextField.text ?? "")
     }
 }
 

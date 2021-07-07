@@ -35,7 +35,13 @@ class SignUpEmailViewController: UIViewController {
     }
     
     @IBAction func continueButton(_ sender: UIButton) {
-        checkTextField() ? nextController() : failAlert(messages: "빈칸을 채우세요.")
+        if checkTextField() && emailCheck() {
+            nextController()
+        } else if !(checkTextField()) {
+            failAlert(messages: "빈칸을 채우세요.")
+        } else {
+            failAlert(messages: "이메일 형식이 맞지 않습니다.")
+        }
     }
     
     func setting() {
@@ -66,6 +72,11 @@ class SignUpEmailViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    func emailCheck() -> Bool {
+        let regex = "s[0-9]+@gsm.hs.kr"
+        return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: emailTextField.text)
     }
 }
 
