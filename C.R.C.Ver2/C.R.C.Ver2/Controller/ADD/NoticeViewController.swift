@@ -58,7 +58,7 @@ class NoticeViewController: UIViewController {
     }
     
     func checkApiCall() {
-        let URL = "http://10.120.75.224:3000/check/role"
+        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/check/role"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {

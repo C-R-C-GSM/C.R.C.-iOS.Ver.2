@@ -91,7 +91,7 @@ class SignUpClassNumberViewController: UIViewController {
     func postData(email: String, password: String, name: String, student_data: String) {
         indicator.startAnimating()
         
-        let URL = "http://10.120.75.224:3000/register"
+        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/register"
         let PARAM: Parameters = [
             "email": email,
             "password": password,
