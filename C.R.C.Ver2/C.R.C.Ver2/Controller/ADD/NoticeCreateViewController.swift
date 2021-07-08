@@ -1,36 +1,34 @@
 //
-//  MealSuggestionBoardCreateViewController.swift
+//  NoticeCreateViewController.swift
 //  C.R.C.Ver2
 //
-//  Created by 조주혁 on 2021/07/06.
+//  Created by 조주혁 on 2021/07/07.
 //
 
 import UIKit
 import Alamofire
 import NVActivityIndicatorView
 
-class MealSuggestionBoardCreateViewController: UIViewController {
+class NoticeCreateViewController: UIViewController {
     
     let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
-    
-    @IBOutlet weak var mealSuggestionNickname: UITextField!
-    @IBOutlet weak var mealSuggestionTitle: UITextField!
-    @IBOutlet weak var mealSuggestionContent: UITextView!
+
+    @IBOutlet weak var noticeCreateTitle: UITextField!
+    @IBOutlet weak var noticeCreateContent: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        indicatorAutolayout()
+        setting()
     }
     
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
-        checkText() ? apiCall(title: mealSuggestionTitle.text ?? "", content: mealSuggestionContent.text ?? "", nickname: mealSuggestionNickname.text ?? "") : failAlert(messages: "빈칸을 모두 채워주세요.")
+        checkText() ? apiCall(title: noticeCreateTitle.text ?? "", content: noticeCreateContent.text ?? "") : failAlert(messages: "빈칸을 모두 채워주세요.")
     }
     
     func setting() {
-        mealSuggestionTitle.delegate = self
-        mealSuggestionContent.delegate = self
-        mealSuggestionNickname.delegate = self
+        noticeCreateTitle.delegate = self
+        noticeCreateContent.delegate = self
     }
     
     func indicatorAutolayout() {
@@ -63,21 +61,20 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealSuggestionTitle.text == "") || (mealSuggestionContent.text == "") || (mealSuggestionNickname.text == "") {
+        if (noticeCreateTitle.text == "") || (noticeCreateContent.text == "") {
             return false
         }
         return true
     }
     
-    func apiCall(title: String, content: String, nickname: String) {
+    func apiCall(title: String, content: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/suggest/register"
+        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/notice/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
             "title": title,
-            "content": content,
-            "nickname": nickname
+            "content": content
         ]
         AF.request(URL, method: .post, parameters: PARAM, headers: ["Token": token]).responseJSON { response in
             switch response.result {
@@ -87,7 +84,7 @@ class MealSuggestionBoardCreateViewController: UIViewController {
                 case 0:
                     self.sucessAlert()
                 default:
-                    self.failAlert(messages: "건의를 등록할 수 없습니다.")
+                    self.failAlert(messages: "공지사항을 등록할 수 없습니다.")
                 }
                 print(value)
             case .failure(let error):
@@ -98,7 +95,7 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     }
 }
 
-extension MealSuggestionBoardCreateViewController: UITextFieldDelegate, UITextViewDelegate {
+extension NoticeCreateViewController: UITextFieldDelegate, UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }

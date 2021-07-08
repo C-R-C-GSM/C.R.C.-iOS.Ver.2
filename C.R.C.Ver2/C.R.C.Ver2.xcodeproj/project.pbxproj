@@ -11,6 +11,11 @@
 		BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */; };
 		BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */; };
 		BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */; };
+		BD3E4CAC2695A00F00ABAA01 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */; };
+		BD3E4CAE2695A02800ABAA01 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */; };
+		BD3E4CB12695A11D00ABAA01 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CB02695A11D00ABAA01 /* NoticeTableViewCell.swift */; };
+		BD3E4CB32695A8D400ABAA01 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CB22695A8D400ABAA01 /* NoticeModel.swift */; };
+		BD3E4CB52695C91100ABAA01 /* NoticeCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3E4CB42695C91100ABAA01 /* NoticeCreateViewController.swift */; };
 		BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD49019F267613FD000CB091 /* MealReviewViewController.swift */; };
 		BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */; };
 		BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */; };
@@ -22,7 +27,7 @@
 		BD6B4E26265DD42800BEBF7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E24265DD42800BEBF7F /* Main.storyboard */; };
 		BD6B4E28265DD42900BEBF7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E27265DD42900BEBF7F /* Assets.xcassets */; };
 		BD6B4E39265F3FF600BEBF7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E38265F3FF600BEBF7F /* LoginViewController.swift */; };
-		BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BD6B4E3B26607B8D00BEBF7F /* Alamofire */; };
+		BD6B4E3C26607B8D00BEBF7F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */; };
 		BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E3E26607F1300BEBF7F /* SignUpEmailViewController.swift */; };
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
@@ -30,13 +35,13 @@
 		BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD751E832689EF7800BAD08B /* TokenManager.swift */; };
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
-		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
+		BDB3DC7A2669FAF100EBE1EF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */; };
 		BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */; };
 		BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */; };
 		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDEE15BA26906C14005CC0AF /* MealSuggestionBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE15B926906C14005CC0AF /* MealSuggestionBoardViewController.swift */; };
 		BDEE15BD26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE15BC26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift */; };
-		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
+		BDFE5EC2266521B70070FBAC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		BD2BE8BC268C1BF600388108 /* TotalStudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStudentModel.swift; sourceTree = "<group>"; };
 		BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardModel.swift; sourceTree = "<group>"; };
 		BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewModel.swift; sourceTree = "<group>"; };
+		BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		BD3E4CB02695A11D00ABAA01 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		BD3E4CB22695A8D400ABAA01 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		BD3E4CB42695C91100ABAA01 /* NoticeCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeCreateViewController.swift; sourceTree = "<group>"; };
 		BD49019F267613FD000CB091 /* MealReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewViewController.swift; sourceTree = "<group>"; };
 		BD4A20A2268EEF060082FCF0 /* MealReviewCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewCreateViewController.swift; sourceTree = "<group>"; };
 		BD4F2B892673447900790E56 /* TotalStatusBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalStatusBoardViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */,
-				BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */,
-				BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */,
+				BDFE5EC2266521B70070FBAC /* BuildFile in Frameworks */,
+				BD6B4E3C26607B8D00BEBF7F /* BuildFile in Frameworks */,
+				BDB3DC7A2669FAF100EBE1EF /* BuildFile in Frameworks */,
 				4FA84434A1712FBD56921C9E /* Pods_C_R_C_Ver2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +113,24 @@
 				703F4D52836E0CB5BC009D84 /* Pods-C.R.C.Ver2.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD3E4CAA26959FEC00ABAA01 /* ADD */ = {
+			isa = PBXGroup;
+			children = (
+				BD3E4CAB2695A00F00ABAA01 /* AddViewController.swift */,
+				BD3E4CAD2695A02800ABAA01 /* NoticeViewController.swift */,
+				BD3E4CB42695C91100ABAA01 /* NoticeCreateViewController.swift */,
+			);
+			path = ADD;
+			sourceTree = "<group>";
+		};
+		BD3E4CAF2695A10100ABAA01 /* ADD */ = {
+			isa = PBXGroup;
+			children = (
+				BD3E4CB02695A11D00ABAA01 /* NoticeTableViewCell.swift */,
+			);
+			path = ADD;
 			sourceTree = "<group>";
 		};
 		BD49019E267613C4000CB091 /* MealReview */ = {
@@ -162,6 +190,7 @@
 				BD2BE8BE268C917100388108 /* StudentStatusBoardModel.swift */,
 				BD2BE8C0268DE88E00388108 /* MealReviewModel.swift */,
 				BD692E272692B0B1001CF85D /* MealSuggestionBoardModel.swift */,
+				BD3E4CB22695A8D400ABAA01 /* NoticeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +204,7 @@
 				BDC0DB0F26677EE900175A85 /* StudentStatusBoard */,
 				BD49019E267613C4000CB091 /* MealReview */,
 				BDEE15B826906B64005CC0AF /* MealSuggestionBoard */,
+				BD3E4CAA26959FEC00ABAA01 /* ADD */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +261,7 @@
 				BDCA19EA2676DAD600EFDDEC /* StudentStatusBoard */,
 				BDCA19EB2676DAE800EFDDEC /* MealReview */,
 				BDEE15BB26906C49005CC0AF /* MealSuggestionBoard */,
+				BD3E4CAF2695A10100ABAA01 /* ADD */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -296,7 +327,7 @@
 				BD6B4E17265DD42800BEBF7F /* Sources */,
 				BD6B4E18265DD42800BEBF7F /* Frameworks */,
 				BD6B4E19265DD42800BEBF7F /* Resources */,
-				0CC0E32E4AC078ABD203770A /* [CP] Embed Pods Frameworks */,
+				1AB47462F4D6B75F37021AF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,9 +335,9 @@
 			);
 			name = C.R.C.Ver2;
 			packageProductDependencies = (
-				BD6B4E3B26607B8D00BEBF7F /* Alamofire */,
-				BDFE5EC1266521B70070FBAC /* KeychainAccess */,
-				BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */,
+				BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */,
+				BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */,
+				BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */,
 			);
 			productName = C.R.C.Ver2;
 			productReference = BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */;
@@ -336,9 +367,9 @@
 			);
 			mainGroup = BD6B4E12265DD42800BEBF7F;
 			packageReferences = (
-				BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */,
+				BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */,
+				BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = BD6B4E1C265DD42800BEBF7F /* Products */;
 			projectDirPath = "";
@@ -364,7 +395,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CC0E32E4AC078ABD203770A /* [CP] Embed Pods Frameworks */ = {
+		1AB47462F4D6B75F37021AF5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,22 +446,27 @@
 				BD6B4E23265DD42800BEBF7F /* StudentStatusBoardViewController.swift in Sources */,
 				BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */,
 				BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */,
+				BD3E4CB32695A8D400ABAA01 /* NoticeModel.swift in Sources */,
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
 				BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */,
 				BDEE15BD26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift in Sources */,
 				BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */,
 				BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */,
+				BD3E4CAC2695A00F00ABAA01 /* AddViewController.swift in Sources */,
 				BD692E282692B0B1001CF85D /* MealSuggestionBoardModel.swift in Sources */,
 				BD2BE8BD268C1BF600388108 /* TotalStudentModel.swift in Sources */,
 				BDEE15BA26906C14005CC0AF /* MealSuggestionBoardViewController.swift in Sources */,
 				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
 				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
 				BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */,
+				BD3E4CB12695A11D00ABAA01 /* NoticeTableViewCell.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
 				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
 				BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */,
+				BD3E4CB52695C91100ABAA01 /* NoticeCreateViewController.swift in Sources */,
+				BD3E4CAE2695A02800ABAA01 /* NoticeViewController.swift in Sources */,
 				BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -639,7 +675,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -647,7 +683,7 @@
 				minimumVersion = 5.4.3;
 			};
 		};
-		BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+		BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
 			requirement = {
@@ -655,7 +691,7 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
 			requirement = {
@@ -666,19 +702,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD6B4E3B26607B8D00BEBF7F /* Alamofire */ = {
+		BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */ = {
+		BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			package = BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */;
 			productName = NVActivityIndicatorView;
 		};
-		BDFE5EC1266521B70070FBAC /* KeychainAccess */ = {
+		BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
