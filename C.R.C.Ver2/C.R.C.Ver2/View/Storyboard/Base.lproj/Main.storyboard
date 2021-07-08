@@ -231,19 +231,25 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Oy0-dW-xg7">
-                                <rect key="frame" x="110" y="396" width="194" height="34"/>
+                                <rect key="frame" x="130" y="396" width="154" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXc-jg-ZtS">
-                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ut-Jj-isT" customClass="DropDown" customModule="iOSDropDown">
-                                        <rect key="frame" x="55.5" y="0.0" width="138.5" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDs-tV-fBP">
+                                        <rect key="frame" x="55.5" y="0.0" width="98.5" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealReviewTimeButton:" destination="kbd-YJ-KWN" eventType="touchUpInside" id="KRq-TJ-WNL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -259,8 +265,8 @@
                             <constraint firstItem="Oy0-dW-xg7" firstAttribute="top" secondItem="XUB-NV-6fO" secondAttribute="bottom" constant="30" id="GrF-T2-DgX"/>
                             <constraint firstItem="XUB-NV-6fO" firstAttribute="centerX" secondItem="pCy-MI-VOw" secondAttribute="centerX" id="J9N-Ap-FHK"/>
                             <constraint firstItem="KNo-sX-0gp" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="XUB-NV-6fO" secondAttribute="trailing" constant="110" id="L3N-0e-fnL"/>
-                            <constraint firstItem="KNo-sX-0gp" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Oy0-dW-xg7" secondAttribute="trailing" constant="110" id="TXB-Fd-eQA"/>
-                            <constraint firstItem="Oy0-dW-xg7" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KNo-sX-0gp" secondAttribute="leading" constant="110" id="Ty7-sf-ivY"/>
+                            <constraint firstItem="KNo-sX-0gp" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Oy0-dW-xg7" secondAttribute="trailing" constant="130" id="TXB-Fd-eQA"/>
+                            <constraint firstItem="Oy0-dW-xg7" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KNo-sX-0gp" secondAttribute="leading" constant="130" id="Ty7-sf-ivY"/>
                             <constraint firstItem="1HD-4K-eAa" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KNo-sX-0gp" secondAttribute="leading" constant="50" id="WFV-ie-jl9"/>
                             <constraint firstItem="Oy0-dW-xg7" firstAttribute="centerX" secondItem="pCy-MI-VOw" secondAttribute="centerX" id="ZQu-vQ-L1w"/>
                             <constraint firstItem="hfU-Yt-hnl" firstAttribute="top" secondItem="1HD-4K-eAa" secondAttribute="bottom" constant="30" id="qax-qG-zHY"/>
@@ -284,7 +290,7 @@
                         <outlet property="mealReviewStar3" destination="70W-UP-qgd" id="rr4-Hr-rhG"/>
                         <outlet property="mealReviewStar4" destination="FLI-Wp-loe" id="AAh-nt-x87"/>
                         <outlet property="mealReviewStar5" destination="YjI-Ko-NBC" id="WxO-yH-Wx4"/>
-                        <outlet property="mealReviewTime" destination="6ut-Jj-isT" id="rqv-O9-ehz"/>
+                        <outlet property="mealReviewTime" destination="fDs-tV-fBP" id="crO-ya-Uer"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW0-e7-bkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

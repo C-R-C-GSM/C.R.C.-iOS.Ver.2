@@ -27,7 +27,7 @@
 		BD6B4E26265DD42800BEBF7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E24265DD42800BEBF7F /* Main.storyboard */; };
 		BD6B4E28265DD42900BEBF7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E27265DD42900BEBF7F /* Assets.xcassets */; };
 		BD6B4E39265F3FF600BEBF7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E38265F3FF600BEBF7F /* LoginViewController.swift */; };
-		BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BD6B4E3B26607B8D00BEBF7F /* Alamofire */; };
+		BD6B4E3C26607B8D00BEBF7F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */; };
 		BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E3E26607F1300BEBF7F /* SignUpEmailViewController.swift */; };
 		BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4026607F4D00BEBF7F /* SignUpPasswordViewController.swift */; };
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
@@ -35,13 +35,13 @@
 		BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD751E832689EF7800BAD08B /* TokenManager.swift */; };
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
-		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
+		BDB3DC7A2669FAF100EBE1EF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */; };
 		BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */; };
 		BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */; };
 		BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB3E502668F0730008DDCA /* SignUpManager.swift */; };
 		BDEE15BA26906C14005CC0AF /* MealSuggestionBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE15B926906C14005CC0AF /* MealSuggestionBoardViewController.swift */; };
 		BDEE15BD26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEE15BC26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift */; };
-		BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* KeychainAccess */; };
+		BDFE5EC2266521B70070FBAC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,9 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDFE5EC2266521B70070FBAC /* KeychainAccess in Frameworks */,
-				BD6B4E3C26607B8D00BEBF7F /* Alamofire in Frameworks */,
-				BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */,
+				BDFE5EC2266521B70070FBAC /* BuildFile in Frameworks */,
+				BD6B4E3C26607B8D00BEBF7F /* BuildFile in Frameworks */,
+				BDB3DC7A2669FAF100EBE1EF /* BuildFile in Frameworks */,
 				4FA84434A1712FBD56921C9E /* Pods_C_R_C_Ver2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +327,7 @@
 				BD6B4E17265DD42800BEBF7F /* Sources */,
 				BD6B4E18265DD42800BEBF7F /* Frameworks */,
 				BD6B4E19265DD42800BEBF7F /* Resources */,
-				0CC0E32E4AC078ABD203770A /* [CP] Embed Pods Frameworks */,
+				1AB47462F4D6B75F37021AF5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,9 +335,9 @@
 			);
 			name = C.R.C.Ver2;
 			packageProductDependencies = (
-				BD6B4E3B26607B8D00BEBF7F /* Alamofire */,
-				BDFE5EC1266521B70070FBAC /* KeychainAccess */,
-				BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */,
+				BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */,
+				BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */,
+				BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */,
 			);
 			productName = C.R.C.Ver2;
 			productReference = BD6B4E1B265DD42800BEBF7F /* C.R.C.Ver2.app */;
@@ -367,9 +367,9 @@
 			);
 			mainGroup = BD6B4E12265DD42800BEBF7F;
 			packageReferences = (
-				BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */,
+				BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */,
+				BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = BD6B4E1C265DD42800BEBF7F /* Products */;
 			projectDirPath = "";
@@ -395,7 +395,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CC0E32E4AC078ABD203770A /* [CP] Embed Pods Frameworks */ = {
+		1AB47462F4D6B75F37021AF5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,7 +675,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -683,7 +683,7 @@
 				minimumVersion = 5.4.3;
 			};
 		};
-		BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+		BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
 			requirement = {
@@ -691,7 +691,7 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
 			requirement = {
@@ -702,19 +702,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD6B4E3B26607B8D00BEBF7F /* Alamofire */ = {
+		BD6B4E3B26607B8D00BEBF7F /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD6B4E3A26607B8D00BEBF7F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = BD6B4E3A26607B8D00BEBF7F /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */ = {
+		BDB3DC792669FAF100EBE1EF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BDB3DC782669FAF100EBE1EF /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			package = BDB3DC782669FAF100EBE1EF /* RemoteSwiftPackageReference */;
 			productName = NVActivityIndicatorView;
 		};
-		BDFE5EC1266521B70070FBAC /* KeychainAccess */ = {
+		BDFE5EC1266521B70070FBAC /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BDFE5EC0266521B70070FBAC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = BDFE5EC0266521B70070FBAC /* RemoteSwiftPackageReference */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */

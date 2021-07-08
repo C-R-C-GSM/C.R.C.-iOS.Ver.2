@@ -6,19 +6,22 @@
 //
 
 import UIKit
+import DropDown
 import Alamofire
-import iOSDropDown
 import NVActivityIndicatorView
 
 class MealReviewCreateViewController: UIViewController {
     
     let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
     
+    let dropDown = DropDown()
+    
     var mealReviewStarCount = 0
     
     @IBOutlet weak var mealReviewNickname: UITextField!
     @IBOutlet weak var mealReviewContent: UITextView!
-    @IBOutlet weak var mealReviewTime: DropDown!
+    @IBOutlet weak var mealReviewTime: UIButton!
+    
     
     @IBOutlet weak var mealReviewStar1: UIButton!
     @IBOutlet weak var mealReviewStar2: UIButton!
@@ -34,7 +37,14 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
-        checkText() ? apiCall(review_star: mealReviewStarCount, content: mealReviewContent.text ?? "", nickname: mealReviewNickname.text ?? "", when: mealReviewTime.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
+        checkText() ? apiCall(review_star: mealReviewStarCount, content: mealReviewContent.text ?? "", nickname: mealReviewNickname.text ?? "", when: mealReviewTime.titleLabel?.text ?? "") : failAlert(messages: "빈칸을 모두 채우세요.")
+    }
+    
+    @IBAction func mealReviewTimeButton(_ sender: UIButton) {
+        dropDown.show()
+        dropDown.selectionAction = { (index: Int, item: String) in
+            self.mealReviewTime.setTitle(item, for: .normal)
+        }
     }
     
     func setting() {
@@ -48,8 +58,9 @@ class MealReviewCreateViewController: UIViewController {
         mealReviewStar4.addTarget(self, action: #selector(star), for: .touchUpInside)
         mealReviewStar5.addTarget(self, action: #selector(star), for: .touchUpInside)
         
-        mealReviewTime.optionArray = ["아침", "점심", "저녁"]
-        mealReviewTime.selectedRowColor = .init(named: "Primary Color") ?? UIColor.black
+        dropDown.dataSource = ["아침", "점심","저녁"]
+        dropDown.anchorView = mealReviewTime
+        dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
     }
     
     func indicatorAutolayout() {
@@ -82,7 +93,7 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealReviewNickname.text == "") || (mealReviewContent.text == "") || (mealReviewTime.text == "") {
+        if (mealReviewNickname.text == "") || (mealReviewContent.text == "") || (mealReviewTime.titleLabel?.text == "") {
             return false
         }
         return true
