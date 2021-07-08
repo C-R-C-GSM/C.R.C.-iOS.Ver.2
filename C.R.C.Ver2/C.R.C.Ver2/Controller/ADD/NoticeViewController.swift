@@ -66,10 +66,10 @@ class NoticeViewController: UIViewController {
                 if let dic = value as? NSDictionary, let code = dic["code"] as? Int {
                     switch code {
                     case -600:
-                        self.noticeCreateButton.isEnabled = false
-                        self.noticeCreateButton.tintColor = .init(named: "AccentColor")
-                    default:
                         break
+                    default:
+                        self.noticeCreateButton.isEnabled = true
+                        self.noticeCreateButton.tintColor = .init(named: "Primary Color")
                     }
                 }
                 print(value)
@@ -82,7 +82,7 @@ class NoticeViewController: UIViewController {
     func apiCall() {
         indicator.startAnimating()
         
-        let URL = "http://10.120.75.224:3000/notice/check"
+        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/notice/check"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
