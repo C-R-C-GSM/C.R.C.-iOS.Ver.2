@@ -543,7 +543,18 @@
                             <constraint firstItem="vtd-7s-SLi" firstAttribute="top" secondItem="26K-OM-IfT" secondAttribute="top" constant="50" id="yfy-dm-XLB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="공지사항 등록" largeTitleDisplayMode="never" id="5od-Il-NPQ"/>
+                    <navigationItem key="navigationItem" title="공지사항 등록" largeTitleDisplayMode="never" id="5od-Il-NPQ">
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="cPe-IJ-cPA">
+                            <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="doneButton:" destination="008-R2-ZSV" id="Bze-tL-Ypd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noticeCreateContent" destination="ild-GG-EQC" id="NZh-qq-QuU"/>
+                        <outlet property="noticeCreateTitle" destination="EDb-F3-ryz" id="11m-S4-csU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBX-II-tum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
