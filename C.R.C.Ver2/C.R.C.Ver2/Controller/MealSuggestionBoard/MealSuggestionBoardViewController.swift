@@ -57,7 +57,7 @@ class MealSuggestionBoardViewController: UIViewController {
     func apiCall() {
         indicator.startAnimating()
         
-        let URL = "http://ec2-3-142-201-241.us-east-2.compute.amazonaws.com:3000/suggest/check"
+        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/suggest/check"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
