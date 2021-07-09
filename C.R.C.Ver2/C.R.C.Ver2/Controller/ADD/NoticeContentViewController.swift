@@ -9,9 +9,20 @@ import UIKit
 
 class NoticeContentViewController: UIViewController {
 
+    @IBOutlet weak var noticeContentTitle: UILabel!
+    @IBOutlet weak var noticeContentDate: UILabel!
+    @IBOutlet weak var noticeContent: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        setting()
     }
+    
+    func setting() {
+        noticeContentTitle.text = NoticeManager.getNoticeTitle()
+        noticeContentDate.text = NoticeManager.getNoticeDate()
+        noticeContent.text = NoticeManager.getNoticeContent()
+    }
+    
 }
