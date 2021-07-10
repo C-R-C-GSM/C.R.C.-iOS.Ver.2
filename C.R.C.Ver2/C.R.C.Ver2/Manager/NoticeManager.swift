@@ -8,25 +8,9 @@
 import Foundation
 
 class NoticeManager {
-    static var noticeId: Int?
     static var noticeTitle: String?
     static var noticeContent: String?
     static var noticeData: String?
-    
-    
-    // 공지사항 아이디
-    class func getNoticeId() -> Int {
-        guard let id = noticeId else { return 0 }
-        return id
-    }
-    
-    class func saveNoticeId(id: Int) {
-        noticeId = id
-    }
-    
-    class func removeNoticeId() {
-        noticeId = nil
-    }
     
     
     // 공지사항 제목
