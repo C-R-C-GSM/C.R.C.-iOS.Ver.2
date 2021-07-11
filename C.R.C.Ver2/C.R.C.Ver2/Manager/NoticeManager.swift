@@ -10,7 +10,7 @@ import Foundation
 class NoticeManager {
     static var noticeTitle: String?
     static var noticeContent: String?
-    static var noticeData: String?
+    static var noticeDate: String?
     
     
     // 공지사항 제목
@@ -44,15 +44,15 @@ class NoticeManager {
     
     // 공지사항 작성 날짜
     class func getNoticeDate() -> String {
-        guard let date = noticeData else { return "" }
+        guard let date = noticeDate else { return "" }
         return date
     }
     
     class func saveNoticeDate(date: String) {
-        noticeData = date
+        noticeDate = date
     }
     
     class func removeNoticeDate() {
-        noticeData = nil
+        noticeDate = nil
     }
 }
