@@ -13,6 +13,7 @@ class MealSuggestionBoardManager {
     static var mealSuggestionContent: String?
     static var mealSuggestionDate: String?
     static var mealSuggestionNickname: String?
+    static var mealSuggestionAnswer: String?
     
     // 급식 건의 Id
     class func getMealSuggestionId() -> Int {
@@ -85,5 +86,20 @@ class MealSuggestionBoardManager {
     
     class func removeMealSuggestionNickname() {
         mealSuggestionNickname = nil
+    }
+    
+    
+    // 급식 건의 답변
+    class func getMealSuggestionAnswer() -> String {
+        guard let answer = mealSuggestionAnswer else { return "" }
+        return answer
+    }
+    
+    class func saveMealSuggestionAnswer(answer: String) {
+        mealSuggestionAnswer = answer
+    }
+    
+    class func removeMealSuggestionAnswer() {
+        mealSuggestionAnswer = nil
     }
 }
