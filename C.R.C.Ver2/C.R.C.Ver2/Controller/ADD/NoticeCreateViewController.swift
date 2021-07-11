@@ -20,6 +20,7 @@ class NoticeCreateViewController: UIViewController {
         super.viewDidLoad()
         
         setting()
+        indicatorAutolayout()
     }
     
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
