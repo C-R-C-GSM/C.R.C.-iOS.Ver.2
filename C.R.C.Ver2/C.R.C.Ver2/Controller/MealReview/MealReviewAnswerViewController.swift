@@ -1,20 +1,19 @@
 //
-//  NoticeCreateViewController.swift
+//  MealReviewAnswerViewController.swift
 //  C.R.C.Ver2
 //
-//  Created by 조주혁 on 2021/07/07.
+//  Created by 조주혁 on 2021/07/11.
 //
 
 import UIKit
 import Alamofire
 import NVActivityIndicatorView
 
-class NoticeCreateViewController: UIViewController {
+class MealReviewAnswerViewController: UIViewController {
     
     let indicator = NVActivityIndicatorView(frame: CGRect(x: 182, y: 423, width: 50, height: 50), type: .ballPulse, color: UIColor.init(named: "Primary Color"), padding: 0)
 
-    @IBOutlet weak var noticeCreateTitle: UITextField!
-    @IBOutlet weak var noticeCreateContent: UITextView!
+    @IBOutlet weak var mealReviewAnswerTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +23,11 @@ class NoticeCreateViewController: UIViewController {
     }
     
     @IBAction func doneButton(_ sender: UIBarButtonItem) {
-        checkText() ? apiCall(title: noticeCreateTitle.text ?? "", content: noticeCreateContent.text ?? "") : failAlert(messages: "빈칸을 모두 채워주세요.")
+        checkText() ? apiCall(answer: mealReviewAnswerTextView.text) : failAlert(messages: "빈칸을 모두 채우세요.")
     }
     
     func setting() {
-        noticeCreateTitle.delegate = self
-        noticeCreateContent.delegate = self
+        mealReviewAnswerTextView.delegate = self
     }
     
     func indicatorAutolayout() {
@@ -53,29 +51,30 @@ class NoticeCreateViewController: UIViewController {
     func sucessAlert() {
         indicator.stopAnimating()
         
-        let alert = UIAlertController(title: "건의 등록 성공", message: "건의 등록 성공!!!", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "답변 달기 성공", message: "답변 달기 성공!!!", preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default) { (_) in
-            self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popToRootViewController(animated: true)
         }
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
     }
     
     func checkText() -> Bool {
-        if (noticeCreateTitle.text == "") || (noticeCreateContent.text == "") {
+        if (mealReviewAnswerTextView.text == "") {
             return false
         }
         return true
     }
     
-    func apiCall(title: String, content: String) {
+    func apiCall(answer: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/notice/register"
+        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/review/reply"
         let token = TokenManager.getToken()
+        let reviewid = MealReviewManager.getMealReviewId()
         let PARAM: Parameters = [
-            "title": title,
-            "content": content
+            "reviewid": reviewid,
+            "reply": answer
         ]
         AF.request(URL, method: .post, parameters: PARAM, headers: ["Token": token]).responseJSON { response in
             switch response.result {
@@ -85,7 +84,7 @@ class NoticeCreateViewController: UIViewController {
                 case 0:
                     self.sucessAlert()
                 default:
-                    self.failAlert(messages: "공지사항을 등록할 수 없습니다.")
+                    self.failAlert(messages: "답변을 등록할 수 없습니다.")
                 }
                 print(value)
             case .failure(let error):
@@ -96,7 +95,7 @@ class NoticeCreateViewController: UIViewController {
     }
 }
 
-extension NoticeCreateViewController: UITextFieldDelegate, UITextViewDelegate {
+extension MealReviewAnswerViewController: UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }

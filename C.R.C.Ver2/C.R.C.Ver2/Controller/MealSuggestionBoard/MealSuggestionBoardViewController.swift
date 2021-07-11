@@ -94,4 +94,14 @@ extension MealSuggestionBoardViewController: UITableViewDelegate, UITableViewDat
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        MealSuggestionBoardManager.saveMealSuggestionId(id: model?.suggest_data[indexPath.row].suggestid ?? 0)
+        MealSuggestionBoardManager.saveMealSuggestionTitle(title: model?.suggest_data[indexPath.row].title ?? "")
+        MealSuggestionBoardManager.saveMealSuggestionDate(date: model?.suggest_data[indexPath.row].suggest_time ?? "")
+        MealSuggestionBoardManager.saveMealSuggestionContent(content: model?.suggest_data[indexPath.row].content ?? "")
+        MealSuggestionBoardManager.saveMealSuggestionNickname(nickname: model?.suggest_data[indexPath.row].nickname ?? "")
+        MealSuggestionBoardManager.saveMealSuggestionAnswer(answer: model?.suggest_data[indexPath.row].reply ?? "")
+    }
 }
