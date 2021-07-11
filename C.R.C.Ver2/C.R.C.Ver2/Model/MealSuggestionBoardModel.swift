@@ -18,4 +18,5 @@ struct Suggest_Data: Codable {
     let content: String
     let suggest_time: String
     let nickname: String
+    let reply: String
 }
