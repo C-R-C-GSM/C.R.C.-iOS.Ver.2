@@ -38,8 +38,8 @@
 		BD964EBC269AD530007BEB07 /* MealSuggestionBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */; };
 		BD964EBE269AE3CF007BEB07 /* MealSuggestionBoardAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EBD269AE3CF007BEB07 /* MealSuggestionBoardAnswerViewController.swift */; };
 		BD964EC0269AEF08007BEB07 /* MealReviewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EBF269AEF08007BEB07 /* MealReviewContentViewController.swift */; };
-		BD964EC2269AF015007BEB07 /* MealReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EC1269AF015007BEB07 /* MealReviewManager.swift */; };
 		BD964EC4269AF176007BEB07 /* MealReviewAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EC3269AF176007BEB07 /* MealReviewAnswerViewController.swift */; };
+		BD964EC6269AF25A007BEB07 /* MealReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
 		BDC2B151267236CC00D2B108 /* C.R.C.Ver.2로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */; };
@@ -88,8 +88,8 @@
 		BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardManager.swift; sourceTree = "<group>"; };
 		BD964EBD269AE3CF007BEB07 /* MealSuggestionBoardAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardAnswerViewController.swift; sourceTree = "<group>"; };
 		BD964EBF269AEF08007BEB07 /* MealReviewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewContentViewController.swift; sourceTree = "<group>"; };
-		BD964EC1269AF015007BEB07 /* MealReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewManager.swift; sourceTree = "<group>"; };
 		BD964EC3269AF176007BEB07 /* MealReviewAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewAnswerViewController.swift; sourceTree = "<group>"; };
+		BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewManager.swift; sourceTree = "<group>"; };
 		BDC2B150267236CC00D2B108 /* C.R.C.Ver.2로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "C.R.C.Ver.2로고.png"; path = "../../../../Downloads/C.R.C.Ver.2로고.png"; sourceTree = "<group>"; };
 		BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewTableViewCell.swift; sourceTree = "<group>"; };
 		BDD8143C26982B2800D6F91B /* NoticeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeContentViewController.swift; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 				BDEB3E502668F0730008DDCA /* SignUpManager.swift */,
 				BDD8143E26982D3A00D6F91B /* NoticeManager.swift */,
 				BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */,
-				BD964EC1269AF015007BEB07 /* MealReviewManager.swift */,
+				BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -473,7 +473,6 @@
 				BD6B4E1F265DD42800BEBF7F /* AppDelegate.swift in Sources */,
 				BD964EBE269AE3CF007BEB07 /* MealSuggestionBoardAnswerViewController.swift in Sources */,
 				BD3E4CB32695A8D400ABAA01 /* NoticeModel.swift in Sources */,
-				BD964EC2269AF015007BEB07 /* MealReviewManager.swift in Sources */,
 				BD964EC4269AF176007BEB07 /* MealReviewAnswerViewController.swift in Sources */,
 				BD6B4E4126607F4D00BEBF7F /* SignUpPasswordViewController.swift in Sources */,
 				BD6B4E21265DD42800BEBF7F /* SceneDelegate.swift in Sources */,
@@ -489,6 +488,7 @@
 				BDEE15BA26906C14005CC0AF /* MealSuggestionBoardViewController.swift in Sources */,
 				BDD8143F26982D3A00D6F91B /* NoticeManager.swift in Sources */,
 				BDEB3E512668F0730008DDCA /* SignUpManager.swift in Sources */,
+				BD964EC6269AF25A007BEB07 /* MealReviewManager.swift in Sources */,
 				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
 				BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */,
 				BD3E4CB12695A11D00ABAA01 /* NoticeTableViewCell.swift in Sources */,
