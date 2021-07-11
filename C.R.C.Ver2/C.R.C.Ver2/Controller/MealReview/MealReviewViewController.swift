@@ -22,6 +22,7 @@ class MealReviewViewController: UIViewController {
         
         setting()
         indicatorAutolayout()
+        checkApiCall()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +53,27 @@ class MealReviewViewController: UIViewController {
         let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default)
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func checkApiCall() {
+        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/check/role"
+        let token = TokenManager.getToken()
+        AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                if let dic = value as? NSDictionary, let code = dic["code"] as? Int {
+                    switch code {
+                    case -600:
+                        break
+                    default:
+                        self.mealReviewTableView.allowsSelection = true
+                    }
+                }
+                print(value)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     func apiCall() {
@@ -94,6 +116,7 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
         cell.mealReviewDate.text = model?.review_data[indexPath.row].review_time ?? ""
         cell.mealReviewTime.text = model?.review_data[indexPath.row].review_when ?? ""
         cell.mealReviewContent.text = model?.review_data[indexPath.row].content ?? ""
+        cell.mealReviewAnswer.text = model?.review_data[indexPath.row].reply ?? ""
         
         let star = model?.review_data[indexPath.row].review_star ?? 0
         
@@ -117,5 +140,9 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        MealReviewManager.saveMealReviewId(id: model?.review_data[indexPath.row].reviewid ?? 0)
     }
 }
