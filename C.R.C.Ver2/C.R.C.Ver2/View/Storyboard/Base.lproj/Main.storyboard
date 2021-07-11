@@ -487,7 +487,6 @@
         <!--Notice Content View Controller-->
         <scene sceneID="zbZ-NT-6ld">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zvB-Ze-OM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ScJ-T0-rlc" customClass="NoticeContentViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PWd-dp-k8D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -533,6 +532,7 @@
                         <outlet property="noticeContentTitle" destination="CG8-fY-HC5" id="gZa-gL-QLa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvB-Ze-OM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5038" y="2345"/>
         </scene>
@@ -646,6 +646,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Primary Color"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -666,6 +667,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Primary Color"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -686,6 +688,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Primary Color"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1726,6 +1729,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Primary Color"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1745,7 +1749,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RkY-VE-pVz">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AccentColor"/>
                         <color key="tintColor" name="Primary Color"/>
+                        <color key="barTintColor" name="AccentColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1856,7 +1862,6 @@
         <!--View Controller-->
         <scene sceneID="aDE-Pu-vuE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cWd-M9-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="5WK-yY-Orq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TI2-P7-uE5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1866,13 +1871,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="rKp-at-ZfE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWd-M9-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2619" y="2344"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1IA-LY-Fe4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5I5-Zj-R7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="c4d-H4-Z90" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDQ-6V-tgY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -1882,6 +1887,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BFL-M0-Oce"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5I5-Zj-R7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="2344"/>
         </scene>
