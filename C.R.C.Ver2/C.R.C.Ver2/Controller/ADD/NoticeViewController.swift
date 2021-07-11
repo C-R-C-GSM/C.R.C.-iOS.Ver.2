@@ -123,7 +123,6 @@ extension NoticeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        NoticeManager.saveNoticeId(id: model?.notice_list[indexPath.row].noticeid ?? 0)
         NoticeManager.saveNoticeTitle(title: model?.notice_list[indexPath.row].notice_title ?? "")
         NoticeManager.saveNoticeContent(content: model?.notice_list[indexPath.row].notice_content ?? "")
         NoticeManager.saveNoticeDate(date: model?.notice_list[indexPath.row].notice_time ?? "")
