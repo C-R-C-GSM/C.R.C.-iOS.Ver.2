@@ -13,6 +13,7 @@ class MealReviewTableViewCell: UITableViewCell {
     @IBOutlet weak var mealReviewContent: UILabel!
     @IBOutlet weak var mealReviewDate: UILabel!
     @IBOutlet weak var mealReviewTime: UILabel!
+    @IBOutlet weak var mealReviewAnswer: UILabel!
     
     @IBOutlet weak var mealReviewStar1: UIImageView!
     @IBOutlet weak var mealReviewStar2: UIImageView!
