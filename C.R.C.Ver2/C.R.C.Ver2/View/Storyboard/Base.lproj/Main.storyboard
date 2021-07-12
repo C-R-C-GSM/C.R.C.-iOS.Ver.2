@@ -182,6 +182,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) 정인교입큰이" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUM-vg-Lec">
                                         <rect key="frame" x="94.5" y="0.0" width="219.5" height="34"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -611,6 +612,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDb-F3-ryz">
                                         <rect key="frame" x="55.5" y="0.0" width="258.5" height="34"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -763,6 +765,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-5Z-Xa1">
                                         <rect key="frame" x="0.0" y="20.5" width="314" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="S8d-Zc-KPo"/>
                                         </constraints>
@@ -803,6 +806,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqy-8g-dq5">
                                         <rect key="frame" x="0.0" y="20.5" width="314" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="eUb-xm-7tL"/>
                                         </constraints>
@@ -934,6 +938,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반, 번호를 입력하세요. ex) 3318" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16o-hA-aJ6">
                                         <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="7Jp-KM-hoI"/>
                                         </constraints>
@@ -1027,6 +1032,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Reg-IV-yzc">
                                         <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="iQe-RW-fup"/>
                                         </constraints>
@@ -1122,6 +1128,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iic-bP-Xao">
                                         <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="CwV-pg-9x7"/>
                                         </constraints>
@@ -1175,6 +1182,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 한 번 더 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDl-Qe-pR7">
                                         <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="eie-74-OXZ"/>
                                         </constraints>
@@ -1261,6 +1269,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-6W-x54">
                                         <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
                                         <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="4yY-0p-ekS"/>
                                         </constraints>
@@ -1820,6 +1829,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex) 정인교입큰이" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5FE-5P-kR1">
                                         <rect key="frame" x="94.5" y="0.0" width="219.5" height="34"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1857,6 +1867,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C59-4B-pRk">
                                         <rect key="frame" x="55.5" y="0.0" width="258.5" height="34"/>
+                                        <color key="tintColor" name="Second Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
