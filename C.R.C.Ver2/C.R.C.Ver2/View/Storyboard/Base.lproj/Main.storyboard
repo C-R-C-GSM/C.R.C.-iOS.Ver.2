@@ -411,14 +411,28 @@
                                     <segue destination="aZM-kP-lBS" kind="show" id="7X8-bx-RVp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs8-ou-dMf">
+                                <rect key="frame" x="100" y="234" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="로그아웃">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="x27-GB-AIg" eventType="touchUpInside" id="5e6-BY-7Zq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ti-9M-Uu8"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Fs8-ou-dMf" secondAttribute="trailing" constant="100" id="3I0-sR-nL8"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="GXH-8i-0sH"/>
+                            <constraint firstItem="Fs8-ou-dMf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="bZ5-n2-yza"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="gmT-hm-Z4L"/>
                             <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gm8-1y-IxQ" secondAttribute="trailing" constant="100" id="n0i-6b-pqc"/>
+                            <constraint firstItem="Fs8-ou-dMf" firstAttribute="top" secondItem="gm8-1y-IxQ" secondAttribute="bottom" constant="30" id="rn7-MA-xlg"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="top" secondItem="7Ti-9M-Uu8" secondAttribute="top" constant="30" id="uQM-f6-f6P"/>
+                            <constraint firstItem="Fs8-ou-dMf" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="z6H-0G-wCL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="더보기" largeTitleDisplayMode="always" id="dBO-rI-7yc"/>
@@ -726,7 +740,7 @@
         <!--C.R.C.-->
         <scene sceneID="26W-4h-tUE">
             <objects>
-                <viewController id="4FK-OR-PmB" customClass="LoginViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="4FK-OR-PmB" customClass="LoginViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sVM-Jp-Rih">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2113,6 +2127,9 @@
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
