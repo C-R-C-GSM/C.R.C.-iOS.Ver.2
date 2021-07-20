@@ -114,7 +114,7 @@ class MealReviewCreateViewController: UIViewController {
     func apiCall(review_star: Int, content: String, nickname: String, when: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/review/register"
+        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/review/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
             "review_star":review_star,

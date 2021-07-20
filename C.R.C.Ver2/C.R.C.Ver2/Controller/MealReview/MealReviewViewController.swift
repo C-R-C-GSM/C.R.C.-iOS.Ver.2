@@ -56,7 +56,7 @@ class MealReviewViewController: UIViewController {
     }
     
     func checkApiCall() {
-        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/check/role"
+        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/check/role"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
@@ -79,7 +79,7 @@ class MealReviewViewController: UIViewController {
     func apiCall() {
         indicator.startAnimating()
         
-        let URL = "http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000/review/check"
+        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/review/check"
         let token = TokenManager.getToken()
         AF.request(URL, method: .get, headers: ["Token": token]).responseJSON { response in
             switch response.result {
