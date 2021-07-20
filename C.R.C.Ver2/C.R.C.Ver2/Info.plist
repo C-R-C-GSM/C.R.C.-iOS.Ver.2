@@ -8,7 +8,7 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>http://ec2-52-14-165-111.us-east-2.compute.amazonaws.com:3000</key>
+			<key>ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
