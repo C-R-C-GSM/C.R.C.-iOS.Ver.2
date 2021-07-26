@@ -33,6 +33,7 @@
 		BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */; };
 		BD6B4E4726607F8000BEBF7F /* SignUpClassNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */; };
 		BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD751E832689EF7800BAD08B /* TokenManager.swift */; };
+		BD7B614826AF186100911CA7 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B614726AF186100911CA7 /* APICall.swift */; };
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BD964EBA269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EB9269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift */; };
 		BD964EBC269AD530007BEB07 /* MealSuggestionBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */; };
@@ -83,6 +84,7 @@
 		BD6B4E4426607F7100BEBF7F /* SignUpNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameViewController.swift; sourceTree = "<group>"; };
 		BD6B4E4626607F8000BEBF7F /* SignUpClassNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpClassNumberViewController.swift; sourceTree = "<group>"; };
 		BD751E832689EF7800BAD08B /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		BD7B614726AF186100911CA7 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BD964EB9269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardContentViewController.swift; sourceTree = "<group>"; };
 		BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardManager.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 		BD7B614626AEFBEE00911CA7 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BD7B614726AF186100911CA7 /* APICall.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				BD964EC6269AF25A007BEB07 /* MealReviewManager.swift in Sources */,
 				BD4901A0267613FD000CB091 /* MealReviewViewController.swift in Sources */,
 				BD2BE8BF268C917100388108 /* StudentStatusBoardModel.swift in Sources */,
+				BD7B614826AF186100911CA7 /* APICall.swift in Sources */,
 				BD3E4CB12695A11D00ABAA01 /* NoticeTableViewCell.swift in Sources */,
 				BD6B4E3F26607F1300BEBF7F /* SignUpEmailViewController.swift in Sources */,
 				BD6B4E4526607F7100BEBF7F /* SignUpNameViewController.swift in Sources */,
