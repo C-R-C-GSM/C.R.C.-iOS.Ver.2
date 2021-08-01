@@ -1255,13 +1255,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sen-3z-sNW">
-                                <rect key="frame" x="30" y="118" width="124.5" height="63.5"/>
+                                <rect key="frame" x="30" y="118" width="124.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="27"/>
                                 <color key="textColor" name="Second Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-VS-ypF">
-                                <rect key="frame" x="30" y="231.5" width="354" height="57.5"/>
+                                <rect key="frame" x="30" y="231" width="354" height="57.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlQ-Ly-i3C">
                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="20.5"/>
@@ -2125,10 +2125,10 @@
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
-            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary Color">
-            <color red="0.2196078431372549" green="0.82745098039215681" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.2199999988079071" green="0.82700002193450928" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Second Color">
             <color red="0.94900000095367432" green="0.70599997043609619" blue="0.66299998760223389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
