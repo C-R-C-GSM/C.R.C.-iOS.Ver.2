@@ -35,6 +35,7 @@
 		BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD751E832689EF7800BAD08B /* TokenManager.swift */; };
 		BD7B614826AF186100911CA7 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7B614726AF186100911CA7 /* APICall.swift */; };
 		BD7B614B26B43FBE00911CA7 /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = BD7B614A26B43FBD00911CA7 /* Roboto */; };
+		BD7B614D26B6EAD100911CA7 /* 지문 로고.png in Resources */ = {isa = PBXBuildFile; fileRef = BD7B614C26B6EAD000911CA7 /* 지문 로고.png */; };
 		BD80B731266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */; };
 		BD964EBA269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EB9269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift */; };
 		BD964EBC269AD530007BEB07 /* MealSuggestionBoardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */; };
@@ -86,6 +87,7 @@
 		BD751E832689EF7800BAD08B /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		BD7B614726AF186100911CA7 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		BD7B614A26B43FBD00911CA7 /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../../Downloads/Roboto; sourceTree = "<group>"; };
+		BD7B614C26B6EAD000911CA7 /* 지문 로고.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "지문 로고.png"; path = "../../../../../Downloads/지문 로고.png"; sourceTree = "<group>"; };
 		BD80B730266BC4AE00612FB1 /* StudentStatusBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStatusBoardTableViewCell.swift; sourceTree = "<group>"; };
 		BD964EB9269AD283007BEB07 /* MealSuggestionBoardContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardContentViewController.swift; sourceTree = "<group>"; };
 		BD964EBB269AD530007BEB07 /* MealSuggestionBoardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardManager.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		BD6B4E1D265DD42800BEBF7F /* C.R.C.Ver2 */ = {
 			isa = PBXGroup;
 			children = (
+				BD7B614C26B6EAD000911CA7 /* 지문 로고.png */,
 				BD7B614926B43F3800911CA7 /* Font */,
 				BD7B614626AEFBEE00911CA7 /* API */,
 				BD6B4E35265DD98A00BEBF7F /* Delegate */,
@@ -431,6 +434,7 @@
 				BD7B614B26B43FBE00911CA7 /* Roboto in Resources */,
 				BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */,
 				BD6B4E28265DD42900BEBF7F /* Assets.xcassets in Resources */,
+				BD7B614D26B6EAD100911CA7 /* 지문 로고.png in Resources */,
 				BD6B4E26265DD42800BEBF7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

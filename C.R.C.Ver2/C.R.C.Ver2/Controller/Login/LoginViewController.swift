@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
         emailTextField.keyboardType = .emailAddress
         passwordTextField.delegate = self
         
-        signInBtn.layer.cornerRadius = 10
+        signInBtn.layer.cornerRadius = 5
     }
     
     func indicatorAutolayout() {
