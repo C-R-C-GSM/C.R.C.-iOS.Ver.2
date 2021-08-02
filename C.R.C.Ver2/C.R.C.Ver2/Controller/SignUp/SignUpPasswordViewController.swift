@@ -39,12 +39,13 @@ class SignUpPasswordViewController: UIViewController {
     }
 
     func setting() {
-        self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        navigationItem.prompt = ""
         
         passwordTextField.delegate = self
         passwordCheckTextField.delegate = self
         
-        continueBtn.layer.cornerRadius = 10
+        continueBtn.layer.cornerRadius = 5
     }
 
     func failAlert(messages: String) {
