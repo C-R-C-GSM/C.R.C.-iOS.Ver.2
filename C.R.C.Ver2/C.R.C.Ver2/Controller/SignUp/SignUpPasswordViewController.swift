@@ -40,7 +40,7 @@ class SignUpPasswordViewController: UIViewController {
 
     func setting() {
         navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
-        navigationItem.prompt = ""
+        navigationItem.title = ""
         
         passwordTextField.delegate = self
         passwordCheckTextField.delegate = self

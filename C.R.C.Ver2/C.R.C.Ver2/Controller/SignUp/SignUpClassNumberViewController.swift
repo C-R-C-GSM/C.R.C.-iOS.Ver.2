@@ -43,6 +43,8 @@ class SignUpClassNumberViewController: UIViewController {
     }
     
     func setting() {
+        navigationItem.title = ""
+        
         classNumberTextField.delegate = self
         classNumberTextField.keyboardType = .numberPad
         

@@ -742,7 +742,7 @@
             </objects>
             <point key="canvasLocation" x="2619" y="897"/>
         </scene>
-        <!--C.R.C.-->
+        <!--Login View Controller-->
         <scene sceneID="26W-4h-tUE">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="4FK-OR-PmB" customClass="LoginViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
@@ -751,13 +751,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인하세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-vO-kLA">
-                                <rect key="frame" x="54" y="172" width="137" height="29.5"/>
+                                <rect key="frame" x="54" y="161.5" width="136" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-gT-23W">
-                                <rect key="frame" x="54" y="233.5" width="306" height="67"/>
+                                <rect key="frame" x="54" y="223" width="306" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-Ao-yd3">
                                         <rect key="frame" x="0.0" y="0.0" width="66.5" height="21"/>
@@ -798,7 +798,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-e9-Bgm">
-                                <rect key="frame" x="54" y="330.5" width="306" height="67"/>
+                                <rect key="frame" x="54" y="320" width="306" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkg-5j-RBQ">
                                         <rect key="frame" x="0.0" y="0.0" width="105.5" height="21"/>
@@ -839,7 +839,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyu-92-uyq">
-                                <rect key="frame" x="54" y="756" width="306" height="40"/>
+                                <rect key="frame" x="54" y="755" width="306" height="40"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZDs-F0-Xas"/>
@@ -853,16 +853,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-zw-Baf">
-                                <rect key="frame" x="126" y="806" width="162.5" height="26"/>
+                                <rect key="frame" x="127" y="805" width="160.5" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpP-B2-2Fi">
-                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="26"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="27"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SST-gy-LXr">
-                                        <rect key="frame" x="120.5" y="0.0" width="42" height="26"/>
+                                        <rect key="frame" x="118.5" y="0.0" width="42" height="27"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                         <state key="normal" title="회원가입">
                                             <color key="titleColor" name="Primary Color"/>
@@ -883,13 +883,20 @@
                                     <constraint firstItem="EpP-B2-2Fi" firstAttribute="leading" secondItem="9vs-zw-Baf" secondAttribute="leading" id="y9Z-P7-bCM"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-EP-Jb3">
+                                <rect key="frame" x="158" y="88" width="98.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
+                                <color key="textColor" name="Primary Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZdP-R7-wUy"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="Vyu-92-uyq" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="2AS-aI-NCP"/>
+                            <constraint firstItem="7iL-vO-kLA" firstAttribute="top" secondItem="Xtc-EP-Jb3" secondAttribute="bottom" constant="30" id="2sT-qL-8Uf"/>
                             <constraint firstItem="ZdP-R7-wUy" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="7iL-vO-kLA" secondAttribute="trailing" constant="250" id="60p-3W-u4i"/>
-                            <constraint firstItem="7iL-vO-kLA" firstAttribute="top" secondItem="ZdP-R7-wUy" secondAttribute="top" constant="50" id="8aY-TO-56t"/>
+                            <constraint firstItem="Xtc-EP-Jb3" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="Am0-yK-9US"/>
                             <constraint firstItem="7iL-vO-kLA" firstAttribute="leading" secondItem="ZdP-R7-wUy" secondAttribute="leading" constant="54" id="C94-xz-QhG"/>
                             <constraint firstItem="mq5-e9-Bgm" firstAttribute="top" secondItem="Kf2-gT-23W" secondAttribute="bottom" constant="30" id="Lo7-sV-evL"/>
                             <constraint firstItem="9vs-zw-Baf" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="PbP-6J-fSD"/>
@@ -901,9 +908,10 @@
                             <constraint firstItem="ZdP-R7-wUy" firstAttribute="bottom" secondItem="9vs-zw-Baf" secondAttribute="bottom" constant="30" id="rpp-dE-f5v"/>
                             <constraint firstItem="Kf2-gT-23W" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="t6t-hG-wQ1"/>
                             <constraint firstItem="mq5-e9-Bgm" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="ukc-oa-PvS"/>
+                            <constraint firstItem="Xtc-EP-Jb3" firstAttribute="top" secondItem="ZdP-R7-wUy" secondAttribute="top" id="yPO-af-Uob"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="C.R.C." prompt=" " id="1bh-Vu-B2H">
+                    <navigationItem key="navigationItem" id="1bh-Vu-B2H">
                         <barButtonItem key="backBarButtonItem" title=" " id="61e-12-wrI"/>
                     </navigationItem>
                     <connections>
@@ -925,57 +933,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반, 번호를 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-92-dOw">
-                                <rect key="frame" x="30" y="74" width="124" height="64.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" name="Second Color"/>
+                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aze-sl-cK9">
-                                <rect key="frame" x="30" y="188.5" width="354" height="57.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class &amp; Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q6-H6-xkE">
-                                        <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <color key="textColor" name="Primary Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반, 번호를 입력하세요. ex) 3318" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16o-hA-aJ6">
-                                        <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" name="Second Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="7Jp-KM-hoI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O56-Vs-YfJ">
-                                        <rect key="frame" x="0.0" y="55.5" width="354" height="2"/>
-                                        <color key="backgroundColor" name="Primary Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="lVW-hR-fW3"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="2Q6-H6-xkE" secondAttribute="trailing" constant="239.5" id="2Um-j7-EF5"/>
-                                    <constraint firstAttribute="trailing" secondItem="16o-hA-aJ6" secondAttribute="trailing" id="6eh-CK-3Kf"/>
-                                    <constraint firstItem="O56-Vs-YfJ" firstAttribute="leading" secondItem="aze-sl-cK9" secondAttribute="leading" id="AaO-Cf-y02"/>
-                                    <constraint firstItem="16o-hA-aJ6" firstAttribute="leading" secondItem="aze-sl-cK9" secondAttribute="leading" id="P3c-yr-n3U"/>
-                                    <constraint firstItem="O56-Vs-YfJ" firstAttribute="top" secondItem="16o-hA-aJ6" secondAttribute="bottom" id="T9q-j8-EBZ"/>
-                                    <constraint firstItem="2Q6-H6-xkE" firstAttribute="top" secondItem="aze-sl-cK9" secondAttribute="top" id="Tiz-c3-NWM"/>
-                                    <constraint firstAttribute="trailing" secondItem="O56-Vs-YfJ" secondAttribute="trailing" id="c4h-iJ-gDu"/>
-                                    <constraint firstItem="2Q6-H6-xkE" firstAttribute="leading" secondItem="aze-sl-cK9" secondAttribute="leading" id="nlO-2K-ibv"/>
-                                    <constraint firstItem="16o-hA-aJ6" firstAttribute="top" secondItem="2Q6-H6-xkE" secondAttribute="bottom" id="oh8-QM-3Iw"/>
-                                    <constraint firstAttribute="bottom" secondItem="O56-Vs-YfJ" secondAttribute="bottom" id="z0S-2w-Bim"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCC-Cq-QOV">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <rect key="frame" x="48" y="792" width="318" height="40"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="hBl-FL-xyR"/>
+                                    <constraint firstAttribute="height" constant="40" id="hBl-FL-xyR"/>
                                 </constraints>
                                 <state key="normal" title="회원가입 완료">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -984,24 +951,73 @@
                                     <action selector="doneButton:" destination="ZSS-N4-5vy" eventType="touchUpInside" id="W05-4M-kvI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-b9-wNP">
+                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
+                                <color key="textColor" name="Primary Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mj-NK-yDC">
+                                <rect key="frame" x="48" y="211" width="318" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반, 번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-HZ-kwE">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" name="Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반, 번호를 입력하세요. ex) 3318" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Olq-Y1-FEv">
+                                        <rect key="frame" x="0.0" y="31" width="318" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="xdG-jL-lyW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-SR-Dx6">
+                                        <rect key="frame" x="0.0" y="66" width="318" height="1"/>
+                                        <color key="backgroundColor" name="Primary Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="khg-ej-krR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iCL-SR-Dx6" secondAttribute="bottom" id="03z-B7-la2"/>
+                                    <constraint firstItem="Be7-HZ-kwE" firstAttribute="top" secondItem="9mj-NK-yDC" secondAttribute="top" id="7Yc-tJ-72D"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Be7-HZ-kwE" secondAttribute="trailing" constant="239.5" id="Srk-Wu-qs8"/>
+                                    <constraint firstItem="Olq-Y1-FEv" firstAttribute="top" secondItem="Be7-HZ-kwE" secondAttribute="bottom" constant="10" id="b7w-HC-dBu"/>
+                                    <constraint firstItem="Olq-Y1-FEv" firstAttribute="leading" secondItem="9mj-NK-yDC" secondAttribute="leading" id="e6r-sC-PKy"/>
+                                    <constraint firstAttribute="trailing" secondItem="iCL-SR-Dx6" secondAttribute="trailing" id="ggk-WD-BzV"/>
+                                    <constraint firstItem="iCL-SR-Dx6" firstAttribute="leading" secondItem="9mj-NK-yDC" secondAttribute="leading" id="glk-AF-h7W"/>
+                                    <constraint firstItem="iCL-SR-Dx6" firstAttribute="top" secondItem="Olq-Y1-FEv" secondAttribute="bottom" id="hdO-Xa-7vu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Olq-Y1-FEv" secondAttribute="trailing" id="olB-um-NjU"/>
+                                    <constraint firstItem="Be7-HZ-kwE" firstAttribute="leading" secondItem="9mj-NK-yDC" secondAttribute="leading" id="yof-Zd-sjx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2gt-Zg-vJQ"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="VCC-Cq-QOV" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="ApV-AG-1Rh"/>
-                            <constraint firstItem="aze-sl-cK9" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="HVu-9e-ZQO"/>
-                            <constraint firstItem="VCC-Cq-QOV" firstAttribute="leading" secondItem="aze-sl-cK9" secondAttribute="leading" id="Iwe-14-Tb3"/>
-                            <constraint firstItem="5yC-92-dOw" firstAttribute="top" secondItem="2gt-Zg-vJQ" secondAttribute="top" constant="30" id="KGo-C1-mui"/>
+                            <constraint firstItem="n0b-b9-wNP" firstAttribute="top" secondItem="2gt-Zg-vJQ" secondAttribute="top" id="GS0-gR-GyJ"/>
+                            <constraint firstItem="VCC-Cq-QOV" firstAttribute="leading" secondItem="5yC-92-dOw" secondAttribute="leading" id="JfL-qW-jhf"/>
+                            <constraint firstItem="9mj-NK-yDC" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="RLX-Ef-ndc"/>
                             <constraint firstItem="2gt-Zg-vJQ" firstAttribute="bottom" secondItem="VCC-Cq-QOV" secondAttribute="bottom" constant="30" id="Wry-2f-TtK"/>
-                            <constraint firstItem="aze-sl-cK9" firstAttribute="leading" secondItem="5yC-92-dOw" secondAttribute="leading" id="cbs-xD-bKW"/>
-                            <constraint firstItem="aze-sl-cK9" firstAttribute="top" secondItem="5yC-92-dOw" secondAttribute="bottom" constant="50" id="fQ3-T9-kDZ"/>
-                            <constraint firstItem="5yC-92-dOw" firstAttribute="leading" secondItem="E2H-zM-hvl" secondAttribute="leading" constant="30" id="mPU-RZ-i90"/>
+                            <constraint firstItem="9mj-NK-yDC" firstAttribute="top" secondItem="5yC-92-dOw" secondAttribute="bottom" constant="30" id="j50-f1-SOd"/>
+                            <constraint firstItem="5yC-92-dOw" firstAttribute="top" secondItem="n0b-b9-wNP" secondAttribute="bottom" constant="30" id="jxZ-x6-3mb"/>
+                            <constraint firstItem="5yC-92-dOw" firstAttribute="leading" secondItem="E2H-zM-hvl" secondAttribute="leading" constant="48" id="mPU-RZ-i90"/>
+                            <constraint firstItem="n0b-b9-wNP" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="qpv-x5-uyL"/>
                             <constraint firstItem="2gt-Zg-vJQ" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="5yC-92-dOw" secondAttribute="trailing" constant="260" id="rTO-hV-CRw"/>
+                            <constraint firstItem="9mj-NK-yDC" firstAttribute="leading" secondItem="5yC-92-dOw" secondAttribute="leading" id="wB6-Tq-AE7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="C.R.C." id="iDH-Fg-dYM"/>
                     <connections>
-                        <outlet property="classNumberTextField" destination="16o-hA-aJ6" id="CPt-NQ-IlC"/>
+                        <outlet property="classNumberTextField" destination="Olq-Y1-FEv" id="KP5-Fw-Xfm"/>
                         <outlet property="doneBtn" destination="VCC-Cq-QOV" id="LGs-Rq-x9v"/>
                         <outlet property="doneBtnBottomConstraint" destination="Wry-2f-TtK" id="XXz-ed-WQV"/>
                     </connections>
@@ -1018,58 +1034,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-Dp-2N2">
-                                <rect key="frame" x="30" y="74" width="124" height="64.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" name="Second Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVK-ZA-0UM">
-                                <rect key="frame" x="30" y="188.5" width="354" height="57.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSi-ux-s2s">
-                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <color key="textColor" name="Primary Color"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Reg-IV-yzc">
-                                        <rect key="frame" x="0.0" y="20.5" width="354" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <color key="tintColor" name="Second Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="iQe-RW-fup"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZE-iv-UIV">
-                                        <rect key="frame" x="0.0" y="55.5" width="354" height="2"/>
-                                        <color key="backgroundColor" name="Primary Color"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="kVy-pp-YBA"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstItem="Reg-IV-yzc" firstAttribute="top" secondItem="QSi-ux-s2s" secondAttribute="bottom" id="0SQ-D6-L0T"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QSi-ux-s2s" secondAttribute="trailing" constant="239.5" id="Bzp-so-9qP"/>
-                                    <constraint firstAttribute="trailing" secondItem="KZE-iv-UIV" secondAttribute="trailing" id="GD6-Mx-rdS"/>
-                                    <constraint firstItem="QSi-ux-s2s" firstAttribute="top" secondItem="UVK-ZA-0UM" secondAttribute="top" id="QUn-Ea-IFv"/>
-                                    <constraint firstItem="QSi-ux-s2s" firstAttribute="leading" secondItem="UVK-ZA-0UM" secondAttribute="leading" id="ZDF-pF-Epo"/>
-                                    <constraint firstAttribute="bottom" secondItem="KZE-iv-UIV" secondAttribute="bottom" id="cCp-hf-tWL"/>
-                                    <constraint firstItem="KZE-iv-UIV" firstAttribute="leading" secondItem="UVK-ZA-0UM" secondAttribute="leading" id="h8a-Dx-WeD"/>
-                                    <constraint firstAttribute="trailing" secondItem="Reg-IV-yzc" secondAttribute="trailing" id="m8d-2D-Xnr"/>
-                                    <constraint firstItem="KZE-iv-UIV" firstAttribute="top" secondItem="Reg-IV-yzc" secondAttribute="bottom" id="rDO-4F-0jX"/>
-                                    <constraint firstItem="Reg-IV-yzc" firstAttribute="leading" secondItem="UVK-ZA-0UM" secondAttribute="leading" id="tsu-t8-cz0"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McU-fo-7Hc">
-                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <rect key="frame" x="48" y="792" width="318" height="40"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9fr-2K-UWi"/>
+                                    <constraint firstAttribute="height" constant="40" id="9fr-2K-UWi"/>
                                 </constraints>
                                 <state key="normal" title="계속하기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1078,18 +1047,73 @@
                                     <action selector="continueButton:" destination="VBc-HS-O6O" eventType="touchUpInside" id="aXI-WR-ARI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-Dp-2N2">
+                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-Vp-r9R">
+                                <rect key="frame" x="48" y="211" width="318" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRc-op-21Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="18"/>
+                                        <color key="textColor" name="Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-X1-mzc">
+                                        <rect key="frame" x="0.0" y="31" width="318" height="35"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="L0Y-Dz-qHC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUk-Vt-7Vw">
+                                        <rect key="frame" x="0.0" y="66" width="318" height="1"/>
+                                        <color key="backgroundColor" name="Primary Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="hiO-Ks-quc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstItem="eRc-op-21Y" firstAttribute="top" secondItem="8S6-Vp-r9R" secondAttribute="top" id="B88-24-wbZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="yUk-Vt-7Vw" secondAttribute="bottom" id="Dew-g9-cSU"/>
+                                    <constraint firstItem="yUk-Vt-7Vw" firstAttribute="leading" secondItem="8S6-Vp-r9R" secondAttribute="leading" id="OaY-Sb-HUw"/>
+                                    <constraint firstItem="eRc-op-21Y" firstAttribute="leading" secondItem="8S6-Vp-r9R" secondAttribute="leading" id="Tg9-3c-HJ1"/>
+                                    <constraint firstItem="QZa-X1-mzc" firstAttribute="top" secondItem="eRc-op-21Y" secondAttribute="bottom" constant="10" id="UHa-Wz-ekf"/>
+                                    <constraint firstItem="yUk-Vt-7Vw" firstAttribute="top" secondItem="QZa-X1-mzc" secondAttribute="bottom" id="Xs8-qi-xKs"/>
+                                    <constraint firstAttribute="trailing" secondItem="QZa-X1-mzc" secondAttribute="trailing" id="ejf-fZ-SII"/>
+                                    <constraint firstAttribute="trailing" secondItem="yUk-Vt-7Vw" secondAttribute="trailing" id="lgj-ud-ENA"/>
+                                    <constraint firstItem="QZa-X1-mzc" firstAttribute="leading" secondItem="8S6-Vp-r9R" secondAttribute="leading" id="oWI-Mn-6PN"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eRc-op-21Y" secondAttribute="trailing" constant="239.5" id="pbN-qA-ptG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-tr-iGX">
+                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
+                                <color key="textColor" name="Primary Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NoE-o7-e2d"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
-                            <constraint firstItem="Txg-Dp-2N2" firstAttribute="top" secondItem="NoE-o7-e2d" secondAttribute="top" constant="30" id="4aw-Ky-nM4"/>
-                            <constraint firstItem="UVK-ZA-0UM" firstAttribute="top" secondItem="Txg-Dp-2N2" secondAttribute="bottom" constant="50" id="HGe-Kp-BZv"/>
+                            <constraint firstItem="8S6-Vp-r9R" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="4Mc-9d-1Hf"/>
+                            <constraint firstItem="8S6-Vp-r9R" firstAttribute="top" secondItem="Txg-Dp-2N2" secondAttribute="bottom" constant="30" id="90Y-p3-Xy3"/>
+                            <constraint firstItem="7l0-tr-iGX" firstAttribute="top" secondItem="NoE-o7-e2d" secondAttribute="top" id="9Ul-62-9qq"/>
+                            <constraint firstItem="8S6-Vp-r9R" firstAttribute="leading" secondItem="Txg-Dp-2N2" secondAttribute="leading" id="B8I-4y-79P"/>
                             <constraint firstItem="McU-fo-7Hc" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="STz-Pv-ybP"/>
                             <constraint firstItem="NoE-o7-e2d" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Txg-Dp-2N2" secondAttribute="trailing" constant="260" id="UyK-xQ-met"/>
-                            <constraint firstItem="Txg-Dp-2N2" firstAttribute="leading" secondItem="NoE-o7-e2d" secondAttribute="leading" constant="30" id="XNk-hl-jnd"/>
-                            <constraint firstItem="UVK-ZA-0UM" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="etd-ye-Eqm"/>
-                            <constraint firstItem="UVK-ZA-0UM" firstAttribute="leading" secondItem="Txg-Dp-2N2" secondAttribute="leading" id="hon-O4-s9Z"/>
-                            <constraint firstItem="McU-fo-7Hc" firstAttribute="leading" secondItem="UVK-ZA-0UM" secondAttribute="leading" id="sLZ-7c-1N7"/>
+                            <constraint firstItem="Txg-Dp-2N2" firstAttribute="leading" secondItem="NoE-o7-e2d" secondAttribute="leading" constant="48" id="XNk-hl-jnd"/>
+                            <constraint firstItem="McU-fo-7Hc" firstAttribute="leading" secondItem="Txg-Dp-2N2" secondAttribute="leading" id="dfi-1C-dZd"/>
+                            <constraint firstItem="Txg-Dp-2N2" firstAttribute="top" secondItem="7l0-tr-iGX" secondAttribute="bottom" constant="30" id="jlM-T2-wY3"/>
+                            <constraint firstItem="7l0-tr-iGX" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="oQa-Fi-iT2"/>
                             <constraint firstItem="NoE-o7-e2d" firstAttribute="bottom" secondItem="McU-fo-7Hc" secondAttribute="bottom" constant="30" id="xAr-y3-jCK"/>
                         </constraints>
                     </view>
@@ -1099,7 +1123,7 @@
                     <connections>
                         <outlet property="continueBtn" destination="McU-fo-7Hc" id="uqN-Ga-YqX"/>
                         <outlet property="continueBtnBottomConstraint" destination="xAr-y3-jCK" id="3v9-lz-9HQ"/>
-                        <outlet property="nameTextField" destination="Reg-IV-yzc" id="dRc-mV-Xql"/>
+                        <outlet property="nameTextField" destination="QZa-X1-mzc" id="SlD-bm-1ZA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RC6-Xs-fgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1114,12 +1138,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-N9-es1">
-                                <rect key="frame" x="48" y="74" width="124.5" height="63"/>
-                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-aE-Sbh">
                                 <rect key="frame" x="48" y="792" width="318" height="40"/>
                                 <color key="backgroundColor" name="Primary Color"/>
@@ -1133,8 +1151,14 @@
                                     <action selector="continueButton:" destination="3wo-I5-LO6" eventType="touchUpInside" id="FDl-XU-MFk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-N9-es1">
+                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-zL-sfQ">
-                                <rect key="frame" x="48" y="167" width="318" height="67"/>
+                                <rect key="frame" x="48" y="211" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ih-8K-hsO">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1150,7 +1174,7 @@
                                             <constraint firstAttribute="height" constant="35" id="3bc-t9-DyJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXh-ST-o4F">
                                         <rect key="frame" x="0.0" y="66" width="318" height="1"/>
@@ -1175,7 +1199,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-25-FrU">
-                                <rect key="frame" x="48" y="254" width="318" height="67"/>
+                                <rect key="frame" x="48" y="298" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxO-bF-hl0">
                                         <rect key="frame" x="0.0" y="0.0" width="98" height="21"/>
@@ -1191,7 +1215,7 @@
                                             <constraint firstAttribute="height" constant="35" id="jbo-ly-irk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NV9-YL-hoJ">
                                         <rect key="frame" x="0.0" y="66" width="318" height="1"/>
@@ -1215,16 +1239,24 @@
                                     <constraint firstAttribute="trailing" secondItem="V27-nQ-rys" secondAttribute="trailing" id="wxN-6r-xhA"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-hL-fvy">
+                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
+                                <color key="textColor" name="Primary Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qjm-XM-Td9"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="iEA-zL-sfQ" firstAttribute="leading" secondItem="QcX-N9-es1" secondAttribute="leading" id="0YG-5u-JjK"/>
                             <constraint firstItem="EMq-25-FrU" firstAttribute="top" secondItem="iEA-zL-sfQ" secondAttribute="bottom" constant="20" id="7OP-Bp-cD0"/>
+                            <constraint firstItem="mBB-hL-fvy" firstAttribute="centerX" secondItem="N79-UP-uGX" secondAttribute="centerX" id="CiJ-Le-mKZ"/>
                             <constraint firstItem="Kdo-aE-Sbh" firstAttribute="centerX" secondItem="N79-UP-uGX" secondAttribute="centerX" id="LaE-oy-3CT"/>
                             <constraint firstItem="QcX-N9-es1" firstAttribute="leading" secondItem="Qjm-XM-Td9" secondAttribute="leading" constant="48" id="ZxT-5I-Vk1"/>
+                            <constraint firstItem="QcX-N9-es1" firstAttribute="top" secondItem="mBB-hL-fvy" secondAttribute="bottom" constant="30" id="bDx-l9-rtI"/>
                             <constraint firstItem="iEA-zL-sfQ" firstAttribute="top" secondItem="QcX-N9-es1" secondAttribute="bottom" constant="30" id="gt6-fg-KGS"/>
-                            <constraint firstItem="QcX-N9-es1" firstAttribute="top" secondItem="Qjm-XM-Td9" secondAttribute="top" constant="30" id="iqf-BC-chl"/>
+                            <constraint firstItem="mBB-hL-fvy" firstAttribute="top" secondItem="Qjm-XM-Td9" secondAttribute="top" id="jr5-gk-Knh"/>
                             <constraint firstItem="EMq-25-FrU" firstAttribute="centerX" secondItem="N79-UP-uGX" secondAttribute="centerX" id="lBP-FC-0gs"/>
                             <constraint firstItem="Qjm-XM-Td9" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QcX-N9-es1" secondAttribute="trailing" constant="260" id="lfm-DH-Nkq"/>
                             <constraint firstItem="iEA-zL-sfQ" firstAttribute="centerX" secondItem="N79-UP-uGX" secondAttribute="centerX" id="rkp-bm-jK5"/>
@@ -1247,7 +1279,7 @@
             </objects>
             <point key="canvasLocation" x="1971" y="-581"/>
         </scene>
-        <!--C.R.C.-->
+        <!--Sign Up Email View Controller-->
         <scene sceneID="rj7-KS-oyr">
             <objects>
                 <viewController storyboardIdentifier="SignUpEmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9MR-Ii-bSF" customClass="SignUpEmailViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
@@ -1256,7 +1288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sen-3z-sNW">
-                                <rect key="frame" x="48" y="152" width="124.5" height="63"/>
+                                <rect key="frame" x="48" y="161.5" width="123.5" height="63.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1276,7 +1308,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNB-vO-h6B">
-                                <rect key="frame" x="48" y="245" width="318" height="67"/>
+                                <rect key="frame" x="48" y="255" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo4-w3-TM9">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1316,22 +1348,30 @@
                                     <constraint firstItem="qtV-rM-gp1" firstAttribute="top" secondItem="Wcz-si-DpH" secondAttribute="bottom" id="yZL-9e-C1y"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-3w-oxg">
+                                <rect key="frame" x="158" y="88" width="98.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
+                                <color key="textColor" name="Primary Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m80-eb-hW1"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="m80-eb-hW1" firstAttribute="bottom" secondItem="EXI-BB-AwT" secondAttribute="bottom" constant="30" id="8kr-cu-M93"/>
                             <constraint firstItem="EXI-BB-AwT" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="CkJ-SY-rbB"/>
+                            <constraint firstItem="hiS-3w-oxg" firstAttribute="top" secondItem="m80-eb-hW1" secondAttribute="top" id="FVc-K6-ijJ"/>
                             <constraint firstItem="m80-eb-hW1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Sen-3z-sNW" secondAttribute="trailing" constant="260" id="LNq-dh-Dns"/>
                             <constraint firstItem="KNB-vO-h6B" firstAttribute="top" secondItem="Sen-3z-sNW" secondAttribute="bottom" constant="30" id="Njh-cc-ZTV"/>
                             <constraint firstItem="KNB-vO-h6B" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="NxL-Sh-DRo"/>
-                            <constraint firstItem="Sen-3z-sNW" firstAttribute="top" secondItem="m80-eb-hW1" secondAttribute="top" constant="30" id="Ss9-ia-3zA"/>
                             <constraint firstItem="KNB-vO-h6B" firstAttribute="leading" secondItem="Sen-3z-sNW" secondAttribute="leading" id="TaT-s8-iWa"/>
                             <constraint firstItem="Sen-3z-sNW" firstAttribute="leading" secondItem="m80-eb-hW1" secondAttribute="leading" constant="48" id="Uba-4W-xwU"/>
+                            <constraint firstItem="hiS-3w-oxg" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="VQG-WH-VoY"/>
+                            <constraint firstItem="Sen-3z-sNW" firstAttribute="top" secondItem="hiS-3w-oxg" secondAttribute="bottom" constant="30" id="vVe-Ft-ULe"/>
                             <constraint firstItem="EXI-BB-AwT" firstAttribute="leading" secondItem="Sen-3z-sNW" secondAttribute="leading" id="xSg-XZ-8yE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="C.R.C." prompt=" " id="mAS-UE-5Rt">
+                    <navigationItem key="navigationItem" id="mAS-UE-5Rt">
                         <barButtonItem key="backBarButtonItem" title=" " id="EIg-pH-arQ"/>
                     </navigationItem>
                     <connections>
@@ -1355,8 +1395,7 @@
                         <color key="backgroundColor" name="AccentColor"/>
                         <color key="tintColor" name="Primary Color"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="30"/>
-                            <color key="textColor" name="Primary Color"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
