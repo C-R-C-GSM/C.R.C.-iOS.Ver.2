@@ -751,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인하세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iL-vO-kLA">
-                                <rect key="frame" x="54" y="161.5" width="136" height="29.5"/>
+                                <rect key="frame" x="54" y="161.5" width="137" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -839,7 +839,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyu-92-uyq">
-                                <rect key="frame" x="54" y="755" width="306" height="40"/>
+                                <rect key="frame" x="54" y="756" width="306" height="40"/>
                                 <color key="backgroundColor" name="Primary Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZDs-F0-Xas"/>
@@ -853,16 +853,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-zw-Baf">
-                                <rect key="frame" x="127" y="805" width="160.5" height="27"/>
+                                <rect key="frame" x="126" y="806" width="162.5" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpP-B2-2Fi">
-                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="27"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="26"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SST-gy-LXr">
-                                        <rect key="frame" x="118.5" y="0.0" width="42" height="27"/>
+                                        <rect key="frame" x="120.5" y="0.0" width="42" height="26"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
                                         <state key="normal" title="회원가입">
                                             <color key="titleColor" name="Primary Color"/>
@@ -884,7 +884,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-EP-Jb3">
-                                <rect key="frame" x="158" y="88" width="98.5" height="43.5"/>
+                                <rect key="frame" x="152" y="88" width="110" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
                                 <color key="textColor" name="Primary Color"/>
                                 <nil key="highlightedColor"/>
@@ -933,7 +933,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반, 번호를 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-92-dOw">
-                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <rect key="frame" x="48" y="117.5" width="124.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -952,13 +952,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0b-b9-wNP">
-                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <rect key="frame" x="152" y="44" width="110" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
                                 <color key="textColor" name="Primary Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mj-NK-yDC">
-                                <rect key="frame" x="48" y="211" width="318" height="67"/>
+                                <rect key="frame" x="48" y="210.5" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반, 번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-HZ-kwE">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1048,13 +1048,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-Dp-2N2">
-                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <rect key="frame" x="48" y="117.5" width="124.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-Vp-r9R">
-                                <rect key="frame" x="48" y="211" width="318" height="67"/>
+                                <rect key="frame" x="48" y="210.5" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRc-op-21Y">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1095,7 +1095,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l0-tr-iGX">
-                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <rect key="frame" x="152" y="44" width="110" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
                                 <color key="textColor" name="Primary Color"/>
                                 <nil key="highlightedColor"/>
@@ -1152,13 +1152,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-N9-es1">
-                                <rect key="frame" x="48" y="117.5" width="123.5" height="63.5"/>
+                                <rect key="frame" x="48" y="117.5" width="124.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-zL-sfQ">
-                                <rect key="frame" x="48" y="211" width="318" height="67"/>
+                                <rect key="frame" x="48" y="210.5" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ih-8K-hsO">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1199,7 +1199,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMq-25-FrU">
-                                <rect key="frame" x="48" y="298" width="318" height="67"/>
+                                <rect key="frame" x="48" y="297.5" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxO-bF-hl0">
                                         <rect key="frame" x="0.0" y="0.0" width="98" height="21"/>
@@ -1240,7 +1240,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-hL-fvy">
-                                <rect key="frame" x="158" y="44" width="98.5" height="43.5"/>
+                                <rect key="frame" x="152" y="44" width="110" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
                                 <color key="textColor" name="Primary Color"/>
                                 <nil key="highlightedColor"/>
@@ -1288,7 +1288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일을 입력하세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sen-3z-sNW">
-                                <rect key="frame" x="48" y="161.5" width="123.5" height="63.5"/>
+                                <rect key="frame" x="48" y="161.5" width="124.5" height="63"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="27"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1308,7 +1308,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNB-vO-h6B">
-                                <rect key="frame" x="48" y="255" width="318" height="67"/>
+                                <rect key="frame" x="48" y="254.5" width="318" height="67"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo4-w3-TM9">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="21"/>
@@ -1349,7 +1349,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C.R.C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-3w-oxg">
-                                <rect key="frame" x="158" y="88" width="98.5" height="43.5"/>
+                                <rect key="frame" x="152" y="88" width="110" height="43.5"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="37"/>
                                 <color key="textColor" name="Primary Color"/>
                                 <nil key="highlightedColor"/>
