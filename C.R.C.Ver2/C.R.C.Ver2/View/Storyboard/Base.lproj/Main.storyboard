@@ -27,7 +27,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9si-0d-LRh">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -142,7 +142,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Brx-SQ-tYt"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9si-0d-LRh" firstAttribute="leading" secondItem="Brx-SQ-tYt" secondAttribute="leading" id="9Y1-aw-6Fv"/>
                             <constraint firstItem="9si-0d-LRh" firstAttribute="bottom" secondItem="Brx-SQ-tYt" secondAttribute="bottom" id="PSc-JW-94G"/>
@@ -277,7 +277,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KNo-sX-0gp"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KNo-sX-0gp" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="1HD-4K-eAa" secondAttribute="trailing" constant="50" id="43K-Ww-ZPk"/>
                             <constraint firstItem="hfU-Yt-hnl" firstAttribute="leading" secondItem="KNo-sX-0gp" secondAttribute="leading" constant="30" id="5RY-iE-JH3"/>
@@ -330,7 +330,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-Fr-uSP">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealSuggestionBoardTableViewCell" id="Et8-8l-4mU" customClass="MealSuggestionBoardTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
@@ -373,7 +373,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lbW-rJ-KCX"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n3L-Fr-uSP" firstAttribute="leading" secondItem="lbW-rJ-KCX" secondAttribute="leading" id="GDo-ad-FIF"/>
                             <constraint firstItem="lbW-rJ-KCX" firstAttribute="trailing" secondItem="n3L-Fr-uSP" secondAttribute="trailing" id="RfD-TN-k4p"/>
@@ -427,7 +427,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ti-9M-Uu8"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Fs8-ou-dMf" secondAttribute="trailing" constant="100" id="3I0-sR-nL8"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="GXH-8i-0sH"/>
@@ -455,7 +455,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-cl-QaE">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NoticeTableViewCell" id="ieN-xN-MUc" customClass="NoticeTableViewCell" customModule="C_R_C_Ver2" customModuleProvider="target">
@@ -498,7 +498,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vte-8h-zOt"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vte-8h-zOt" firstAttribute="trailing" secondItem="QbE-cl-QaE" secondAttribute="trailing" id="160-Lj-wLB"/>
                             <constraint firstItem="QbE-cl-QaE" firstAttribute="leading" secondItem="vte-8h-zOt" secondAttribute="leading" id="kuV-yt-2PW"/>
@@ -508,7 +508,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="공지사항" largeTitleDisplayMode="always" id="wg2-Zr-xUQ">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="03C-x9-E8H">
-                            <color key="tintColor" name="AccentColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="008-R2-ZSV" kind="show" id="2rK-DA-bxG"/>
                             </connections>
@@ -551,7 +551,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fv6-Mz-S67"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CG8-fY-HC5" firstAttribute="top" secondItem="fv6-Mz-S67" secondAttribute="top" constant="30" id="0Yn-bY-oOD"/>
                             <constraint firstItem="fv6-Mz-S67" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lsd-gx-Rp3" secondAttribute="trailing" constant="50" id="6IH-tf-UVk"/>
@@ -623,7 +623,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="26K-OM-IfT"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="XOD-LG-5pH" firstAttribute="centerX" secondItem="jmK-uM-uuq" secondAttribute="centerX" id="1bn-rO-owb"/>
                             <constraint firstItem="vtd-7s-SLi" firstAttribute="leading" secondItem="26K-OM-IfT" secondAttribute="leading" constant="50" id="ByE-zk-fSP"/>
@@ -685,9 +685,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Rj5-cd-sO3">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -707,9 +707,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="B5a-IG-VE9">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -729,9 +729,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="cEw-I4-pOd">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -767,7 +767,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3b-5Z-Xa1">
                                         <rect key="frame" x="0.0" y="31" width="306" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="S8d-Zc-KPo"/>
@@ -783,7 +783,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="U3H-28-eKT" firstAttribute="leading" secondItem="Kf2-gT-23W" secondAttribute="leading" id="2Ct-Qo-E3y"/>
                                     <constraint firstAttribute="bottom" secondItem="U3H-28-eKT" secondAttribute="bottom" id="Aef-0Q-tP8"/>
@@ -808,7 +808,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqy-8g-dq5">
                                         <rect key="frame" x="0.0" y="31" width="306" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" name="Second Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="eUb-xm-7tL"/>
@@ -824,7 +824,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="uqy-8g-dq5" firstAttribute="top" secondItem="Qkg-5j-RBQ" secondAttribute="bottom" constant="10" id="8wZ-W9-Yvv"/>
                                     <constraint firstItem="uqy-8g-dq5" firstAttribute="leading" secondItem="mq5-e9-Bgm" secondAttribute="leading" id="Fql-UL-bZU"/>
@@ -872,7 +872,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="SST-gy-LXr" firstAttribute="leading" secondItem="EpP-B2-2Fi" secondAttribute="trailing" constant="3" id="HtH-AQ-GZW"/>
                                     <constraint firstItem="SST-gy-LXr" firstAttribute="top" secondItem="9vs-zw-Baf" secondAttribute="top" id="Kr0-xi-ocF"/>
@@ -891,7 +891,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZdP-R7-wUy"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vyu-92-uyq" firstAttribute="centerX" secondItem="sVM-Jp-Rih" secondAttribute="centerX" id="2AS-aI-NCP"/>
                             <constraint firstItem="7iL-vO-kLA" firstAttribute="top" secondItem="Xtc-EP-Jb3" secondAttribute="bottom" constant="30" id="2sT-qL-8Uf"/>
@@ -968,7 +968,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="반, 번호를 입력하세요. ex) 3318" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Olq-Y1-FEv">
                                         <rect key="frame" x="0.0" y="31" width="318" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="xdG-jL-lyW"/>
@@ -984,7 +984,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="iCL-SR-Dx6" secondAttribute="bottom" id="03z-B7-la2"/>
                                     <constraint firstItem="Be7-HZ-kwE" firstAttribute="top" secondItem="9mj-NK-yDC" secondAttribute="top" id="7Yc-tJ-72D"/>
@@ -1000,7 +1000,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2gt-Zg-vJQ"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VCC-Cq-QOV" firstAttribute="centerX" secondItem="E2H-zM-hvl" secondAttribute="centerX" id="ApV-AG-1Rh"/>
                             <constraint firstItem="n0b-b9-wNP" firstAttribute="top" secondItem="2gt-Zg-vJQ" secondAttribute="top" id="GS0-gR-GyJ"/>
@@ -1064,7 +1064,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-X1-mzc">
                                         <rect key="frame" x="0.0" y="31" width="318" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="L0Y-Dz-qHC"/>
@@ -1080,7 +1080,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="eRc-op-21Y" firstAttribute="top" secondItem="8S6-Vp-r9R" secondAttribute="top" id="B88-24-wbZ"/>
                                     <constraint firstAttribute="bottom" secondItem="yUk-Vt-7Vw" secondAttribute="bottom" id="Dew-g9-cSU"/>
@@ -1102,7 +1102,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NoE-o7-e2d"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8S6-Vp-r9R" firstAttribute="centerX" secondItem="4y9-Ws-3gY" secondAttribute="centerX" id="4Mc-9d-1Hf"/>
                             <constraint firstItem="8S6-Vp-r9R" firstAttribute="top" secondItem="Txg-Dp-2N2" secondAttribute="bottom" constant="30" id="90Y-p3-Xy3"/>
@@ -1168,7 +1168,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nKi-Ou-GJA">
                                         <rect key="frame" x="0.0" y="31" width="318" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="3bc-t9-DyJ"/>
@@ -1184,7 +1184,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="WXh-ST-o4F" firstAttribute="top" secondItem="nKi-Ou-GJA" secondAttribute="bottom" id="2C6-yS-fwB"/>
                                     <constraint firstAttribute="trailing" secondItem="nKi-Ou-GJA" secondAttribute="trailing" id="5U5-s5-XZd"/>
@@ -1209,7 +1209,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 한 번 더 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V27-nQ-rys">
                                         <rect key="frame" x="0.0" y="31" width="318" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="jbo-ly-irk"/>
@@ -1225,7 +1225,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="NV9-YL-hoJ" secondAttribute="trailing" id="0JG-rY-zO7"/>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="wxO-bF-hl0" secondAttribute="trailing" constant="239.5" id="3JT-ya-kUI"/>
@@ -1247,7 +1247,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qjm-XM-Td9"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iEA-zL-sfQ" firstAttribute="leading" secondItem="QcX-N9-es1" secondAttribute="leading" id="0YG-5u-JjK"/>
                             <constraint firstItem="EMq-25-FrU" firstAttribute="top" secondItem="iEA-zL-sfQ" secondAttribute="bottom" constant="20" id="7OP-Bp-cD0"/>
@@ -1318,7 +1318,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcz-si-DpH">
                                         <rect key="frame" x="0.0" y="31" width="318" height="35"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="orC-q1-jH7"/>
@@ -1334,7 +1334,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Fo4-w3-TM9" secondAttribute="trailing" constant="239.5" id="0mR-lp-bvz"/>
                                     <constraint firstItem="Fo4-w3-TM9" firstAttribute="top" secondItem="KNB-vO-h6B" secondAttribute="top" id="EmG-GS-O8n"/>
@@ -1356,7 +1356,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="m80-eb-hW1"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="m80-eb-hW1" firstAttribute="bottom" secondItem="EXI-BB-AwT" secondAttribute="bottom" constant="30" id="8kr-cu-M93"/>
                             <constraint firstItem="EXI-BB-AwT" firstAttribute="centerX" secondItem="hVK-UO-vfY" secondAttribute="centerX" id="CkJ-SY-rbB"/>
@@ -1392,7 +1392,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lCS-zX-8zQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
@@ -1429,7 +1429,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IDp-fr-MYV">
                                                 <rect key="frame" x="6.5" y="8" width="43" height="40"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="43" id="Xn7-g1-VuD"/>
@@ -1437,7 +1437,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="IDp-fr-MYV" firstAttribute="centerX" secondItem="yqG-b7-PYr" secondAttribute="centerX" id="0Qq-VP-qke"/>
                                             <constraint firstAttribute="height" constant="56" id="BSj-zQ-tB6"/>
@@ -1451,7 +1451,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="qbb-Zi-uqC" firstAttribute="top" secondItem="Dmk-zx-2W1" secondAttribute="top" constant="15" id="1zb-Fj-1th"/>
                                     <constraint firstItem="qbb-Zi-uqC" firstAttribute="leading" secondItem="yqG-b7-PYr" secondAttribute="trailing" constant="5" id="H1H-rt-HO2"/>
@@ -1479,7 +1479,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QuT-ZZ-Xbs">
                                                 <rect key="frame" x="6.5" y="8" width="43" height="40"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" name="Primary Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="43" id="6ui-eb-acI"/>
@@ -1487,7 +1487,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="QuT-ZZ-Xbs" firstAttribute="centerY" secondItem="tJS-qa-Jqr" secondAttribute="centerY" id="HZY-U4-Anv"/>
                                             <constraint firstItem="QuT-ZZ-Xbs" firstAttribute="centerX" secondItem="tJS-qa-Jqr" secondAttribute="centerX" id="QdQ-pm-EgE"/>
@@ -1502,7 +1502,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="xav-Vn-Uja" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="top" constant="15" id="EzV-0o-CGq"/>
                                     <constraint firstAttribute="bottom" secondItem="aXE-8I-bUh" secondAttribute="bottom" constant="14.5" id="MAM-f4-1b5"/>
@@ -1530,7 +1530,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gg4-OC-tdZ">
                                                 <rect key="frame" x="6.5" y="7" width="43" height="41"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" name="Second Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="43" id="358-sp-Fp9"/>
@@ -1538,7 +1538,7 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="2RS-H8-HKr"/>
                                             <constraint firstAttribute="height" constant="56" id="7cY-Zj-Q6A"/>
@@ -1553,7 +1553,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="0Dq-vv-lGO" firstAttribute="top" secondItem="6C8-eM-A8s" secondAttribute="top" constant="15" id="02k-is-o0u"/>
                                     <constraint firstAttribute="trailing" secondItem="Aa5-Mv-NyH" secondAttribute="trailing" constant="57.5" id="28e-Rg-F1u"/>
@@ -1569,7 +1569,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wq2-Ta-j1K"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wq2-Ta-j1K" firstAttribute="trailing" secondItem="6C8-eM-A8s" secondAttribute="trailing" constant="50" id="1Uc-pC-Lgx"/>
                             <constraint firstItem="6C8-eM-A8s" firstAttribute="top" secondItem="ESJ-Vp-IG1" secondAttribute="bottom" constant="50" id="2e4-VI-G7h"/>
@@ -1683,7 +1683,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="H0h-0r-hCY" firstAttribute="leading" secondItem="igy-ch-LEc" secondAttribute="leading" constant="15" id="0kh-BQ-bIB"/>
                                     <constraint firstItem="oj7-sj-mg6" firstAttribute="leading" secondItem="igy-ch-LEc" secondAttribute="leading" constant="5" id="EdL-0u-D2B"/>
@@ -1760,7 +1760,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VZR-pV-VsP" firstAttribute="top" secondItem="oDI-ce-DEK" secondAttribute="top" constant="15" id="0yT-uE-5IT"/>
                                     <constraint firstItem="b90-aC-KRU" firstAttribute="leading" secondItem="oDI-ce-DEK" secondAttribute="leading" constant="5" id="1jF-fI-mby"/>
@@ -1776,7 +1776,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GhS-Zo-s2u"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oDI-ce-DEK" firstAttribute="trailing" secondItem="GhS-Zo-s2u" secondAttribute="trailing" id="3CB-WG-fyT"/>
                             <constraint firstItem="igy-ch-LEc" firstAttribute="top" secondItem="9J0-qE-YM3" secondAttribute="bottom" id="6A2-6E-4zB"/>
@@ -1819,9 +1819,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="myH-FF-yp1">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1841,9 +1841,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RkY-VE-pVz">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="Primary Color"/>
-                        <color key="barTintColor" name="AccentColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1919,7 +1919,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bV4-Pn-FM4"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4lf-J8-61T" firstAttribute="centerX" secondItem="atM-R1-kdl" secondAttribute="centerX" id="4Xc-Mq-lve"/>
                             <constraint firstItem="s5d-ua-RZs" firstAttribute="top" secondItem="bV4-Pn-FM4" secondAttribute="top" constant="60" id="8LQ-6U-QkJ"/>
@@ -2000,7 +2000,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eQs-Yy-ldG"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3hl-xH-jI0" firstAttribute="leading" secondItem="71S-Df-4SY" secondAttribute="leading" constant="50" id="0zH-n3-x5u"/>
                             <constraint firstItem="CJm-iP-5Qx" firstAttribute="centerX" secondItem="71S-Df-4SY" secondAttribute="centerX" id="48g-8w-ts6"/>
@@ -2074,7 +2074,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Zr-mw-iD0"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z5o-eP-NpB" firstAttribute="leading" secondItem="0Zr-mw-iD0" secondAttribute="leading" constant="50" id="4MG-8h-8FQ"/>
                             <constraint firstItem="Z5o-eP-NpB" firstAttribute="top" secondItem="0Zr-mw-iD0" secondAttribute="top" constant="100" id="7ex-z7-MWq"/>
@@ -2129,7 +2129,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gdr-fr-K99"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gdr-fr-K99" firstAttribute="trailing" secondItem="di1-El-3A0" secondAttribute="trailing" constant="50" id="2yS-UK-MC5"/>
                             <constraint firstItem="di1-El-3A0" firstAttribute="centerX" secondItem="qj6-Gc-6wS" secondAttribute="centerX" id="X4i-cC-NeH"/>
@@ -2166,7 +2166,7 @@
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary Color">
             <color red="0.2199999988079071" green="0.82700002193450928" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
