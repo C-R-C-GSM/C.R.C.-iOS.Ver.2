@@ -55,6 +55,7 @@
 		BD964EC4269AF176007BEB07 /* MealReviewAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EC3269AF176007BEB07 /* MealReviewAnswerViewController.swift */; };
 		BD964EC6269AF25A007BEB07 /* MealReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */; };
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
+		BDB15F4926BBEAE6000CD84E /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB15F4826BBEAE6000CD84E /* UISegmentedControl.swift */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
 		BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */; };
 		BDD8143D26982B2800D6F91B /* NoticeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8143C26982B2800D6F91B /* NoticeContentViewController.swift */; };
@@ -117,6 +118,7 @@
 		BD964EBF269AEF08007BEB07 /* MealReviewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewContentViewController.swift; sourceTree = "<group>"; };
 		BD964EC3269AF176007BEB07 /* MealReviewAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewAnswerViewController.swift; sourceTree = "<group>"; };
 		BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewManager.swift; sourceTree = "<group>"; };
+		BDB15F4826BBEAE6000CD84E /* UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
 		BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewTableViewCell.swift; sourceTree = "<group>"; };
 		BDD8143C26982B2800D6F91B /* NoticeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeContentViewController.swift; sourceTree = "<group>"; };
 		BDD8143E26982D3A00D6F91B /* NoticeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeManager.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		BD6B4E1D265DD42800BEBF7F /* C.R.C.Ver2 */ = {
 			isa = PBXGroup;
 			children = (
+				BDB15F4726BBEA67000CD84E /* Extension */,
 				BD7B616E26B849D800911CA7 /* 지문 로고-2.png */,
 				BD7B614926B43F3800911CA7 /* Font */,
 				BD7B614626AEFBEE00911CA7 /* API */,
@@ -338,6 +341,14 @@
 				BD3E4CAF2695A10100ABAA01 /* ADD */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		BDB15F4726BBEA67000CD84E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BDB15F4826BBEAE6000CD84E /* UISegmentedControl.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		BDC0DB0F26677EE900175A85 /* StudentStatusBoard */ = {
@@ -547,6 +558,7 @@
 				BDEE15BD26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift in Sources */,
 				BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */,
 				BD4F2B8A2673447900790E56 /* TotalStatusBoardViewController.swift in Sources */,
+				BDB15F4926BBEAE6000CD84E /* UISegmentedControl.swift in Sources */,
 				BDD8143D26982B2800D6F91B /* NoticeContentViewController.swift in Sources */,
 				BD3E4CAC2695A00F00ABAA01 /* AddViewController.swift in Sources */,
 				BD692E282692B0B1001CF85D /* MealSuggestionBoardModel.swift in Sources */,
@@ -644,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -699,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
