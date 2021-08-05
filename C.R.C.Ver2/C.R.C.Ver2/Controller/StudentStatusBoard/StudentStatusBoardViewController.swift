@@ -35,6 +35,7 @@ class StudentStatusBoardViewController: UIViewController {
     @IBOutlet weak var comeStudentTotalCountLabel: UILabel!
     @IBOutlet weak var notComeStudentTotalCountLabel: UILabel!
     
+    @IBOutlet weak var studentGradeSegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,7 +64,7 @@ class StudentStatusBoardViewController: UIViewController {
             return
         }
     }
-    @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+    @IBAction func refreshButton(_ sender: UIButton) {
         apiCall(grade: studentGrade.rawValue)
     }
     
@@ -73,12 +74,30 @@ class StudentStatusBoardViewController: UIViewController {
         comeStudentTableView.tag = 1
         comeStudentTableView.tableFooterView = UIView()
         comeStudentTableView.layer.cornerRadius = 10
+        comeStudentTableView.layer.borderWidth = 0.5
+        comeStudentTableView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
         
         notComeStudentTableView.delegate = self
         notComeStudentTableView.dataSource = self
         notComeStudentTableView.tag = 2
         notComeStudentTableView.tableFooterView = UIView()
         notComeStudentTableView.layer.cornerRadius = 10
+        notComeStudentTableView.layer.borderWidth = 0.5
+        notComeStudentTableView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        
+        studentGradeSegmentedControl.backgroundColor = .white
+        studentGradeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.init(red: 0.267, green: 0.267, blue: 0.267, alpha: 0.2)], for: .normal)
+        studentGradeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+        studentGradeSegmentedControl.clearBG()
+        
+        studentGradeSegmentedControl.layer.borderWidth = 0.3
+        studentGradeSegmentedControl.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
+        
+        studentGradeSegmentedControl.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.03).cgColor
+        studentGradeSegmentedControl.layer.shadowOpacity = 1
+        studentGradeSegmentedControl.layer.shadowRadius = 10
+        studentGradeSegmentedControl.layer.shadowOffset = CGSize(width: 2, height: 1)
+        studentGradeSegmentedControl.clipsToBounds = false
     }
     
     func indicatorAutolayout() {
@@ -170,4 +189,3 @@ extension StudentStatusBoardViewController: UITableViewDelegate, UITableViewData
         return cell
     }
 }
-
