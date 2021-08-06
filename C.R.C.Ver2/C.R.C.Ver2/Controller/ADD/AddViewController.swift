@@ -31,7 +31,7 @@ class AddViewController: UIViewController {
     }
     
     func goLoginPage(){
-        guard let goMain = self.storyboard?.instantiateViewController(identifier: "LoginViewController") else { return }
+        guard let goMain = self.storyboard?.instantiateViewController(identifier: "LoginNav") else { return }
         goMain.modalPresentationStyle = .fullScreen
         self.present(goMain, animated: true)
     }
