@@ -32,6 +32,12 @@ class MealReviewViewController: UIViewController {
     }
     
     func setting() {
+        
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.clipsToBounds = true
+        self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        
         mealReviewTableView.delegate = self
         mealReviewTableView.dataSource = self
         mealReviewTableView.tableFooterView = UIView()
@@ -110,7 +116,7 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealReviewTableViewCell", for: indexPath) as! MealReviewTableViewCell
         
-        cell.updateConstraintsIfNeeded()
+        
         
         cell.mealReviewNicname.text = model?.review_data[indexPath.row].nickname ?? ""
         cell.mealReviewDate.text = model?.review_data[indexPath.row].review_time ?? ""
@@ -122,19 +128,19 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch star {
         case star:
-            cell.mealReviewStar1.image = .init(systemName: "star.fill")
+            cell.mealReviewStar1.tintColor = UIColor.systemYellow
             if star > 1 { fallthrough } else { break }
         case 2:
-            cell.mealReviewStar2.image = .init(systemName: "star.fill")
+            cell.mealReviewStar2.tintColor = UIColor.systemYellow
             if star > 2 { fallthrough } else { break }
         case 3:
-            cell.mealReviewStar3.image = .init(systemName: "star.fill")
+            cell.mealReviewStar3.tintColor = UIColor.systemYellow
             if star > 3 { fallthrough } else { break }
         case 4:
-            cell.mealReviewStar4.image = .init(systemName: "star.fill")
+            cell.mealReviewStar4.tintColor = UIColor.systemYellow
             if star > 4 { fallthrough } else { break }
         case 5:
-            cell.mealReviewStar5.image = .init(systemName: "star.fill")
+            cell.mealReviewStar5.tintColor = UIColor.systemYellow
         default:
             break
         }
