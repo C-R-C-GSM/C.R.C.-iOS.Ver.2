@@ -36,7 +36,7 @@ class MealReviewViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.clipsToBounds = true
-        self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor(red: 0.267, green: 0.267, blue: 0.267, alpha: 0.9)
         
         mealReviewTableView.delegate = self
         mealReviewTableView.dataSource = self
@@ -127,19 +127,46 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
         let star = model?.review_data[indexPath.row].review_star ?? 0
         
         switch star {
-        case star:
+        case 0:
+            cell.mealReviewStar1.tintColor = UIColor.lightGray
+            cell.mealReviewStar2.tintColor = UIColor.lightGray
+            cell.mealReviewStar3.tintColor = UIColor.lightGray
+            cell.mealReviewStar4.tintColor = UIColor.lightGray
+            cell.mealReviewStar5.tintColor = UIColor.lightGray
+        case 1:
+            print("1")
             cell.mealReviewStar1.tintColor = UIColor.systemYellow
-            if star > 1 { fallthrough } else { break }
+            cell.mealReviewStar2.tintColor = UIColor.lightGray
+            cell.mealReviewStar3.tintColor = UIColor.lightGray
+            cell.mealReviewStar4.tintColor = UIColor.lightGray
+            cell.mealReviewStar5.tintColor = UIColor.lightGray
         case 2:
+            print("2")
+            cell.mealReviewStar1.tintColor = UIColor.systemYellow
             cell.mealReviewStar2.tintColor = UIColor.systemYellow
-            if star > 2 { fallthrough } else { break }
+            cell.mealReviewStar3.tintColor = UIColor.lightGray
+            cell.mealReviewStar4.tintColor = UIColor.lightGray
+            cell.mealReviewStar5.tintColor = UIColor.lightGray
         case 3:
+            print("3")
+            cell.mealReviewStar1.tintColor = UIColor.systemYellow
+            cell.mealReviewStar2.tintColor = UIColor.systemYellow
             cell.mealReviewStar3.tintColor = UIColor.systemYellow
-            if star > 3 { fallthrough } else { break }
+            cell.mealReviewStar4.tintColor = UIColor.lightGray
+            cell.mealReviewStar5.tintColor = UIColor.lightGray
         case 4:
+            print("4")
+            cell.mealReviewStar1.tintColor = UIColor.systemYellow
+            cell.mealReviewStar2.tintColor = UIColor.systemYellow
+            cell.mealReviewStar3.tintColor = UIColor.systemYellow
             cell.mealReviewStar4.tintColor = UIColor.systemYellow
-            if star > 4 { fallthrough } else { break }
+            cell.mealReviewStar5.tintColor = UIColor.lightGray
         case 5:
+            print("5")
+            cell.mealReviewStar1.tintColor = UIColor.systemYellow
+            cell.mealReviewStar2.tintColor = UIColor.systemYellow
+            cell.mealReviewStar3.tintColor = UIColor.systemYellow
+            cell.mealReviewStar4.tintColor = UIColor.systemYellow
             cell.mealReviewStar5.tintColor = UIColor.systemYellow
         default:
             break
