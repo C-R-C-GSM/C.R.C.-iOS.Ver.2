@@ -28,6 +28,9 @@ class MealReviewAnswerViewController: UIViewController {
     
     func setting() {
         mealReviewAnswerTextView.delegate = self
+        mealReviewAnswerTextView.layer.cornerRadius = 5
+        mealReviewAnswerTextView.layer.borderWidth = 0.5
+        mealReviewAnswerTextView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
     }
     
     func indicatorAutolayout() {
@@ -60,7 +63,7 @@ class MealReviewAnswerViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealReviewAnswerTextView.text == "") {
+        if (mealReviewAnswerTextView.text == "답글을 입력하세요.") {
             return false
         }
         return true
@@ -98,5 +101,21 @@ class MealReviewAnswerViewController: UIViewController {
 extension MealReviewAnswerViewController: UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    // TextView Place Holder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "답글을 입력하세요." {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+        
+    }
+    // TextView Place Holder
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "답글을 입력하세요."
+            textView.textColor = UIColor.lightGray
+        }
     }
 }

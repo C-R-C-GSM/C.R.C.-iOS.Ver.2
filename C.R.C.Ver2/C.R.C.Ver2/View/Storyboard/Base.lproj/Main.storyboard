@@ -601,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvB-Ze-OM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5038" y="2345"/>
+            <point key="canvasLocation" x="5948" y="2344"/>
         </scene>
         <!--공지사항 등록-->
         <scene sceneID="dAP-tc-mru">
@@ -725,7 +725,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E25-NL-f4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2619" y="897"/>
+            <point key="canvasLocation" x="3529" y="897"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="26W-4h-tUE">
@@ -1839,7 +1839,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygE-As-Zbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4242" y="897"/>
+            <point key="canvasLocation" x="5151" y="897"/>
         </scene>
         <!--급식 건의 등록-->
         <scene sceneID="V5g-Yv-h6E">
@@ -2028,7 +2028,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epb-Q5-haH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2619" y="2344"/>
+            <point key="canvasLocation" x="3529" y="2344"/>
         </scene>
         <!--답글 달기-->
         <scene sceneID="bda-AP-6oX">
@@ -2083,7 +2083,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFL-re-O7E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3441" y="2344"/>
+            <point key="canvasLocation" x="4351" y="2344"/>
         </scene>
         <!--답글 달기-->
         <scene sceneID="eXV-sY-lxb">
@@ -2093,35 +2093,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="di1-El-3A0">
-                                <rect key="frame" x="50" y="188" width="314" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWu-r4-sjt">
-                                        <rect key="frame" x="0.0" y="38" width="40.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hl0-BW-a0A">
-                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Ce9-sm-efi"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="답글을 입력하세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-2Q-KDk">
+                                <rect key="frame" x="30" y="139" width="354" height="108"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="dvB-F3-KmL"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgx-SH-DWo">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Jt7-tk-WLV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gdr-fr-K99"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Gdr-fr-K99" firstAttribute="trailing" secondItem="di1-El-3A0" secondAttribute="trailing" constant="50" id="2yS-UK-MC5"/>
-                            <constraint firstItem="di1-El-3A0" firstAttribute="centerX" secondItem="qj6-Gc-6wS" secondAttribute="centerX" id="X4i-cC-NeH"/>
-                            <constraint firstItem="di1-El-3A0" firstAttribute="top" secondItem="Gdr-fr-K99" secondAttribute="top" constant="100" id="Xqn-Fo-hPp"/>
-                            <constraint firstItem="di1-El-3A0" firstAttribute="leading" secondItem="Gdr-fr-K99" secondAttribute="leading" constant="50" id="crK-Uu-ea4"/>
+                            <constraint firstItem="mlT-2Q-KDk" firstAttribute="centerX" secondItem="qj6-Gc-6wS" secondAttribute="centerX" id="2bf-lZ-acf"/>
+                            <constraint firstItem="Gdr-fr-K99" firstAttribute="trailing" secondItem="mlT-2Q-KDk" secondAttribute="trailing" constant="30" id="2hB-Pk-kXO"/>
+                            <constraint firstItem="Vgx-SH-DWo" firstAttribute="leading" secondItem="qj6-Gc-6wS" secondAttribute="leading" id="Ohc-qv-Qw2"/>
+                            <constraint firstItem="Vgx-SH-DWo" firstAttribute="top" secondItem="Gdr-fr-K99" secondAttribute="top" id="VdL-ob-w7B"/>
+                            <constraint firstItem="mlT-2Q-KDk" firstAttribute="leading" secondItem="Gdr-fr-K99" secondAttribute="leading" constant="30" id="lme-oG-lL0"/>
+                            <constraint firstAttribute="trailing" secondItem="Vgx-SH-DWo" secondAttribute="trailing" id="oS5-cT-M7z"/>
+                            <constraint firstItem="mlT-2Q-KDk" firstAttribute="top" secondItem="Vgx-SH-DWo" secondAttribute="bottom" constant="50" id="u7o-gi-a36"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="답글 달기" largeTitleDisplayMode="never" id="Pv0-o2-9hB">
@@ -2134,7 +2133,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="mealReviewAnswerTextView" destination="Hl0-BW-a0A" id="vC7-Qe-eTe"/>
+                        <outlet property="mealReviewAnswerTextView" destination="mlT-2Q-KDk" id="lnV-os-Net"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx7-Yp-Xdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
