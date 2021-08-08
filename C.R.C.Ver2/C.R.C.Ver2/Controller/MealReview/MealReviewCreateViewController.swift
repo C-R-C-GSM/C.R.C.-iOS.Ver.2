@@ -29,8 +29,6 @@ class MealReviewCreateViewController: UIViewController {
     @IBOutlet weak var mealReviewStar4: UIButton!
     @IBOutlet weak var mealReviewStar5: UIButton!
     
-    @IBOutlet weak var mealReviewStarView: UIView!
-    @IBOutlet weak var mealReviewTimeView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,20 +52,12 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func setting() {
-        mealReviewNickname.attributedPlaceholder = NSAttributedString(string: "닉네임을 입력하세요. ex) 정인교입큰이", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black])
+        mealReviewNickname.attributedPlaceholder = NSAttributedString(string: "닉네임을 입력하세요. ex) 정인교입큰이", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         mealReviewNickname.delegate = self
         mealReviewContent.delegate = self
         mealReviewContent.layer.cornerRadius = 5
         mealReviewContent.layer.borderWidth = 0.5
         mealReviewContent.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
-        
-        mealReviewStarView.layer.cornerRadius = 5
-        mealReviewStarView.layer.borderWidth = 0.5
-        mealReviewStarView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
-        
-        mealReviewTimeView.layer.cornerRadius = 5
-        mealReviewTimeView.layer.borderWidth = 0.5
-        mealReviewTimeView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
         
         mealReviewStar1.addTarget(self, action: #selector(star), for: .touchUpInside)
         mealReviewStar2.addTarget(self, action: #selector(star), for: .touchUpInside)
@@ -76,6 +66,9 @@ class MealReviewCreateViewController: UIViewController {
         mealReviewStar5.addTarget(self, action: #selector(star), for: .touchUpInside)
         
         mealReviewTime.layer.cornerRadius = 5
+        
+        mealReviewDate.minimumDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        mealReviewDate.maximumDate = Date()
         
         dropDown.dataSource = ["아침", "점심","저녁"]
         dropDown.anchorView = mealReviewTime
@@ -112,7 +105,7 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealReviewNickname.text == "") || (mealReviewContent.text == "") || (mealReviewTime.titleLabel?.text == "") {
+        if (mealReviewNickname.text == "") || (mealReviewContent.text == "내용을 입력하세요.") || (mealReviewTime.titleLabel?.text == "") {
             return false
         }
         return true
@@ -164,5 +157,21 @@ class MealReviewCreateViewController: UIViewController {
 extension MealReviewCreateViewController: UITextViewDelegate, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    // TextView Place Holder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "내용을 입력하세요." {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+        
+    }
+    // TextView Place Holder
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "내용을 입력하세요."
+            textView.textColor = UIColor.lightGray
+        }
     }
 }
