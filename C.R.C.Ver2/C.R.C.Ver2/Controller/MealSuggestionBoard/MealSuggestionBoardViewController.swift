@@ -15,7 +15,7 @@ class MealSuggestionBoardViewController: UIViewController {
     
     var model: MealSuggestionBoardModel?
     
-    @IBOutlet weak var mealSuggestionBoardTableView: UITableView!
+    @IBOutlet weak var mealSuggestionBoardCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +31,13 @@ class MealSuggestionBoardViewController: UIViewController {
     }
     
     func setting() {
-        mealSuggestionBoardTableView.delegate = self
-        mealSuggestionBoardTableView.dataSource = self
-        mealSuggestionBoardTableView.tableFooterView = UIView()
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.clipsToBounds = true
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor(red: 0.267, green: 0.267, blue: 0.267, alpha: 0.9)
+        
+        mealSuggestionBoardCollectionView.delegate = self
+        mealSuggestionBoardCollectionView.dataSource = self
     }
     
     func indicatorAutolayout() {
@@ -70,7 +74,7 @@ class MealSuggestionBoardViewController: UIViewController {
                     print(error.localizedDescription)
                 }
                 self.indicator.stopAnimating()
-                self.mealSuggestionBoardTableView.reloadData()
+                self.mealSuggestionBoardCollectionView.reloadData()
                 print(value)
             case .failure(let error):
                 self.failAlert(messages: "네트워크 연결을 확인해주세요.")
@@ -80,14 +84,27 @@ class MealSuggestionBoardViewController: UIViewController {
     }
 }
 
-extension MealSuggestionBoardViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+extension MealSuggestionBoardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model?.suggest_data.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MealSuggestionBoardTableViewCell", for: indexPath) as! MealSuggestionBoardTableViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MealSuggestionBoardCollectionViewCell", for: indexPath) as! MealSuggestionBoardCollectionViewCell
+    
+        cell.contentView.backgroundColor = .white
+        
+        cell.layer.cornerRadius = 5
+        cell.layer.borderWidth = 0.1
+        cell.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        
+        cell.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.04).cgColor
+        cell.layer.shadowOffset = CGSize(width: 10, height: 4)
+        cell.layer.shadowRadius = 10
+        cell.layer.shadowOpacity = 1
+        cell.layer.masksToBounds = false
+        
         
         cell.mealSuggestionTitle.text = model?.suggest_data[indexPath.row].title ?? ""
         cell.mealSuggestionDate.text = model?.suggest_data[indexPath.row].suggest_time ?? ""
@@ -95,7 +112,7 @@ extension MealSuggestionBoardViewController: UITableViewDelegate, UITableViewDat
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         MealSuggestionBoardManager.saveMealSuggestionId(id: model?.suggest_data[indexPath.row].suggestid ?? 0)
         MealSuggestionBoardManager.saveMealSuggestionTitle(title: model?.suggest_data[indexPath.row].title ?? "")
@@ -103,5 +120,9 @@ extension MealSuggestionBoardViewController: UITableViewDelegate, UITableViewDat
         MealSuggestionBoardManager.saveMealSuggestionContent(content: model?.suggest_data[indexPath.row].content ?? "")
         MealSuggestionBoardManager.saveMealSuggestionNickname(nickname: model?.suggest_data[indexPath.row].nickname ?? "")
         MealSuggestionBoardManager.saveMealSuggestionAnswer(answer: model?.suggest_data[indexPath.row].reply ?? "")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width - 60, height: 60)
     }
 }

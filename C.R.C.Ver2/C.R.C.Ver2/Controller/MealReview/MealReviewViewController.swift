@@ -116,8 +116,6 @@ extension MealReviewViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MealReviewTableViewCell", for: indexPath) as! MealReviewTableViewCell
         
-        
-        
         cell.mealReviewNicname.text = model?.review_data[indexPath.row].nickname ?? ""
         cell.mealReviewDate.text = model?.review_data[indexPath.row].review_time ?? ""
         cell.mealReviewTime.text = model?.review_data[indexPath.row].review_when ?? ""
