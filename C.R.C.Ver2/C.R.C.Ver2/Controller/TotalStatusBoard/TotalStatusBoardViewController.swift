@@ -18,10 +18,17 @@ class TotalStatusBoardViewController: UIViewController {
     @IBOutlet weak var comeStudentCount: UILabel!
     @IBOutlet weak var notComeStudentCount: UILabel!
     
+    @IBOutlet weak var noticeView: UIView!
+    @IBOutlet weak var totalStudentView: UIView!
+    @IBOutlet weak var comeStudentView: UIView!
+    @IBOutlet weak var notComeStudentView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         indicatorAutolayout()
+        setting()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,8 +36,42 @@ class TotalStatusBoardViewController: UIViewController {
         apiCall()
     }
     
-    @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+    @IBAction func refreshButton(_ sender: UIButton) {
         apiCall()
+    }
+    
+    func setting() {
+        
+        noticeView.layer.cornerRadius = 15
+        
+        totalStudentView.layer.cornerRadius = 5
+        totalStudentView.layer.borderWidth = 0.1
+        totalStudentView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        totalStudentView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        totalStudentView.layer.shadowRadius = 10.0
+        totalStudentView.layer.shadowOpacity = 1.0
+        totalStudentView.layer.shadowOffset = CGSize(width: 10.0, height: 4.0)
+        totalStudentView.layer.masksToBounds = false
+        
+        
+        comeStudentView.layer.cornerRadius = 5
+        comeStudentView.layer.borderWidth = 0.1
+        comeStudentView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        comeStudentView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        comeStudentView.layer.shadowRadius = 10
+        comeStudentView.layer.shadowOpacity = 1
+        comeStudentView.layer.shadowOffset = CGSize(width: 10.0, height: 4.0)
+        comeStudentView.layer.masksToBounds = false
+        
+        
+        notComeStudentView.layer.cornerRadius = 5
+        notComeStudentView.layer.borderWidth = 0.1
+        notComeStudentView.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        notComeStudentView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.08).cgColor
+        notComeStudentView.layer.shadowRadius = 10
+        notComeStudentView.layer.shadowOpacity = 1
+        notComeStudentView.layer.shadowOffset = CGSize(width: 10.0, height: 4.0)
+        notComeStudentView.layer.masksToBounds = false
     }
     
     func indicatorAutolayout() {

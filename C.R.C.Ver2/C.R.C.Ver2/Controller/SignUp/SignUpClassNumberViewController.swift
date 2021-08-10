@@ -43,10 +43,12 @@ class SignUpClassNumberViewController: UIViewController {
     }
     
     func setting() {
+        navigationItem.title = ""
+        
         classNumberTextField.delegate = self
         classNumberTextField.keyboardType = .numberPad
         
-        doneBtn.layer.cornerRadius = 10
+        doneBtn.layer.cornerRadius = 5
     }
     
     func indicatorAutolayout() {

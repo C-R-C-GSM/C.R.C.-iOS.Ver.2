@@ -38,11 +38,12 @@ class SignUpNameViewController: UIViewController {
     }
     
     func setting() {
-        self.navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        navigationItem.backBarButtonItem?.tintColor = .init(named: "Primary Color")
+        navigationItem.title = ""
         
         nameTextField.delegate = self
         
-        continueBtn.layer.cornerRadius = 10
+        continueBtn.layer.cornerRadius = 5
     }
     
     func failAlert(messages: String) {

@@ -50,7 +50,7 @@ class SignUpEmailViewController: UIViewController {
         emailTextField.delegate = self
         emailTextField.keyboardType = .emailAddress
         
-        continueBtn.layer.cornerRadius = 10
+        continueBtn.layer.cornerRadius = 5
     }
     
     func failAlert(messages: String) {
