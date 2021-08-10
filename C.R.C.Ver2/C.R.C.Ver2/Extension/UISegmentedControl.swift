@@ -10,7 +10,6 @@ import UIKit
 extension UISegmentedControl {
     func clearBG() {
         setBackgroundImage(imageWithColor(color: UIColor.white), for: .normal, barMetrics: .default)
-        setBackgroundImage(imageWithColor(color: UIColor.white), for: .normal, barMetrics: .default)
         setDividerImage(imageWithColor(color: .white), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
     }
     // create a 1x1 image with this color
