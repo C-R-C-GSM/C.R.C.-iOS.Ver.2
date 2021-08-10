@@ -57,6 +57,7 @@
 		BDAF07E9266BC838005F49CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6B4E29265DD42900BEBF7F /* LaunchScreen.storyboard */; };
 		BDB15F4926BBEAE6000CD84E /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB15F4826BBEAE6000CD84E /* UISegmentedControl.swift */; };
 		BDB3DC7A2669FAF100EBE1EF /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BDB3DC792669FAF100EBE1EF /* NVActivityIndicatorView */; };
+		BDC0139D26C2C111005A24E8 /* MealSuggestionBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0139C26C2C111005A24E8 /* MealSuggestionBoardCollectionViewCell.swift */; };
 		BDCA19ED2676DB0100EFDDEC /* MealReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */; };
 		BDD8143D26982B2800D6F91B /* NoticeContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8143C26982B2800D6F91B /* NoticeContentViewController.swift */; };
 		BDD8143F26982D3A00D6F91B /* NoticeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD8143E26982D3A00D6F91B /* NoticeManager.swift */; };
@@ -119,6 +120,7 @@
 		BD964EC3269AF176007BEB07 /* MealReviewAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewAnswerViewController.swift; sourceTree = "<group>"; };
 		BD964EC5269AF25A007BEB07 /* MealReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewManager.swift; sourceTree = "<group>"; };
 		BDB15F4826BBEAE6000CD84E /* UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
+		BDC0139C26C2C111005A24E8 /* MealSuggestionBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSuggestionBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		BDCA19EC2676DB0100EFDDEC /* MealReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReviewTableViewCell.swift; sourceTree = "<group>"; };
 		BDD8143C26982B2800D6F91B /* NoticeContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeContentViewController.swift; sourceTree = "<group>"; };
 		BDD8143E26982D3A00D6F91B /* NoticeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeManager.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				BDEE15BC26906CAE005CC0AF /* MealSuggestionBoardTableViewCell.swift */,
+				BDC0139C26C2C111005A24E8 /* MealSuggestionBoardCollectionViewCell.swift */,
 			);
 			path = MealSuggestionBoard;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				BD751E842689EF7800BAD08B /* TokenManager.swift in Sources */,
 				BD2BE8C1268DE88E00388108 /* MealReviewModel.swift in Sources */,
 				BD3E4CB52695C91100ABAA01 /* NoticeCreateViewController.swift in Sources */,
+				BDC0139D26C2C111005A24E8 /* MealSuggestionBoardCollectionViewCell.swift in Sources */,
 				BD3E4CAE2695A02800ABAA01 /* NoticeViewController.swift in Sources */,
 				BD4A20A3268EEF060082FCF0 /* MealReviewCreateViewController.swift in Sources */,
 				BD964EC0269AEF08007BEB07 /* MealReviewContentViewController.swift in Sources */,
