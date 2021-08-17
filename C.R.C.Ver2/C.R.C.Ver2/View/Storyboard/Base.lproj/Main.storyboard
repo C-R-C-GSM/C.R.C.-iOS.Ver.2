@@ -16,6 +16,9 @@
         <array key="Roboto-Medium.ttf">
             <string>Roboto-Medium</string>
         </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Meal Review View Controller-->
@@ -1956,63 +1959,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="급식 건의 제목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tS-xz-Etq">
-                                <rect key="frame" x="150.5" y="118" width="113" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="150" y="119" width="114" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2003.02.25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJm-iP-5Qx">
-                                <rect key="frame" x="160.5" y="172" width="93.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="169.5" y="162.5" width="75.5" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-1t-rCn">
-                                <rect key="frame" x="184.5" y="213" width="45" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="186" y="200.5" width="42" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hl-xH-jI0">
-                                <rect key="frame" x="50" y="355.5" width="314" height="2"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <rect key="frame" x="50" y="309.5" width="314" height="2"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="nJE-Zt-DIw"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건의사항 답글" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se1-bt-n2C">
-                                <rect key="frame" x="50" y="407.5" width="98" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="50" y="341.5" width="92.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건의사항 내용" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W89-4F-Sng">
-                                <rect key="frame" x="50" y="284" width="98" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="50" y="259.5" width="92.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37N-BC-ScK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="g16-gP-Lkl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eQs-Yy-ldG"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3hl-xH-jI0" firstAttribute="leading" secondItem="71S-Df-4SY" secondAttribute="leading" constant="50" id="0zH-n3-x5u"/>
                             <constraint firstItem="CJm-iP-5Qx" firstAttribute="centerX" secondItem="71S-Df-4SY" secondAttribute="centerX" id="48g-8w-ts6"/>
-                            <constraint firstItem="se1-bt-n2C" firstAttribute="top" secondItem="3hl-xH-jI0" secondAttribute="bottom" constant="50" id="4pB-4L-lvs"/>
-                            <constraint firstItem="3hl-xH-jI0" firstAttribute="top" secondItem="W89-4F-Sng" secondAttribute="bottom" constant="50" id="6UW-vZ-JYO"/>
+                            <constraint firstItem="se1-bt-n2C" firstAttribute="top" secondItem="3hl-xH-jI0" secondAttribute="bottom" constant="30" id="4pB-4L-lvs"/>
+                            <constraint firstItem="3hl-xH-jI0" firstAttribute="top" secondItem="W89-4F-Sng" secondAttribute="bottom" constant="30" id="6UW-vZ-JYO"/>
                             <constraint firstItem="W89-4F-Sng" firstAttribute="leading" secondItem="eQs-Yy-ldG" secondAttribute="leading" constant="50" id="AkW-mD-bQS"/>
-                            <constraint firstItem="W89-4F-Sng" firstAttribute="top" secondItem="aZA-1t-rCn" secondAttribute="bottom" constant="50" id="FN3-i6-0TG"/>
+                            <constraint firstItem="W89-4F-Sng" firstAttribute="top" secondItem="aZA-1t-rCn" secondAttribute="bottom" constant="40" id="FN3-i6-0TG"/>
                             <constraint firstItem="eQs-Yy-ldG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W89-4F-Sng" secondAttribute="trailing" constant="50" id="LWI-Vv-jth"/>
+                            <constraint firstItem="7tS-xz-Etq" firstAttribute="top" secondItem="37N-BC-ScK" secondAttribute="bottom" constant="30" id="MUK-VT-Oie"/>
+                            <constraint firstItem="37N-BC-ScK" firstAttribute="leading" secondItem="71S-Df-4SY" secondAttribute="leading" id="Nqa-ze-rMv"/>
                             <constraint firstItem="aZA-1t-rCn" firstAttribute="top" secondItem="CJm-iP-5Qx" secondAttribute="bottom" constant="20" id="Q8g-2S-HIo"/>
                             <constraint firstItem="eQs-Yy-ldG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7tS-xz-Etq" secondAttribute="trailing" constant="20" id="Tpk-cS-S3E"/>
                             <constraint firstAttribute="trailing" secondItem="3hl-xH-jI0" secondAttribute="trailing" constant="50" id="Wgx-dx-k6d"/>
                             <constraint firstItem="7tS-xz-Etq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eQs-Yy-ldG" secondAttribute="leading" constant="20" id="acW-FO-ThH"/>
+                            <constraint firstAttribute="trailing" secondItem="37N-BC-ScK" secondAttribute="trailing" id="brQ-WH-fZn"/>
                             <constraint firstItem="se1-bt-n2C" firstAttribute="leading" secondItem="eQs-Yy-ldG" secondAttribute="leading" constant="50" id="fNM-Di-rWm"/>
                             <constraint firstItem="aZA-1t-rCn" firstAttribute="centerX" secondItem="71S-Df-4SY" secondAttribute="centerX" id="feD-CH-mxG"/>
-                            <constraint firstItem="CJm-iP-5Qx" firstAttribute="top" secondItem="7tS-xz-Etq" secondAttribute="bottom" constant="30" id="jBu-B7-sU3"/>
+                            <constraint firstItem="37N-BC-ScK" firstAttribute="top" secondItem="eQs-Yy-ldG" secondAttribute="top" id="few-rs-lyT"/>
+                            <constraint firstItem="CJm-iP-5Qx" firstAttribute="top" secondItem="7tS-xz-Etq" secondAttribute="bottom" constant="20" id="jBu-B7-sU3"/>
                             <constraint firstItem="7tS-xz-Etq" firstAttribute="centerX" secondItem="71S-Df-4SY" secondAttribute="centerX" id="k4x-iU-ixa"/>
                             <constraint firstItem="3hl-xH-jI0" firstAttribute="centerX" secondItem="71S-Df-4SY" secondAttribute="centerX" id="loV-EF-cDW"/>
-                            <constraint firstItem="7tS-xz-Etq" firstAttribute="top" secondItem="eQs-Yy-ldG" secondAttribute="top" constant="30" id="mAm-fR-Xsk"/>
                             <constraint firstItem="eQs-Yy-ldG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="se1-bt-n2C" secondAttribute="trailing" constant="50" id="xAe-gQ-eJ1"/>
                         </constraints>
                     </view>
@@ -2194,9 +2207,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
