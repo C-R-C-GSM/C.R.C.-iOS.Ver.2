@@ -2030,10 +2030,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="JS8-7b-IG8">
+                        <barButtonItem key="backBarButtonItem" title="금식 건의" id="ELx-H9-kxU"/>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="답글 달기" id="qbA-zN-Ih4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="Rqb-8A-2aA" kind="show" id="na8-a1-1wQ"/>
+                                <segue destination="CPG-j6-C2J" kind="show" id="hZc-D2-zyo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2049,61 +2050,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epb-Q5-haH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3529" y="2344"/>
-        </scene>
-        <!--답글 달기-->
-        <scene sceneID="bda-AP-6oX">
-            <objects>
-                <viewController id="Rqb-8A-2aA" customClass="MealSuggestionBoardAnswerViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N9Q-bd-YIx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-eP-NpB">
-                                <rect key="frame" x="50" y="188" width="314" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu2-Vp-Tft">
-                                        <rect key="frame" x="0.0" y="38" width="40.5" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QO2-Bc-gIV">
-                                        <rect key="frame" x="55.5" y="0.0" width="258.5" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="r51-ii-1au"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="0Zr-mw-iD0"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Z5o-eP-NpB" firstAttribute="leading" secondItem="0Zr-mw-iD0" secondAttribute="leading" constant="50" id="4MG-8h-8FQ"/>
-                            <constraint firstItem="Z5o-eP-NpB" firstAttribute="top" secondItem="0Zr-mw-iD0" secondAttribute="top" constant="100" id="7ex-z7-MWq"/>
-                            <constraint firstItem="Z5o-eP-NpB" firstAttribute="centerX" secondItem="N9Q-bd-YIx" secondAttribute="centerX" id="RJQ-58-Ye4"/>
-                            <constraint firstItem="0Zr-mw-iD0" firstAttribute="trailing" secondItem="Z5o-eP-NpB" secondAttribute="trailing" constant="50" id="Ren-8e-jMP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="답글 달기" largeTitleDisplayMode="never" id="ycY-vh-2p1">
-                        <barButtonItem key="rightBarButtonItem" title="완료" id="TUu-eA-ZBV">
-                            <color key="tintColor" name="Primary Color"/>
-                            <connections>
-                                <action selector="doneButton:" destination="Rqb-8A-2aA" id="rn0-z4-LGH"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="mealSuggestionAnswerTextView" destination="QO2-Bc-gIV" id="rug-9W-Lv5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sFL-re-O7E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4351" y="2344"/>
         </scene>
         <!--답글 달기-->
         <scene sceneID="eXV-sY-lxb">
@@ -2181,6 +2127,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="909-42-XSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1275" y="897"/>
+        </scene>
+        <!--답글 달기-->
+        <scene sceneID="2fm-pB-ZNS">
+            <objects>
+                <viewController id="CPG-j6-C2J" customClass="MealSuggestionBoardAnswerViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0s7-St-hMs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="답글을 입력하세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yng-Vj-jcO">
+                                <rect key="frame" x="30" y="139" width="354" height="108"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="RXf-eQ-Ipu"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7p7-w4-A7t">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eT1-oG-zxM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aoH-nn-2xG"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7p7-w4-A7t" firstAttribute="top" secondItem="aoH-nn-2xG" secondAttribute="top" id="1LB-e4-jpA"/>
+                            <constraint firstItem="Yng-Vj-jcO" firstAttribute="top" secondItem="7p7-w4-A7t" secondAttribute="bottom" constant="50" id="3hj-mh-FDf"/>
+                            <constraint firstAttribute="trailing" secondItem="7p7-w4-A7t" secondAttribute="trailing" id="AWs-na-55C"/>
+                            <constraint firstItem="aoH-nn-2xG" firstAttribute="trailing" secondItem="Yng-Vj-jcO" secondAttribute="trailing" constant="30" id="DkW-E7-Wxt"/>
+                            <constraint firstItem="Yng-Vj-jcO" firstAttribute="centerX" secondItem="0s7-St-hMs" secondAttribute="centerX" id="IVG-DD-XrI"/>
+                            <constraint firstItem="Yng-Vj-jcO" firstAttribute="leading" secondItem="aoH-nn-2xG" secondAttribute="leading" constant="30" id="Tag-K0-OjM"/>
+                            <constraint firstItem="7p7-w4-A7t" firstAttribute="leading" secondItem="0s7-St-hMs" secondAttribute="leading" id="cEs-Fv-kpL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="답글 달기" largeTitleDisplayMode="never" id="vEf-rP-v5G">
+                        <barButtonItem key="rightBarButtonItem" title="완료" id="BJ4-GC-o6L">
+                            <color key="tintColor" name="Primary Color"/>
+                            <connections>
+                                <action selector="doneButton:" destination="CPG-j6-C2J" id="2Vg-29-X9R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mealSuggestionAnswerTextView" destination="Yng-Vj-jcO" id="ewN-Bo-vc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hP-4M-QvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4351" y="2344"/>
         </scene>
     </scenes>
     <resources>

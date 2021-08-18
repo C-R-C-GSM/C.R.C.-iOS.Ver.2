@@ -60,7 +60,7 @@ class MealSuggestionBoardAnswerViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealSuggestionAnswerTextView.text == "") {
+        if (mealSuggestionAnswerTextView.text == "") || (mealSuggestionAnswerTextView.text == "답글을 입력하세요.") {
             return false
         }
         return true
@@ -98,5 +98,20 @@ class MealSuggestionBoardAnswerViewController: UIViewController {
 extension MealSuggestionBoardAnswerViewController: UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    // TextView Place Holder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "답글을 입력하세요." {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+        
+    }
+    // TextView Place Holder
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "답글을 입력하세요."
+            textView.textColor = UIColor.lightGray
+        }
     }
 }
