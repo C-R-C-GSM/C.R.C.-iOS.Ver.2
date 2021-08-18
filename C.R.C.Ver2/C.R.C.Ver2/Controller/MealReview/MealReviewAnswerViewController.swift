@@ -63,7 +63,7 @@ class MealReviewAnswerViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealReviewAnswerTextView.text == "답글을 입력하세요.") {
+        if (mealReviewAnswerTextView.text == "답글을 입력하세요.") || (mealReviewAnswerTextView.text == "") {
             return false
         }
         return true
