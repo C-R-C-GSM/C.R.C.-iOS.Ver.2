@@ -461,7 +461,7 @@
             </objects>
             <point key="canvasLocation" x="3528.985507246377" y="1609.8214285714284"/>
         </scene>
-        <!--더보기-->
+        <!--Add View Controller-->
         <scene sceneID="yeN-Z2-GXo">
             <objects>
                 <viewController id="x27-GB-AIg" customClass="AddViewController" customModule="C_R_C_Ver2" customModuleProvider="target" sceneMemberID="viewController">
@@ -470,7 +470,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm8-1y-IxQ">
-                                <rect key="frame" x="100" y="170" width="214" height="34"/>
+                                <rect key="frame" x="100" y="184" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="공지사항">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -480,7 +480,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs8-ou-dMf">
-                                <rect key="frame" x="100" y="234" width="214" height="34"/>
+                                <rect key="frame" x="100" y="248" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="로그아웃">
                                     <color key="titleColor" systemColor="systemRedColor"/>
@@ -489,21 +489,39 @@
                                     <action selector="logoutButton:" destination="x27-GB-AIg" eventType="touchUpInside" id="5e6-BY-7Zq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-br-882">
+                                <rect key="frame" x="174.5" y="88" width="65" height="30"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mM0-kY-V71">
+                                <rect key="frame" x="30" y="133" width="354" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iKl-3h-oAP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ti-9M-Uu8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="mM0-kY-V71" firstAttribute="leading" secondItem="0uJ-Av-i7P" secondAttribute="leading" constant="30" id="1fI-Mi-3De"/>
                             <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Fs8-ou-dMf" secondAttribute="trailing" constant="100" id="3I0-sR-nL8"/>
+                            <constraint firstItem="zeM-br-882" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="3sA-gb-lvx"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="GXH-8i-0sH"/>
+                            <constraint firstItem="mM0-kY-V71" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="XAm-aY-IbL"/>
                             <constraint firstItem="Fs8-ou-dMf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="7Ti-9M-Uu8" secondAttribute="leading" constant="100" id="bZ5-n2-yza"/>
                             <constraint firstItem="gm8-1y-IxQ" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="gmT-hm-Z4L"/>
+                            <constraint firstItem="mM0-kY-V71" firstAttribute="top" secondItem="zeM-br-882" secondAttribute="bottom" constant="15" id="kmx-i8-BAh"/>
+                            <constraint firstItem="gm8-1y-IxQ" firstAttribute="top" secondItem="mM0-kY-V71" secondAttribute="bottom" constant="50" id="lyZ-sZ-AWe"/>
                             <constraint firstItem="7Ti-9M-Uu8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gm8-1y-IxQ" secondAttribute="trailing" constant="100" id="n0i-6b-pqc"/>
                             <constraint firstItem="Fs8-ou-dMf" firstAttribute="top" secondItem="gm8-1y-IxQ" secondAttribute="bottom" constant="30" id="rn7-MA-xlg"/>
-                            <constraint firstItem="gm8-1y-IxQ" firstAttribute="top" secondItem="7Ti-9M-Uu8" secondAttribute="top" constant="30" id="uQM-f6-f6P"/>
+                            <constraint firstItem="zeM-br-882" firstAttribute="top" secondItem="7Ti-9M-Uu8" secondAttribute="top" id="ygy-Zr-EBf"/>
                             <constraint firstItem="Fs8-ou-dMf" firstAttribute="centerX" secondItem="0uJ-Av-i7P" secondAttribute="centerX" id="z6H-0G-wCL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="더보기" largeTitleDisplayMode="always" id="dBO-rI-7yc"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="dBO-rI-7yc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4o-xA-f65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
