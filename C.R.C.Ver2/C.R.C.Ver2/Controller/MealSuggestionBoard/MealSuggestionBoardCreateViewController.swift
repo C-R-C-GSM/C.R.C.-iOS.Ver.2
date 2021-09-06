@@ -20,6 +20,7 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setting()
         indicatorAutolayout()
     }
     
@@ -31,6 +32,13 @@ class MealSuggestionBoardCreateViewController: UIViewController {
         mealSuggestionTitle.delegate = self
         mealSuggestionContent.delegate = self
         mealSuggestionNickname.delegate = self
+        
+        mealSuggestionTitle.attributedPlaceholder = NSAttributedString(string: "제목을 입력하세요.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        mealSuggestionNickname.attributedPlaceholder = NSAttributedString(string: "닉네임을 입력하세요. ex) 정인교입큰이", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        
+        mealSuggestionContent.layer.cornerRadius = 5
+        mealSuggestionContent.layer.borderWidth = 0.5
+        mealSuggestionContent.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2).cgColor
     }
     
     func indicatorAutolayout() {
@@ -63,7 +71,7 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealSuggestionTitle.text == "") || (mealSuggestionContent.text == "") || (mealSuggestionNickname.text == "") {
+        if (mealSuggestionTitle.text == "") || (mealSuggestionContent.text == "내용을 입력하세요") || (mealSuggestionContent.text == "") || (mealSuggestionNickname.text == "") {
             return false
         }
         return true
@@ -101,5 +109,19 @@ class MealSuggestionBoardCreateViewController: UIViewController {
 extension MealSuggestionBoardCreateViewController: UITextFieldDelegate, UITextViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
+    }
+    // TextView Place Holder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == "내용을 입력하세요." {
+            textView.text = nil
+            textView.textColor = UIColor.black
+        }
+    }
+    // TextView Place Holder
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "내용을 입력하세요."
+            textView.textColor = UIColor.lightGray
+        }
     }
 }

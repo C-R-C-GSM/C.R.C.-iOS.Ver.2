@@ -105,7 +105,7 @@ class MealReviewCreateViewController: UIViewController {
     }
     
     func checkText() -> Bool {
-        if (mealReviewNickname.text == "") || (mealReviewContent.text == "내용을 입력하세요.") || (mealReviewTime.titleLabel?.text == "") {
+        if (mealReviewNickname.text == "") || (mealReviewContent.text == "내용을 입력하세요.") || (mealReviewContent.text == "") || (mealReviewTime.titleLabel?.text == "") {
             return false
         }
         return true
