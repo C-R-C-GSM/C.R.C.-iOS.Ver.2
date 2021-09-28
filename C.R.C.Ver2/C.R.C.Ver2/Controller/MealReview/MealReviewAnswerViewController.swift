@@ -72,7 +72,7 @@ class MealReviewAnswerViewController: UIViewController {
     func apiCall(answer: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/review/reply"
+        let URL = "http://ec2-3-34-189-53.ap-northeast-2.compute.amazonaws.com:3000/review/reply"
         let token = TokenManager.getToken()
         let reviewid = MealReviewManager.getMealReviewId()
         let PARAM: Parameters = [
