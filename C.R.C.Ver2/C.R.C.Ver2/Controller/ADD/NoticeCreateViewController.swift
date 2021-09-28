@@ -71,7 +71,7 @@ class NoticeCreateViewController: UIViewController {
     func apiCall(title: String, content: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/notice/register"
+        let URL = "http://ec2-3-34-189-53.ap-northeast-2.compute.amazonaws.com:3000/notice/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
             "title": title,

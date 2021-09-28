@@ -80,7 +80,7 @@ class MealSuggestionBoardCreateViewController: UIViewController {
     func apiCall(title: String, content: String, nickname: String) {
         indicator.startAnimating()
         
-        let URL = "http://ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000/suggest/register"
+        let URL = "http://ec2-3-34-189-53.ap-northeast-2.compute.amazonaws.com:3000/suggest/register"
         let token = TokenManager.getToken()
         let PARAM: Parameters = [
             "title": title,

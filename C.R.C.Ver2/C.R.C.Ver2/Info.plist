@@ -23,7 +23,7 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>ec2-3-35-81-230.ap-northeast-2.compute.amazonaws.com:3000</key>
+			<key>http://ec2-3-34-189-53.ap-northeast-2.compute.amazonaws.com:3000</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
